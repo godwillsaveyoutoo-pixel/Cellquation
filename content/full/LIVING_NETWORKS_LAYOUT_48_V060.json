@@ -1,0 +1,4072 @@
+{
+  "schemaVersion": 2,
+  "id": "cellquation-living-networks-layout-v0.6-full-2color",
+  "coordinateSpace": "authored-pixels-y-down",
+  "curveModel": "cellkit-analytic-centre-bend",
+  "strategy": "Audit28 authored node layouts + v0.5.3 production composition grammar. First three levels remain exact v0.5.3 authored layouts; remaining layouts keep audited nodes and add topology-aware outward bends/atmosphere.",
+  "levels": {
+    "NET-W01-L01-chain_3": {
+      "artDirection": "A shallow living arc: three cells form one compact cluster; both equal-length synapses bow away from the central negative space.",
+      "silhouette": "balanced-arc",
+      "targetMedianWorldLength": 0.83,
+      "nodes": [
+        {
+          "x": 105,
+          "y": 455
+        },
+        {
+          "x": 270,
+          "y": 330
+        },
+        {
+          "x": 435,
+          "y": 455
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.072
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.072
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270,
+          "y": 398
+        },
+        "spread": 1.0,
+        "phase": 0.17
+      },
+      "source": "exact-v0.5.3-authored"
+    },
+    "NET-W01-L02-chain_4": {
+      "artDirection": "An open anchor-like sweep: three near-equal links turn around a calm central chamber without tangling at either joint.",
+      "silhouette": "open-anchor",
+      "targetMedianWorldLength": 0.8,
+      "nodes": [
+        {
+          "x": 115,
+          "y": 430
+        },
+        {
+          "x": 210,
+          "y": 278
+        },
+        {
+          "x": 382,
+          "y": 326
+        },
+        {
+          "x": 362,
+          "y": 507
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.05
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.054
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.05
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 277,
+          "y": 382
+        },
+        "spread": 1.08,
+        "phase": 0.41
+      },
+      "source": "exact-v0.5.3-authored"
+    },
+    "NET-W01-L03-chain_5": {
+      "artDirection": "A deliberately open chamber: four outward-curving links describe a broken ring and preserve a readable empty centre.",
+      "silhouette": "open-chamber",
+      "targetMedianWorldLength": 0.78,
+      "nodes": [
+        {
+          "x": 100,
+          "y": 438
+        },
+        {
+          "x": 143,
+          "y": 270
+        },
+        {
+          "x": 310,
+          "y": 220
+        },
+        {
+          "x": 442,
+          "y": 340
+        },
+        {
+          "x": 346,
+          "y": 493
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.046
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.054
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.056
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.05
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 272,
+          "y": 361
+        },
+        "spread": 1.14,
+        "phase": 0.73
+      },
+      "source": "exact-v0.5.3-authored"
+    },
+    "NET-W01-L04-chain_6": {
+      "artDirection": "Audit-validated chain_6 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-6",
+      "targetMedianWorldLength": 0.812,
+      "nodes": [
+        {
+          "x": 100,
+          "y": 300
+        },
+        {
+          "x": 245,
+          "y": 270
+        },
+        {
+          "x": 410,
+          "y": 330
+        },
+        {
+          "x": 420,
+          "y": 465
+        },
+        {
+          "x": 285,
+          "y": 535
+        },
+        {
+          "x": 120,
+          "y": 625
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0488
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0351
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0475
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.039
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0463
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 263.33,
+          "y": 420.83
+        },
+        "spread": 1.055,
+        "phase": 0.561
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 320,
+        "height": 355
+      }
+    },
+    "NET-W01-L05-chain_7": {
+      "artDirection": "Audit-validated chain_7 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-7",
+      "targetMedianWorldLength": 0.794,
+      "nodes": [
+        {
+          "x": 95,
+          "y": 290
+        },
+        {
+          "x": 235,
+          "y": 255
+        },
+        {
+          "x": 400,
+          "y": 310
+        },
+        {
+          "x": 435,
+          "y": 425
+        },
+        {
+          "x": 340,
+          "y": 520
+        },
+        {
+          "x": 180,
+          "y": 535
+        },
+        {
+          "x": 105,
+          "y": 670
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0463
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.038
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.045
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0371
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.05
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": -0.0361
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 255.71,
+          "y": 429.29
+        },
+        "spread": 1.11,
+        "phase": 0.658
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 340,
+        "height": 415
+      }
+    },
+    "NET-W01-L06-chain_8": {
+      "artDirection": "Audit-validated chain_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-8",
+      "targetMedianWorldLength": 0.776,
+      "nodes": [
+        {
+          "x": 90,
+          "y": 285
+        },
+        {
+          "x": 225,
+          "y": 250
+        },
+        {
+          "x": 390,
+          "y": 295
+        },
+        {
+          "x": 445,
+          "y": 410
+        },
+        {
+          "x": 365,
+          "y": 510
+        },
+        {
+          "x": 205,
+          "y": 500
+        },
+        {
+          "x": 95,
+          "y": 590
+        },
+        {
+          "x": 235,
+          "y": 700
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.05
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0361
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0488
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0351
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0475
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.039
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.0463
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 256.25,
+          "y": 442.5
+        },
+        "spread": 1.165,
+        "phase": 0.755
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 355,
+        "height": 450
+      }
+    },
+    "NET-W01-L07-loop_5": {
+      "artDirection": "Audit-validated loop_5 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "loop-5",
+      "targetMedianWorldLength": 0.84,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 315.0
+        },
+        {
+          "x": 407.9,
+          "y": 446.3
+        },
+        {
+          "x": 355.2,
+          "y": 658.7
+        },
+        {
+          "x": 184.8,
+          "y": 658.7
+        },
+        {
+          "x": 132.1,
+          "y": 446.3
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0594
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0627
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.066
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0611
+        },
+        {
+          "from": 4,
+          "to": 0,
+          "bend": 0.0644
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 505.0
+        },
+        "spread": 1.0,
+        "phase": 0.852
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 275.8,
+        "height": 343.7
+      }
+    },
+    "NET-W01-L08-loop_6": {
+      "artDirection": "Audit-validated loop_6 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "loop-6",
+      "targetMedianWorldLength": 0.832,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 315.0
+        },
+        {
+          "x": 395.6,
+          "y": 410.0
+        },
+        {
+          "x": 395.6,
+          "y": 600.0
+        },
+        {
+          "x": 270.0,
+          "y": 695.0
+        },
+        {
+          "x": 144.4,
+          "y": 600.0
+        },
+        {
+          "x": 144.4,
+          "y": 410.0
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0644
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0594
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0627
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.066
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0611
+        },
+        {
+          "from": 5,
+          "to": 0,
+          "bend": 0.0644
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 505.0
+        },
+        "spread": 1.055,
+        "phase": 0.949
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 251.2,
+        "height": 380.0
+      }
+    },
+    "NET-W02-L01-chain_5": {
+      "artDirection": "Audit-validated chain_5 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-5",
+      "targetMedianWorldLength": 0.83,
+      "nodes": [
+        {
+          "x": 105,
+          "y": 330
+        },
+        {
+          "x": 250,
+          "y": 285
+        },
+        {
+          "x": 410,
+          "y": 360
+        },
+        {
+          "x": 350,
+          "y": 500
+        },
+        {
+          "x": 175,
+          "y": 570
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.045
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0475
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.05
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0463
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 258.0,
+          "y": 409.0
+        },
+        "spread": 1.0,
+        "phase": 0.443
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 305,
+        "height": 285
+      }
+    },
+    "NET-W02-L02-chain_6": {
+      "artDirection": "Audit-validated chain_6 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-6",
+      "targetMedianWorldLength": 0.812,
+      "nodes": [
+        {
+          "x": 100,
+          "y": 300
+        },
+        {
+          "x": 245,
+          "y": 270
+        },
+        {
+          "x": 410,
+          "y": 330
+        },
+        {
+          "x": 420,
+          "y": 465
+        },
+        {
+          "x": 285,
+          "y": 535
+        },
+        {
+          "x": 120,
+          "y": 625
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0488
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0351
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0475
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.039
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0463
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 263.33,
+          "y": 420.83
+        },
+        "spread": 1.055,
+        "phase": 0.54
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 320,
+        "height": 355
+      }
+    },
+    "NET-W02-L03-chain_7": {
+      "artDirection": "Audit-validated chain_7 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-7",
+      "targetMedianWorldLength": 0.794,
+      "nodes": [
+        {
+          "x": 95,
+          "y": 290
+        },
+        {
+          "x": 235,
+          "y": 255
+        },
+        {
+          "x": 400,
+          "y": 310
+        },
+        {
+          "x": 435,
+          "y": 425
+        },
+        {
+          "x": 340,
+          "y": 520
+        },
+        {
+          "x": 180,
+          "y": 535
+        },
+        {
+          "x": 105,
+          "y": 670
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0463
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.038
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.045
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0371
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.05
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": -0.0361
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 255.71,
+          "y": 429.29
+        },
+        "spread": 1.11,
+        "phase": 0.637
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 340,
+        "height": 415
+      }
+    },
+    "NET-W02-L04-loop_5": {
+      "artDirection": "Audit-validated loop_5 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "loop-5",
+      "targetMedianWorldLength": 0.84,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 315.0
+        },
+        {
+          "x": 407.9,
+          "y": 446.3
+        },
+        {
+          "x": 355.2,
+          "y": 658.7
+        },
+        {
+          "x": 184.8,
+          "y": 658.7
+        },
+        {
+          "x": 132.1,
+          "y": 446.3
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0594
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0627
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.066
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0611
+        },
+        {
+          "from": 4,
+          "to": 0,
+          "bend": 0.0644
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 505.0
+        },
+        "spread": 1.0,
+        "phase": 0.734
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 275.8,
+        "height": 343.7
+      }
+    },
+    "NET-W02-L05-loop_6": {
+      "artDirection": "Audit-validated loop_6 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "loop-6",
+      "targetMedianWorldLength": 0.832,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 315.0
+        },
+        {
+          "x": 395.6,
+          "y": 410.0
+        },
+        {
+          "x": 395.6,
+          "y": 600.0
+        },
+        {
+          "x": 270.0,
+          "y": 695.0
+        },
+        {
+          "x": 144.4,
+          "y": 600.0
+        },
+        {
+          "x": 144.4,
+          "y": 410.0
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0644
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0594
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0627
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.066
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0611
+        },
+        {
+          "from": 5,
+          "to": 0,
+          "bend": 0.0644
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 505.0
+        },
+        "spread": 1.055,
+        "phase": 0.831
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 251.2,
+        "height": 380.0
+      }
+    },
+    "NET-W02-L06-loop_7": {
+      "artDirection": "Audit-validated loop_7 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "loop-7",
+      "targetMedianWorldLength": 0.814,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 290.0
+        },
+        {
+          "x": 395.1,
+          "y": 370.9
+        },
+        {
+          "x": 426.0,
+          "y": 552.8
+        },
+        {
+          "x": 339.4,
+          "y": 698.7
+        },
+        {
+          "x": 200.6,
+          "y": 698.7
+        },
+        {
+          "x": 114.0,
+          "y": 552.8
+        },
+        {
+          "x": 144.9,
+          "y": 370.9
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0611
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0644
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0594
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0627
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.066
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.0611
+        },
+        {
+          "from": 6,
+          "to": 0,
+          "bend": 0.0644
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 504.97
+        },
+        "spread": 1.11,
+        "phase": 0.928
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 312.0,
+        "height": 408.7
+      }
+    },
+    "NET-W02-L07-chain_8": {
+      "artDirection": "Audit-validated chain_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-8",
+      "targetMedianWorldLength": 0.776,
+      "nodes": [
+        {
+          "x": 90,
+          "y": 285
+        },
+        {
+          "x": 225,
+          "y": 250
+        },
+        {
+          "x": 390,
+          "y": 295
+        },
+        {
+          "x": 445,
+          "y": 410
+        },
+        {
+          "x": 365,
+          "y": 510
+        },
+        {
+          "x": 205,
+          "y": 500
+        },
+        {
+          "x": 95,
+          "y": 590
+        },
+        {
+          "x": 235,
+          "y": 700
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.05
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0361
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0488
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0351
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0475
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.039
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.0463
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 256.25,
+          "y": 442.5
+        },
+        "spread": 1.165,
+        "phase": 0.025
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 355,
+        "height": 450
+      }
+    },
+    "NET-W02-L08-loop_8": {
+      "artDirection": "Audit-validated loop_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "loop-8",
+      "targetMedianWorldLength": 0.796,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 290.0
+        },
+        {
+          "x": 383.1,
+          "y": 353.0
+        },
+        {
+          "x": 430.0,
+          "y": 505.0
+        },
+        {
+          "x": 383.1,
+          "y": 657.0
+        },
+        {
+          "x": 270.0,
+          "y": 720.0
+        },
+        {
+          "x": 156.9,
+          "y": 657.0
+        },
+        {
+          "x": 110.0,
+          "y": 505.0
+        },
+        {
+          "x": 156.9,
+          "y": 353.0
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.066
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0611
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0644
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0594
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0627
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.066
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.0611
+        },
+        {
+          "from": 7,
+          "to": 0,
+          "bend": 0.0644
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 505.0
+        },
+        "spread": 1.165,
+        "phase": 0.122
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 320.0,
+        "height": 430.0
+      }
+    },
+    "NET-W03-L01-chain_5": {
+      "artDirection": "Audit-validated chain_5 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-5",
+      "targetMedianWorldLength": 0.83,
+      "nodes": [
+        {
+          "x": 105,
+          "y": 330
+        },
+        {
+          "x": 250,
+          "y": 285
+        },
+        {
+          "x": 410,
+          "y": 360
+        },
+        {
+          "x": 350,
+          "y": 500
+        },
+        {
+          "x": 175,
+          "y": 570
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.045
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0475
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.05
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0463
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 258.0,
+          "y": 409.0
+        },
+        "spread": 1.0,
+        "phase": 0.616
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 305,
+        "height": 285
+      }
+    },
+    "NET-W03-L02-chain_6": {
+      "artDirection": "Audit-validated chain_6 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-6",
+      "targetMedianWorldLength": 0.812,
+      "nodes": [
+        {
+          "x": 100,
+          "y": 300
+        },
+        {
+          "x": 245,
+          "y": 270
+        },
+        {
+          "x": 410,
+          "y": 330
+        },
+        {
+          "x": 420,
+          "y": 465
+        },
+        {
+          "x": 285,
+          "y": 535
+        },
+        {
+          "x": 120,
+          "y": 625
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0488
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0351
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0475
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.039
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0463
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 263.33,
+          "y": 420.83
+        },
+        "spread": 1.055,
+        "phase": 0.713
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 320,
+        "height": 355
+      }
+    },
+    "NET-W03-L03-chain_7": {
+      "artDirection": "Audit-validated chain_7 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-7",
+      "targetMedianWorldLength": 0.794,
+      "nodes": [
+        {
+          "x": 95.0,
+          "y": 290.0
+        },
+        {
+          "x": 235.0,
+          "y": 255.0
+        },
+        {
+          "x": 400.0,
+          "y": 310.0
+        },
+        {
+          "x": 435.0,
+          "y": 425.0
+        },
+        {
+          "x": 340.0,
+          "y": 520.0
+        },
+        {
+          "x": 180.0,
+          "y": 535.0
+        },
+        {
+          "x": 105.0,
+          "y": 670.0
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0463
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.038
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.045
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0371
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.05
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": -0.0361
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 255.71,
+          "y": 429.29
+        },
+        "spread": 1.11,
+        "phase": 0.81
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 340.0,
+        "height": 415.0
+      }
+    },
+    "NET-W03-L04-chain_8": {
+      "artDirection": "Audit-validated chain_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-8",
+      "targetMedianWorldLength": 0.776,
+      "nodes": [
+        {
+          "x": 90.0,
+          "y": 285.0
+        },
+        {
+          "x": 225.0,
+          "y": 250.0
+        },
+        {
+          "x": 390.0,
+          "y": 295.0
+        },
+        {
+          "x": 445.0,
+          "y": 410.0
+        },
+        {
+          "x": 365.0,
+          "y": 510.0
+        },
+        {
+          "x": 205.0,
+          "y": 500.0
+        },
+        {
+          "x": 95.0,
+          "y": 590.0
+        },
+        {
+          "x": 235.0,
+          "y": 700.0
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.05
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0361
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0488
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0351
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0475
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.039
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.0463
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 256.25,
+          "y": 442.5
+        },
+        "spread": 1.165,
+        "phase": 0.907
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 355.0,
+        "height": 450.0
+      }
+    },
+    "NET-W03-L05-loop_6": {
+      "artDirection": "Audit-validated loop_6 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "loop-6",
+      "targetMedianWorldLength": 0.832,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 315.0
+        },
+        {
+          "x": 395.6,
+          "y": 410.0
+        },
+        {
+          "x": 395.6,
+          "y": 600.0
+        },
+        {
+          "x": 270.0,
+          "y": 695.0
+        },
+        {
+          "x": 144.4,
+          "y": 600.0
+        },
+        {
+          "x": 144.4,
+          "y": 410.0
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0644
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0594
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0627
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.066
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0611
+        },
+        {
+          "from": 5,
+          "to": 0,
+          "bend": 0.0644
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 505.0
+        },
+        "spread": 1.055,
+        "phase": 0.004
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 251.2,
+        "height": 380.0
+      }
+    },
+    "NET-W03-L06-loop_7": {
+      "artDirection": "Audit-validated loop_7 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "loop-7",
+      "targetMedianWorldLength": 0.814,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 290.0
+        },
+        {
+          "x": 395.1,
+          "y": 370.9
+        },
+        {
+          "x": 426.0,
+          "y": 552.8
+        },
+        {
+          "x": 339.4,
+          "y": 698.7
+        },
+        {
+          "x": 200.6,
+          "y": 698.7
+        },
+        {
+          "x": 114.0,
+          "y": 552.8
+        },
+        {
+          "x": 144.9,
+          "y": 370.9
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0611
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0644
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0594
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0627
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.066
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.0611
+        },
+        {
+          "from": 6,
+          "to": 0,
+          "bend": 0.0644
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 504.97
+        },
+        "spread": 1.11,
+        "phase": 0.101
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 312.0,
+        "height": 408.7
+      }
+    },
+    "NET-W03-L07-y_7": {
+      "artDirection": "Audit-validated y_7 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "y-7",
+      "targetMedianWorldLength": 0.794,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 522.7
+        },
+        {
+          "x": 180.7,
+          "y": 440.8
+        },
+        {
+          "x": 91.5,
+          "y": 358.9
+        },
+        {
+          "x": 359.3,
+          "y": 440.8
+        },
+        {
+          "x": 448.5,
+          "y": 358.9
+        },
+        {
+          "x": 270.0,
+          "y": 627.7
+        },
+        {
+          "x": 270.0,
+          "y": 732.7
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0425
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0546
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "bend": -0.0413
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": -0.0532
+        },
+        {
+          "from": 0,
+          "to": 5,
+          "bend": 0.0459
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.0518
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 497.5
+        },
+        "spread": 1.11,
+        "phase": 0.198
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 357.0,
+        "height": 373.8
+      }
+    },
+    "NET-W03-L08-y_8": {
+      "artDirection": "Audit-validated y_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "y-8",
+      "targetMedianWorldLength": 0.776,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 487.5
+        },
+        {
+          "x": 209.8,
+          "y": 411.3
+        },
+        {
+          "x": 149.7,
+          "y": 335.2
+        },
+        {
+          "x": 330.2,
+          "y": 411.3
+        },
+        {
+          "x": 390.3,
+          "y": 335.2
+        },
+        {
+          "x": 450.5,
+          "y": 259.0
+        },
+        {
+          "x": 270.0,
+          "y": 584.6
+        },
+        {
+          "x": 270.0,
+          "y": 681.6
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0459
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0518
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "bend": -0.0448
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": -0.0504
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.0532
+        },
+        {
+          "from": 0,
+          "to": 6,
+          "bend": 0.0459
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.0518
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 292.56,
+          "y": 438.21
+        },
+        "spread": 1.165,
+        "phase": 0.295
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 300.8,
+        "height": 422.6
+      }
+    },
+    "NET-W04-L01-chain_6": {
+      "artDirection": "Audit-validated chain_6 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-6",
+      "targetMedianWorldLength": 0.812,
+      "nodes": [
+        {
+          "x": 100.0,
+          "y": 300.0
+        },
+        {
+          "x": 245.0,
+          "y": 270.0
+        },
+        {
+          "x": 410.0,
+          "y": 330.0
+        },
+        {
+          "x": 420.0,
+          "y": 465.0
+        },
+        {
+          "x": 285.0,
+          "y": 535.0
+        },
+        {
+          "x": 120.0,
+          "y": 625.0
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0488
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0351
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0475
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.039
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0463
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 263.33,
+          "y": 420.83
+        },
+        "spread": 1.055,
+        "phase": 0.789
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 320.0,
+        "height": 355.0
+      }
+    },
+    "NET-W04-L02-chain_7": {
+      "artDirection": "Audit-validated chain_7 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-7",
+      "targetMedianWorldLength": 0.794,
+      "nodes": [
+        {
+          "x": 95.0,
+          "y": 290.0
+        },
+        {
+          "x": 235.0,
+          "y": 255.0
+        },
+        {
+          "x": 400.0,
+          "y": 310.0
+        },
+        {
+          "x": 435.0,
+          "y": 425.0
+        },
+        {
+          "x": 340.0,
+          "y": 520.0
+        },
+        {
+          "x": 180.0,
+          "y": 535.0
+        },
+        {
+          "x": 105.0,
+          "y": 670.0
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0463
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.038
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.045
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0371
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.05
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": -0.0361
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 255.71,
+          "y": 429.29
+        },
+        "spread": 1.11,
+        "phase": 0.886
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 340.0,
+        "height": 415.0
+      }
+    },
+    "NET-W04-L03-chain_8": {
+      "artDirection": "Audit-validated chain_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-8",
+      "targetMedianWorldLength": 0.776,
+      "nodes": [
+        {
+          "x": 90,
+          "y": 285
+        },
+        {
+          "x": 225,
+          "y": 250
+        },
+        {
+          "x": 390,
+          "y": 295
+        },
+        {
+          "x": 445,
+          "y": 410
+        },
+        {
+          "x": 365,
+          "y": 510
+        },
+        {
+          "x": 205,
+          "y": 500
+        },
+        {
+          "x": 95,
+          "y": 590
+        },
+        {
+          "x": 235,
+          "y": 700
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.05
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0361
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0488
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0351
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0475
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.039
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.0463
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 256.25,
+          "y": 442.5
+        },
+        "spread": 1.165,
+        "phase": 0.983
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 355,
+        "height": 450
+      }
+    },
+    "NET-W04-L04-y_6": {
+      "artDirection": "Audit-validated y_6 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "y-6",
+      "targetMedianWorldLength": 0.812,
+      "nodes": [
+        {
+          "x": 239.0,
+          "y": 499.7
+        },
+        {
+          "x": 145.8,
+          "y": 414.3
+        },
+        {
+          "x": 332.1,
+          "y": 414.3
+        },
+        {
+          "x": 425.1,
+          "y": 328.9
+        },
+        {
+          "x": 239.0,
+          "y": 609.2
+        },
+        {
+          "x": 239.0,
+          "y": 718.7
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0448
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "bend": -0.0413
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0532
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "bend": 0.0459
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.0518
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 497.52
+        },
+        "spread": 1.055,
+        "phase": 0.08
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 279.3,
+        "height": 389.8
+      }
+    },
+    "NET-W04-L05-y_7": {
+      "artDirection": "Audit-validated y_7 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "y-7",
+      "targetMedianWorldLength": 0.794,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 522.7
+        },
+        {
+          "x": 180.7,
+          "y": 440.8
+        },
+        {
+          "x": 91.5,
+          "y": 358.9
+        },
+        {
+          "x": 359.3,
+          "y": 440.8
+        },
+        {
+          "x": 448.5,
+          "y": 358.9
+        },
+        {
+          "x": 270.0,
+          "y": 627.7
+        },
+        {
+          "x": 270.0,
+          "y": 732.7
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0425
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0546
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "bend": -0.0413
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": -0.0532
+        },
+        {
+          "from": 0,
+          "to": 5,
+          "bend": 0.0459
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.0518
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 497.5
+        },
+        "spread": 1.11,
+        "phase": 0.177
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 357.0,
+        "height": 373.8
+      }
+    },
+    "NET-W04-L06-y_8": {
+      "artDirection": "Audit-validated y_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "y-8",
+      "targetMedianWorldLength": 0.776,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 487.5
+        },
+        {
+          "x": 209.8,
+          "y": 411.3
+        },
+        {
+          "x": 149.7,
+          "y": 335.2
+        },
+        {
+          "x": 330.2,
+          "y": 411.3
+        },
+        {
+          "x": 390.3,
+          "y": 335.2
+        },
+        {
+          "x": 450.5,
+          "y": 259.0
+        },
+        {
+          "x": 270.0,
+          "y": 584.6
+        },
+        {
+          "x": 270.0,
+          "y": 681.6
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0459
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0518
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "bend": -0.0448
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": -0.0504
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.0532
+        },
+        {
+          "from": 0,
+          "to": 6,
+          "bend": 0.0459
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.0518
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 292.56,
+          "y": 438.21
+        },
+        "spread": 1.165,
+        "phase": 0.274
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 300.8,
+        "height": 422.6
+      }
+    },
+    "NET-W04-L07-bridge_8": {
+      "artDirection": "Audit-validated bridge_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "bridge-8",
+      "targetMedianWorldLength": 0.776,
+      "nodes": [
+        {
+          "x": 135,
+          "y": 390
+        },
+        {
+          "x": 205,
+          "y": 475
+        },
+        {
+          "x": 135,
+          "y": 560
+        },
+        {
+          "x": 80,
+          "y": 475
+        },
+        {
+          "x": 405,
+          "y": 390
+        },
+        {
+          "x": 460,
+          "y": 475
+        },
+        {
+          "x": 405,
+          "y": 560
+        },
+        {
+          "x": 335,
+          "y": 475
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.0492
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.0455
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0585
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": 0.054
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.057
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.06
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.0455
+        },
+        {
+          "from": 7,
+          "to": 4,
+          "bend": -0.048
+        },
+        {
+          "from": 1,
+          "to": 7,
+          "bend": 0.0443
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 475.0
+        },
+        "spread": 1.165,
+        "phase": 0.371
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 380,
+        "height": 170
+      }
+    },
+    "NET-W04-L08-loop_8": {
+      "artDirection": "Audit-validated loop_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "loop-8",
+      "targetMedianWorldLength": 0.796,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 290.0
+        },
+        {
+          "x": 383.1,
+          "y": 353.0
+        },
+        {
+          "x": 430.0,
+          "y": 505.0
+        },
+        {
+          "x": 383.1,
+          "y": 657.0
+        },
+        {
+          "x": 270.0,
+          "y": 720.0
+        },
+        {
+          "x": 156.9,
+          "y": 657.0
+        },
+        {
+          "x": 110.0,
+          "y": 505.0
+        },
+        {
+          "x": 156.9,
+          "y": 353.0
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.066
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0611
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0644
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0594
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0627
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.066
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.0611
+        },
+        {
+          "from": 7,
+          "to": 0,
+          "bend": 0.0644
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 505.0
+        },
+        "spread": 1.165,
+        "phase": 0.468
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 320.0,
+        "height": 430.0
+      }
+    },
+    "NET-W05-L01-chain_7": {
+      "artDirection": "Audit-validated chain_7 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-7",
+      "targetMedianWorldLength": 0.794,
+      "nodes": [
+        {
+          "x": 95.0,
+          "y": 290.0
+        },
+        {
+          "x": 235.0,
+          "y": 255.0
+        },
+        {
+          "x": 400.0,
+          "y": 310.0
+        },
+        {
+          "x": 435.0,
+          "y": 425.0
+        },
+        {
+          "x": 340.0,
+          "y": 520.0
+        },
+        {
+          "x": 180.0,
+          "y": 535.0
+        },
+        {
+          "x": 105.0,
+          "y": 670.0
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0463
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.038
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.045
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0371
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.05
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": -0.0361
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 255.71,
+          "y": 429.29
+        },
+        "spread": 1.11,
+        "phase": 0.962
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 340.0,
+        "height": 415.0
+      }
+    },
+    "NET-W05-L02-chain_8": {
+      "artDirection": "Audit-validated chain_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-8",
+      "targetMedianWorldLength": 0.776,
+      "nodes": [
+        {
+          "x": 90,
+          "y": 285
+        },
+        {
+          "x": 225,
+          "y": 250
+        },
+        {
+          "x": 390,
+          "y": 295
+        },
+        {
+          "x": 445,
+          "y": 410
+        },
+        {
+          "x": 365,
+          "y": 510
+        },
+        {
+          "x": 205,
+          "y": 500
+        },
+        {
+          "x": 95,
+          "y": 590
+        },
+        {
+          "x": 235,
+          "y": 700
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.05
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0361
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0488
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0351
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0475
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.039
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.0463
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 256.25,
+          "y": 442.5
+        },
+        "spread": 1.165,
+        "phase": 0.059
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 355,
+        "height": 450
+      }
+    },
+    "NET-W05-L03-y_7": {
+      "artDirection": "Audit-validated y_7 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "y-7",
+      "targetMedianWorldLength": 0.794,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 522.7
+        },
+        {
+          "x": 180.7,
+          "y": 440.8
+        },
+        {
+          "x": 91.5,
+          "y": 358.9
+        },
+        {
+          "x": 359.3,
+          "y": 440.8
+        },
+        {
+          "x": 448.5,
+          "y": 358.9
+        },
+        {
+          "x": 270.0,
+          "y": 627.7
+        },
+        {
+          "x": 270.0,
+          "y": 732.7
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0425
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0546
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "bend": -0.0413
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": -0.0532
+        },
+        {
+          "from": 0,
+          "to": 5,
+          "bend": 0.0459
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.0518
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 497.5
+        },
+        "spread": 1.11,
+        "phase": 0.156
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 357.0,
+        "height": 373.8
+      }
+    },
+    "NET-W05-L04-y_8": {
+      "artDirection": "Audit-validated y_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "y-8",
+      "targetMedianWorldLength": 0.776,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 487.5
+        },
+        {
+          "x": 209.8,
+          "y": 411.3
+        },
+        {
+          "x": 149.7,
+          "y": 335.2
+        },
+        {
+          "x": 330.2,
+          "y": 411.3
+        },
+        {
+          "x": 390.3,
+          "y": 335.2
+        },
+        {
+          "x": 450.5,
+          "y": 259.0
+        },
+        {
+          "x": 270.0,
+          "y": 584.6
+        },
+        {
+          "x": 270.0,
+          "y": 681.6
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0459
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0518
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "bend": -0.0448
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": -0.0504
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.0532
+        },
+        {
+          "from": 0,
+          "to": 6,
+          "bend": 0.0459
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.0518
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 292.56,
+          "y": 438.21
+        },
+        "spread": 1.165,
+        "phase": 0.253
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 300.8,
+        "height": 422.6
+      }
+    },
+    "NET-W05-L05-bridge_8": {
+      "artDirection": "Audit-validated bridge_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "bridge-8",
+      "targetMedianWorldLength": 0.776,
+      "nodes": [
+        {
+          "x": 135,
+          "y": 390
+        },
+        {
+          "x": 205,
+          "y": 475
+        },
+        {
+          "x": 135,
+          "y": 560
+        },
+        {
+          "x": 80,
+          "y": 475
+        },
+        {
+          "x": 405,
+          "y": 390
+        },
+        {
+          "x": 460,
+          "y": 475
+        },
+        {
+          "x": 405,
+          "y": 560
+        },
+        {
+          "x": 335,
+          "y": 475
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.0492
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.0455
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0585
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": 0.054
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.057
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.06
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.0455
+        },
+        {
+          "from": 7,
+          "to": 4,
+          "bend": -0.048
+        },
+        {
+          "from": 1,
+          "to": 7,
+          "bend": 0.0443
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 475.0
+        },
+        "spread": 1.165,
+        "phase": 0.35
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 380,
+        "height": 170
+      }
+    },
+    "NET-W05-L06-loop_8": {
+      "artDirection": "Audit-validated loop_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "loop-8",
+      "targetMedianWorldLength": 0.796,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 290.0
+        },
+        {
+          "x": 383.1,
+          "y": 353.0
+        },
+        {
+          "x": 430.0,
+          "y": 505.0
+        },
+        {
+          "x": 383.1,
+          "y": 657.0
+        },
+        {
+          "x": 270.0,
+          "y": 720.0
+        },
+        {
+          "x": 156.9,
+          "y": 657.0
+        },
+        {
+          "x": 110.0,
+          "y": 505.0
+        },
+        {
+          "x": 156.9,
+          "y": 353.0
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.066
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0611
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0644
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0594
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0627
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.066
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.0611
+        },
+        {
+          "from": 7,
+          "to": 0,
+          "bend": 0.0644
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 505.0
+        },
+        "spread": 1.165,
+        "phase": 0.447
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 320.0,
+        "height": 430.0
+      }
+    },
+    "NET-W05-L07-double_loop_10": {
+      "artDirection": "Audit-validated double_loop_10 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "double-loop-10",
+      "targetMedianWorldLength": 0.76,
+      "nodes": [
+        {
+          "x": 98.4,
+          "y": 441.3
+        },
+        {
+          "x": 192.0,
+          "y": 399.7
+        },
+        {
+          "x": 233.6,
+          "y": 498.5
+        },
+        {
+          "x": 171.2,
+          "y": 592.1
+        },
+        {
+          "x": 82.8,
+          "y": 555.7
+        },
+        {
+          "x": 306.4,
+          "y": 498.5
+        },
+        {
+          "x": 348.0,
+          "y": 399.7
+        },
+        {
+          "x": 441.6,
+          "y": 441.3
+        },
+        {
+          "x": 457.2,
+          "y": 555.7
+        },
+        {
+          "x": 368.8,
+          "y": 592.1
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0475
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.0411
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.0433
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0488
+        },
+        {
+          "from": 4,
+          "to": 0,
+          "bend": 0.0515
+        },
+        {
+          "from": 2,
+          "to": 5,
+          "bend": -0.039
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": -0.0411
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.0528
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "bend": 0.0488
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "bend": 0.0515
+        },
+        {
+          "from": 9,
+          "to": 5,
+          "bend": -0.039
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 497.46
+        },
+        "spread": 1.345,
+        "phase": 0.544
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 374.4,
+        "height": 192.4
+      }
+    },
+    "NET-W05-L08-tree_10": {
+      "artDirection": "Audit-validated tree_10 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "tree-10",
+      "targetMedianWorldLength": 0.74,
+      "nodes": [
+        {
+          "x": 278.6,
+          "y": 295.5
+        },
+        {
+          "x": 192.2,
+          "y": 392.7
+        },
+        {
+          "x": 365.0,
+          "y": 392.7
+        },
+        {
+          "x": 143.6,
+          "y": 500.7
+        },
+        {
+          "x": 235.4,
+          "y": 500.7
+        },
+        {
+          "x": 321.8,
+          "y": 500.7
+        },
+        {
+          "x": 413.6,
+          "y": 500.7
+        },
+        {
+          "x": 100.4,
+          "y": 630.3
+        },
+        {
+          "x": 192.2,
+          "y": 630.3
+        },
+        {
+          "x": 456.8,
+          "y": 630.3
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.0338
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "bend": -0.0356
+        },
+        {
+          "from": 1,
+          "to": 3,
+          "bend": -0.0375
+        },
+        {
+          "from": 1,
+          "to": 4,
+          "bend": 0.0347
+        },
+        {
+          "from": 2,
+          "to": 5,
+          "bend": 0.0366
+        },
+        {
+          "from": 2,
+          "to": 6,
+          "bend": -0.0338
+        },
+        {
+          "from": 3,
+          "to": 7,
+          "bend": -0.0435
+        },
+        {
+          "from": 4,
+          "to": 8,
+          "bend": -0.0458
+        },
+        {
+          "from": 6,
+          "to": 9,
+          "bend": 0.0423
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 269.96,
+          "y": 497.46
+        },
+        "spread": 1.275,
+        "phase": 0.641
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 356.4,
+        "height": 334.8
+      }
+    },
+    "NET-W06-L01-chain_8": {
+      "artDirection": "Audit-validated chain_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "chain-8",
+      "targetMedianWorldLength": 0.776,
+      "nodes": [
+        {
+          "x": 90.0,
+          "y": 285.0
+        },
+        {
+          "x": 225.0,
+          "y": 250.0
+        },
+        {
+          "x": 390.0,
+          "y": 295.0
+        },
+        {
+          "x": 445.0,
+          "y": 410.0
+        },
+        {
+          "x": 365.0,
+          "y": 510.0
+        },
+        {
+          "x": 205.0,
+          "y": 500.0
+        },
+        {
+          "x": 95.0,
+          "y": 590.0
+        },
+        {
+          "x": 235.0,
+          "y": 700.0
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.05
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0361
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0488
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0351
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0475
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.039
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.0463
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 256.25,
+          "y": 442.5
+        },
+        "spread": 1.165,
+        "phase": 0.135
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 355.0,
+        "height": 450.0
+      }
+    },
+    "NET-W06-L02-loop_8": {
+      "artDirection": "Audit-validated loop_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "loop-8",
+      "targetMedianWorldLength": 0.796,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 290.0
+        },
+        {
+          "x": 383.1,
+          "y": 353.0
+        },
+        {
+          "x": 430.0,
+          "y": 505.0
+        },
+        {
+          "x": 383.1,
+          "y": 657.0
+        },
+        {
+          "x": 270.0,
+          "y": 720.0
+        },
+        {
+          "x": 156.9,
+          "y": 657.0
+        },
+        {
+          "x": 110.0,
+          "y": 505.0
+        },
+        {
+          "x": 156.9,
+          "y": 353.0
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.066
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0611
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0644
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0594
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.0627
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.066
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.0611
+        },
+        {
+          "from": 7,
+          "to": 0,
+          "bend": 0.0644
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 505.0
+        },
+        "spread": 1.165,
+        "phase": 0.232
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 320.0,
+        "height": 430.0
+      }
+    },
+    "NET-W06-L03-y_8": {
+      "artDirection": "Audit-validated y_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "y-8",
+      "targetMedianWorldLength": 0.776,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 487.5
+        },
+        {
+          "x": 209.8,
+          "y": 411.3
+        },
+        {
+          "x": 149.7,
+          "y": 335.2
+        },
+        {
+          "x": 330.2,
+          "y": 411.3
+        },
+        {
+          "x": 390.3,
+          "y": 335.2
+        },
+        {
+          "x": 450.5,
+          "y": 259.0
+        },
+        {
+          "x": 270.0,
+          "y": 584.6
+        },
+        {
+          "x": 270.0,
+          "y": 681.6
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0459
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0518
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "bend": -0.0448
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": -0.0504
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.0532
+        },
+        {
+          "from": 0,
+          "to": 6,
+          "bend": 0.0459
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.0518
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 292.56,
+          "y": 438.21
+        },
+        "spread": 1.165,
+        "phase": 0.329
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 300.8,
+        "height": 422.6
+      }
+    },
+    "NET-W06-L04-y_9": {
+      "artDirection": "Audit-validated y_9 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "y-9",
+      "targetMedianWorldLength": 0.758,
+      "nodes": [
+        {
+          "x": 270.0,
+          "y": 487.5
+        },
+        {
+          "x": 209.8,
+          "y": 411.3
+        },
+        {
+          "x": 149.7,
+          "y": 335.2
+        },
+        {
+          "x": 89.5,
+          "y": 259.0
+        },
+        {
+          "x": 330.2,
+          "y": 411.3
+        },
+        {
+          "x": 390.3,
+          "y": 335.2
+        },
+        {
+          "x": 450.5,
+          "y": 259.0
+        },
+        {
+          "x": 270.0,
+          "y": 584.6
+        },
+        {
+          "x": 270.0,
+          "y": 681.6
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0384
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0493
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0456
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "bend": 0.0394
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.0444
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": -0.0468
+        },
+        {
+          "from": 0,
+          "to": 7,
+          "bend": 0.0404
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "bend": 0.0456
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 418.3
+        },
+        "spread": 1.22,
+        "phase": 0.426
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 361.0,
+        "height": 422.6
+      }
+    },
+    "NET-W06-L05-bridge_8": {
+      "artDirection": "Audit-validated bridge_8 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "bridge-8",
+      "targetMedianWorldLength": 0.776,
+      "nodes": [
+        {
+          "x": 135,
+          "y": 390
+        },
+        {
+          "x": 205,
+          "y": 475
+        },
+        {
+          "x": 135,
+          "y": 560
+        },
+        {
+          "x": 80,
+          "y": 475
+        },
+        {
+          "x": 405,
+          "y": 390
+        },
+        {
+          "x": 460,
+          "y": 475
+        },
+        {
+          "x": 405,
+          "y": 560
+        },
+        {
+          "x": 335,
+          "y": 475
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.0492
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.0455
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0585
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": 0.054
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.057
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.06
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.0455
+        },
+        {
+          "from": 7,
+          "to": 4,
+          "bend": -0.048
+        },
+        {
+          "from": 1,
+          "to": 7,
+          "bend": 0.0443
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 475.0
+        },
+        "spread": 1.165,
+        "phase": 0.523
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 380,
+        "height": 170
+      }
+    },
+    "NET-W06-L06-double_loop_10": {
+      "artDirection": "Audit-validated double_loop_10 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "double-loop-10",
+      "targetMedianWorldLength": 0.76,
+      "nodes": [
+        {
+          "x": 98.4,
+          "y": 441.3
+        },
+        {
+          "x": 192.0,
+          "y": 399.7
+        },
+        {
+          "x": 233.6,
+          "y": 498.5
+        },
+        {
+          "x": 171.2,
+          "y": 592.1
+        },
+        {
+          "x": 82.8,
+          "y": 555.7
+        },
+        {
+          "x": 306.4,
+          "y": 498.5
+        },
+        {
+          "x": 348.0,
+          "y": 399.7
+        },
+        {
+          "x": 441.6,
+          "y": 441.3
+        },
+        {
+          "x": 457.2,
+          "y": 555.7
+        },
+        {
+          "x": 368.8,
+          "y": 592.1
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0475
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.0411
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.0433
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0488
+        },
+        {
+          "from": 4,
+          "to": 0,
+          "bend": 0.0515
+        },
+        {
+          "from": 2,
+          "to": 5,
+          "bend": -0.039
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": -0.0411
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.0528
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "bend": 0.0488
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "bend": 0.0515
+        },
+        {
+          "from": 9,
+          "to": 5,
+          "bend": -0.039
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 497.46
+        },
+        "spread": 1.345,
+        "phase": 0.62
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 374.4,
+        "height": 192.4
+      }
+    },
+    "NET-W06-L07-ladder_10": {
+      "artDirection": "Audit-validated ladder_10 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "ladder-10",
+      "targetMedianWorldLength": 0.72,
+      "nodes": [
+        {
+          "x": 78.6,
+          "y": 369.9
+        },
+        {
+          "x": 174.3,
+          "y": 369.9
+        },
+        {
+          "x": 270.0,
+          "y": 369.9
+        },
+        {
+          "x": 365.7,
+          "y": 369.9
+        },
+        {
+          "x": 461.4,
+          "y": 369.9
+        },
+        {
+          "x": 78.6,
+          "y": 625.1
+        },
+        {
+          "x": 174.3,
+          "y": 625.1
+        },
+        {
+          "x": 270.0,
+          "y": 625.1
+        },
+        {
+          "x": 365.7,
+          "y": 625.1
+        },
+        {
+          "x": 461.4,
+          "y": 625.1
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0325
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.0343
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0361
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.0334
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": -0.0352
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.0325
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "bend": -0.0343
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "bend": -0.0361
+        },
+        {
+          "from": 0,
+          "to": 5,
+          "bend": -0.0407
+        },
+        {
+          "from": 1,
+          "to": 6,
+          "bend": -0.0352
+        },
+        {
+          "from": 2,
+          "to": 7,
+          "bend": 0.0325
+        },
+        {
+          "from": 3,
+          "to": 8,
+          "bend": 0.0343
+        },
+        {
+          "from": 4,
+          "to": 9,
+          "bend": 0.044
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 270.0,
+          "y": 497.5
+        },
+        "spread": 1.345,
+        "phase": 0.717
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 382.8,
+        "height": 255.2
+      }
+    },
+    "NET-W06-L08-asym_11": {
+      "artDirection": "Audit-validated asym_11 composition with topology-aware curved synapses and component-wide atmosphere.",
+      "silhouette": "asym-11",
+      "targetMedianWorldLength": 0.702,
+      "nodes": [
+        {
+          "x": 120,
+          "y": 350
+        },
+        {
+          "x": 225,
+          "y": 330
+        },
+        {
+          "x": 330,
+          "y": 365
+        },
+        {
+          "x": 425,
+          "y": 330
+        },
+        {
+          "x": 165,
+          "y": 465
+        },
+        {
+          "x": 275,
+          "y": 480
+        },
+        {
+          "x": 390,
+          "y": 470
+        },
+        {
+          "x": 105,
+          "y": 610
+        },
+        {
+          "x": 220,
+          "y": 625
+        },
+        {
+          "x": 335,
+          "y": 600
+        },
+        {
+          "x": 440,
+          "y": 630
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.0352
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.0325
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.0343
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "bend": 0.0361
+        },
+        {
+          "from": 1,
+          "to": 5,
+          "bend": -0.0334
+        },
+        {
+          "from": 2,
+          "to": 5,
+          "bend": -0.0352
+        },
+        {
+          "from": 2,
+          "to": 6,
+          "bend": 0.0325
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "bend": -0.0343
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.0361
+        },
+        {
+          "from": 4,
+          "to": 7,
+          "bend": 0.0334
+        },
+        {
+          "from": 5,
+          "to": 8,
+          "bend": 0.0352
+        },
+        {
+          "from": 5,
+          "to": 9,
+          "bend": 0.0325
+        },
+        {
+          "from": 6,
+          "to": 9,
+          "bend": 0.0343
+        },
+        {
+          "from": 6,
+          "to": 10,
+          "bend": -0.0361
+        }
+      ],
+      "atmosphere": {
+        "focus": {
+          "x": 275.45,
+          "y": 477.73
+        },
+        "spread": 1.4,
+        "phase": 0.814
+      },
+      "source": "audit28-node-layout+v053-curve-grammar",
+      "layoutBounds": {
+        "width": 335,
+        "height": 300
+      }
+    }
+  }
+}

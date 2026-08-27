@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "cellquation-living-networks-production-candidate-v0.5.3",
+  "direction": "Look A readability and controlled form combined with Look C coloured membrane, atmosphere and particles.",
+  "production": {
+    "cell": {
+      "fusion": {
+        "densityContrast": 1.42,
+        "liquidLights": 2.62,
+        "fineDetail": 1.86,
+        "nucleusGlow": 0.31,
+        "nucleusSheen": 0.16,
+        "glowStrength": 1.24,
+        "exposure": 1.46
+      },
+      "split": {
+        "densityContrast": 2.34,
+        "liquidLights": 3.18,
+        "fineDetail": 2.74,
+        "nucleusGlow": 0.72,
+        "nucleusSheen": 0.43,
+        "glowStrength": 1.22,
+        "exposure": 1.46
+      }
+    },
+    "synapse": {
+      "membraneTint": 1.48,
+      "rimTint": 1.44,
+      "flowTint": 1.6,
+      "flowStrength": 0.96,
+      "glowScale": 1.34,
+      "endpointSpeciesMix": 0.68,
+      "lipOverlayStrength": 0.54,
+      "livingScale": 1.1,
+      "edgeLifeScale": 0.72,
+      "breatheStrengthScale": 1.0,
+      "mouthFlexScale": 0.92,
+      "contactPulse": 0.15
+    },
+    "atmosphere": {
+      "nodeGlowPx": 72,
+      "edgeGlowPx": 82,
+      "componentGlowPx": 190,
+      "nodeAlpha": 0.042,
+      "edgeAlpha": 0.022,
+      "componentAlpha": 0.018,
+      "contactDensity": 3
+    }
+  },
+  "previous": {
+    "synapse": {
+      "membraneTint": 0.92,
+      "rimTint": 1.18,
+      "flowTint": 1.02,
+      "flowStrength": 0.68,
+      "glowScale": 1.18,
+      "endpointSpeciesMix": 0.52,
+      "lipOverlayStrength": 0.4,
+      "livingScale": 0.9,
+      "edgeLifeScale": 0.56,
+      "breatheStrengthScale": 0.86,
+      "mouthFlexScale": 0.84,
+      "contactPulse": 0.0
+    }
+  },
+  "quality": {
+    "low": {
+      "particleNode": 0,
+      "particleEdge": 0,
+      "particleContact": 0,
+      "auraScale": 0.48,
+      "animateAtmosphere": false
+    },
+    "normal": {
+      "particleNode": 3,
+      "particleEdge": 4,
+      "particleContact": 1,
+      "auraScale": 0.72,
+      "animateAtmosphere": true
+    },
+    "high": {
+      "particleNode": 5,
+      "particleEdge": 6,
+      "particleContact": 2,
+      "auraScale": 0.84,
+      "animateAtmosphere": true
+    }
+  }
+}

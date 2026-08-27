@@ -1,0 +1,7509 @@
+{
+  "schemaVersion": 2,
+  "id": "threecolor-network-full-v071",
+  "mode": "threecolor_network",
+  "colours": [
+    "blue",
+    "green",
+    "violet"
+  ],
+  "worlds": [
+    {
+      "index": 0,
+      "offset": 0,
+      "count": 8,
+      "title": {
+        "en": "ADJACENT TRI FUSION",
+        "nl": "ADJACENT TRI FUSION"
+      },
+      "intro": {
+        "en": "Mixed Fusion must now respect adjacency and empty-node space.",
+        "nl": "Mixed Fusion must now respect adjacency and empty-node space."
+      }
+    },
+    {
+      "index": 1,
+      "offset": 8,
+      "count": 8,
+      "title": {
+        "en": "TOPOLOGY CONVERSION",
+        "nl": "TOPOLOGY CONVERSION"
+      },
+      "intro": {
+        "en": "Loops, chains and bottlenecks determine where colour conversion can happen.",
+        "nl": "Loops, chains and bottlenecks determine where colour conversion can happen."
+      }
+    },
+    {
+      "index": 2,
+      "offset": 16,
+      "count": 8,
+      "title": {
+        "en": "GROWTH PATHS",
+        "nl": "GROWTH PATHS"
+      },
+      "intro": {
+        "en": "Brood daughters travel through the network, so growth and route planning become one puzzle.",
+        "nl": "Brood daughters travel through the network, so growth and route planning become one puzzle."
+      }
+    },
+    {
+      "index": 3,
+      "offset": 24,
+      "count": 8,
+      "title": {
+        "en": "PRUNING GATES",
+        "nl": "PRUNING GATES"
+      },
+      "intro": {
+        "en": "Destruct opens and closes spatial possibilities while the target ratio still has to survive.",
+        "nl": "Destruct opens and closes spatial possibilities while the target ratio still has to survive."
+      }
+    },
+    {
+      "index": 4,
+      "offset": 32,
+      "count": 8,
+      "title": {
+        "en": "MIRROR TISSUE",
+        "nl": "MIRROR TISSUE"
+      },
+      "intro": {
+        "en": "Imitation copies a connected same-colour role; topology decides whether that copy is useful.",
+        "nl": "Imitation copies a connected same-colour role; topology decides whether that copy is useful."
+      }
+    },
+    {
+      "index": 5,
+      "offset": 40,
+      "count": 8,
+      "title": {
+        "en": "FULL THREE-COLOUR NETWORKS",
+        "nl": "FULL THREE-COLOUR NETWORKS"
+      },
+      "intro": {
+        "en": "Fusion, Split, Brood, Destruct and Imitation combine inside full three-colour networks.",
+        "nl": "Fusion, Split, Brood, Destruct and Imitation combine inside full three-colour networks."
+      }
+    }
+  ],
+  "rules": {
+    "swap": false,
+    "fusion": "adjacent fusion cells; same colour stays same, mixed colours produce third-colour split",
+    "split": "uses one adjacent empty node",
+    "brood": "mother stays; daughters fill a connected empty route serially; parent becomes Fusion",
+    "destruct": "source and connected target are both removed",
+    "imitation": "copies the role of a connected same-colour cell; colour is preserved"
+  },
+  "levels": [
+    {
+      "id": "3C2-N1_ADJACENT_TRI_FUSION-04",
+      "world": 0,
+      "local": 0,
+      "goal": [
+        1,
+        1,
+        1
+      ],
+      "min": 4,
+      "title": {
+        "en": "First Tri Link",
+        "nl": "First Tri Link"
+      },
+      "note": {
+        "en": "Target 1:1:1. Research optimum 4 moves.",
+        "nl": "Doel 1:1:1. Researchoptimum 4 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 1,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "blue",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "split",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 4
+        }
+      ],
+      "researchFamily": "N1_ADJACENT_TRI_FUSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 6.1019,
+      "network": {
+        "id": "fork6",
+        "kind": "fork6",
+        "nodes": [
+          {
+            "x": 80,
+            "y": 650
+          },
+          {
+            "x": 180,
+            "y": 535
+          },
+          {
+            "x": 300,
+            "y": 420
+          },
+          {
+            "x": 220,
+            "y": 230
+          },
+          {
+            "x": 460,
+            "y": 300
+          },
+          {
+            "x": 460,
+            "y": 560
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      },
+      "topology": "fork6"
+    },
+    {
+      "id": "3C6-TARGET-N1-211-7070",
+      "world": 0,
+      "local": 1,
+      "goal": [
+        2,
+        1,
+        1
+      ],
+      "min": 5,
+      "title": {
+        "en": "Diamond Conversion",
+        "nl": "Diamond Conversion"
+      },
+      "note": {
+        "en": "Target 2:1:1. Research optimum 5 moves.",
+        "nl": "Doel 2:1:1. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 2,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 4,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "blue",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "split",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "fusion",
+          "a": 2,
+          "b": 4
+        }
+      ],
+      "researchFamily": "N1_ADJACENT_TRI_FUSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 7.3926,
+      "network": {
+        "id": "diamond6",
+        "kind": "diamond6",
+        "nodes": [
+          {
+            "x": 115,
+            "y": 420
+          },
+          {
+            "x": 235,
+            "y": 260
+          },
+          {
+            "x": 385,
+            "y": 315
+          },
+          {
+            "x": 235,
+            "y": 580
+          },
+          {
+            "x": 385,
+            "y": 525
+          },
+          {
+            "x": 505,
+            "y": 420
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      },
+      "topology": "diamond6"
+    },
+    {
+      "id": "3C5-TARGET-N1-112",
+      "world": 0,
+      "local": 2,
+      "goal": [
+        1,
+        1,
+        2
+      ],
+      "min": 5,
+      "title": {
+        "en": "Purple Passage",
+        "nl": "Purple Passage"
+      },
+      "note": {
+        "en": "Target 1:1:2. Research optimum 5 moves.",
+        "nl": "Doel 1:1:2. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 1,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "blue",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "fusion",
+          "a": 3,
+          "b": 2
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 4
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 5
+        }
+      ],
+      "researchFamily": "N1_ADJACENT_TRI_FUSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 6.9806,
+      "network": {
+        "id": "chain6",
+        "kind": "chain6",
+        "nodes": [
+          {
+            "x": 190,
+            "y": 690
+          },
+          {
+            "x": 285,
+            "y": 575
+          },
+          {
+            "x": 220,
+            "y": 455
+          },
+          {
+            "x": 305,
+            "y": 335
+          },
+          {
+            "x": 240,
+            "y": 215
+          },
+          {
+            "x": 335,
+            "y": 100
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      },
+      "topology": "chain6"
+    },
+    {
+      "id": "3C2-N1_ADJACENT_TRI_FUSION-02",
+      "world": 0,
+      "local": 3,
+      "goal": [
+        2,
+        2,
+        1
+      ],
+      "min": 5,
+      "title": {
+        "en": "Bottleneck Mix",
+        "nl": "Bottleneck Mix"
+      },
+      "note": {
+        "en": "Target 2:2:1. Research optimum 5 moves.",
+        "nl": "Doel 2:2:1. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 1,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 6,
+          "species": "green",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "fusion",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 2
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 4
+        }
+      ],
+      "researchFamily": "N1_ADJACENT_TRI_FUSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 7.0224,
+      "network": {
+        "id": "bottleneck7",
+        "kind": "bottleneck7",
+        "nodes": [
+          {
+            "x": 300,
+            "y": 690
+          },
+          {
+            "x": 175,
+            "y": 565
+          },
+          {
+            "x": 300,
+            "y": 430
+          },
+          {
+            "x": 425,
+            "y": 565
+          },
+          {
+            "x": 300,
+            "y": 285
+          },
+          {
+            "x": 185,
+            "y": 140
+          },
+          {
+            "x": 415,
+            "y": 140
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      },
+      "topology": "bottleneck7"
+    },
+    {
+      "id": "3C2-N1_ADJACENT_TRI_FUSION-08",
+      "world": 0,
+      "local": 4,
+      "goal": [
+        2,
+        1,
+        1
+      ],
+      "min": 5,
+      "title": {
+        "en": "Forked Triad",
+        "nl": "Forked Triad"
+      },
+      "note": {
+        "en": "Target 2:1:1. Research optimum 5 moves.",
+        "nl": "Doel 2:1:1. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 1,
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "node": 2,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 2
+        },
+        {
+          "kind": "split",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 1
+        }
+      ],
+      "researchFamily": "N1_ADJACENT_TRI_FUSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 7.0515,
+      "network": {
+        "id": "fork6",
+        "kind": "fork6",
+        "nodes": [
+          {
+            "x": 80,
+            "y": 650
+          },
+          {
+            "x": 180,
+            "y": 535
+          },
+          {
+            "x": 300,
+            "y": 420
+          },
+          {
+            "x": 220,
+            "y": 230
+          },
+          {
+            "x": 460,
+            "y": 300
+          },
+          {
+            "x": 460,
+            "y": 560
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      },
+      "topology": "fork6"
+    },
+    {
+      "id": "3C5-TARGET-N1-121",
+      "world": 0,
+      "local": 5,
+      "goal": [
+        1,
+        2,
+        1
+      ],
+      "min": 5,
+      "title": {
+        "en": "Loop Current",
+        "nl": "Loop Current"
+      },
+      "note": {
+        "en": "Target 1:2:1. Research optimum 5 moves.",
+        "nl": "Doel 1:2:1. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 1,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "node": 6,
+          "species": "green",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "split",
+          "a": 5,
+          "b": 4
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "fusion",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 2
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 3
+        }
+      ],
+      "researchFamily": "N1_ADJACENT_TRI_FUSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 7.3186,
+      "network": {
+        "id": "loop_tail7",
+        "kind": "loop_tail7",
+        "nodes": [
+          {
+            "x": 145,
+            "y": 375
+          },
+          {
+            "x": 245,
+            "y": 220
+          },
+          {
+            "x": 390,
+            "y": 330
+          },
+          {
+            "x": 265,
+            "y": 500
+          },
+          {
+            "x": 485,
+            "y": 455
+          },
+          {
+            "x": 475,
+            "y": 610
+          },
+          {
+            "x": 365,
+            "y": 720
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      },
+      "topology": "loop_tail7"
+    },
+    {
+      "id": "3C2-N1_ADJACENT_TRI_FUSION-05",
+      "world": 0,
+      "local": 6,
+      "goal": [
+        1,
+        1,
+        1
+      ],
+      "min": 4,
+      "title": {
+        "en": "Second Fork",
+        "nl": "Second Fork"
+      },
+      "note": {
+        "en": "Target 1:1:1. Research optimum 4 moves.",
+        "nl": "Doel 1:1:1. Researchoptimum 4 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 1,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "blue",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "split",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 3
+        }
+      ],
+      "researchFamily": "N1_ADJACENT_TRI_FUSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 6.1019,
+      "network": {
+        "id": "fork6",
+        "kind": "fork6",
+        "nodes": [
+          {
+            "x": 80,
+            "y": 650
+          },
+          {
+            "x": 180,
+            "y": 535
+          },
+          {
+            "x": 300,
+            "y": 420
+          },
+          {
+            "x": 220,
+            "y": 230
+          },
+          {
+            "x": 460,
+            "y": 300
+          },
+          {
+            "x": 460,
+            "y": 560
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      },
+      "topology": "fork6"
+    },
+    {
+      "id": "3C5-TARGET-N1-122",
+      "world": 0,
+      "local": 7,
+      "goal": [
+        1,
+        2,
+        2
+      ],
+      "min": 5,
+      "title": {
+        "en": "Balance Gate",
+        "nl": "Balance Gate"
+      },
+      "note": {
+        "en": "Target 1:2:2. Research optimum 5 moves.",
+        "nl": "Doel 1:2:2. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 1,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 2,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "node": 6,
+          "species": "blue",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "fusion",
+          "a": 5,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 4
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 4,
+          "b": 6
+        }
+      ],
+      "researchFamily": "N1_ADJACENT_TRI_FUSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 7.5348,
+      "network": {
+        "id": "bottleneck7",
+        "kind": "bottleneck7",
+        "nodes": [
+          {
+            "x": 300,
+            "y": 690
+          },
+          {
+            "x": 175,
+            "y": 565
+          },
+          {
+            "x": 300,
+            "y": 430
+          },
+          {
+            "x": 425,
+            "y": 565
+          },
+          {
+            "x": 300,
+            "y": 285
+          },
+          {
+            "x": 185,
+            "y": 140
+          },
+          {
+            "x": 415,
+            "y": 140
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      },
+      "topology": "bottleneck7"
+    },
+    {
+      "id": "3C2-N2_TOPOLOGY_CONVERSION-05",
+      "world": 1,
+      "local": 0,
+      "goal": [
+        1,
+        1,
+        1
+      ],
+      "min": 4,
+      "title": {
+        "en": "Loop Conversion",
+        "nl": "Loop Conversion"
+      },
+      "note": {
+        "en": "Target 1:1:1. Research optimum 4 moves.",
+        "nl": "Doel 1:1:1. Researchoptimum 4 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 1,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 6,
+          "species": "blue",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "fusion",
+          "a": 5,
+          "b": 6
+        },
+        {
+          "kind": "split",
+          "a": 5,
+          "b": 4
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 4
+        }
+      ],
+      "researchFamily": "N2_TOPOLOGY_CONVERSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 5.8609,
+      "network": {
+        "id": "loop_tail7",
+        "kind": "loop_tail7",
+        "nodes": [
+          {
+            "x": 145,
+            "y": 375
+          },
+          {
+            "x": 245,
+            "y": 220
+          },
+          {
+            "x": 390,
+            "y": 330
+          },
+          {
+            "x": 265,
+            "y": 500
+          },
+          {
+            "x": 485,
+            "y": 455
+          },
+          {
+            "x": 475,
+            "y": 610
+          },
+          {
+            "x": 365,
+            "y": 720
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      },
+      "topology": "loop_tail7"
+    },
+    {
+      "id": "3C2-N2_TOPOLOGY_CONVERSION-08",
+      "world": 1,
+      "local": 1,
+      "goal": [
+        2,
+        1,
+        1
+      ],
+      "min": 5,
+      "title": {
+        "en": "Two Routes",
+        "nl": "Two Routes"
+      },
+      "note": {
+        "en": "Target 2:1:1. Research optimum 5 moves.",
+        "nl": "Doel 2:1:1. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 1,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "green",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "kind": "fusion",
+          "a": 2,
+          "b": 1
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 4
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 3
+        }
+      ],
+      "researchFamily": "N2_TOPOLOGY_CONVERSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 7.3281,
+      "network": {
+        "id": "diamond6",
+        "kind": "diamond6",
+        "nodes": [
+          {
+            "x": 115,
+            "y": 420
+          },
+          {
+            "x": 235,
+            "y": 260
+          },
+          {
+            "x": 385,
+            "y": 315
+          },
+          {
+            "x": 235,
+            "y": 580
+          },
+          {
+            "x": 385,
+            "y": 525
+          },
+          {
+            "x": 505,
+            "y": 420
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      },
+      "topology": "diamond6"
+    },
+    {
+      "id": "3C2-N2_TOPOLOGY_CONVERSION-04",
+      "world": 1,
+      "local": 2,
+      "goal": [
+        1,
+        1,
+        2
+      ],
+      "min": 6,
+      "title": {
+        "en": "Conversion Chain",
+        "nl": "Conversion Chain"
+      },
+      "note": {
+        "en": "Target 1:1:2. Research optimum 6 moves.",
+        "nl": "Doel 1:1:2. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "node": 1,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "green",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 2
+        },
+        {
+          "kind": "split",
+          "a": 5,
+          "b": 4
+        },
+        {
+          "kind": "fusion",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 2
+        }
+      ],
+      "researchFamily": "N2_TOPOLOGY_CONVERSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 7.721,
+      "network": {
+        "id": "chain6",
+        "kind": "chain6",
+        "nodes": [
+          {
+            "x": 190,
+            "y": 690
+          },
+          {
+            "x": 285,
+            "y": 575
+          },
+          {
+            "x": 220,
+            "y": 455
+          },
+          {
+            "x": 305,
+            "y": 335
+          },
+          {
+            "x": 240,
+            "y": 215
+          },
+          {
+            "x": 335,
+            "y": 100
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      },
+      "topology": "chain6"
+    },
+    {
+      "id": "3C2-N2_TOPOLOGY_CONVERSION-03",
+      "world": 1,
+      "local": 3,
+      "goal": [
+        2,
+        3,
+        1
+      ],
+      "min": 5,
+      "title": {
+        "en": "Diamond Route",
+        "nl": "Diamond Route"
+      },
+      "note": {
+        "en": "Target 2:3:1. Research optimum 5 moves.",
+        "nl": "Doel 2:3:1. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 1,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "node": 5,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 6,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 7,
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "fusion",
+          "a": 3,
+          "b": 6
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 2
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 0
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 6
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 6,
+          "b": 7
+        }
+      ],
+      "researchFamily": "N2_TOPOLOGY_CONVERSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 7.9137,
+      "network": {
+        "id": "double_loop8",
+        "kind": "double_loop8",
+        "nodes": [
+          {
+            "x": 150,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 135
+          },
+          {
+            "x": 390,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 380
+          },
+          {
+            "x": 390,
+            "y": 510
+          },
+          {
+            "x": 270,
+            "y": 635
+          },
+          {
+            "x": 150,
+            "y": 510
+          },
+          {
+            "x": 65,
+            "y": 665
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "double_loop8"
+    },
+    {
+      "id": "3C5-DIVERSE-N2_TOPOLOGY_CONVERSION-122",
+      "world": 1,
+      "local": 4,
+      "goal": [
+        1,
+        2,
+        2
+      ],
+      "min": 6,
+      "title": {
+        "en": "Tail Current",
+        "nl": "Tail Current"
+      },
+      "note": {
+        "en": "Target 1:2:2. Research optimum 6 moves.",
+        "nl": "Doel 1:2:2. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "node": 5,
+          "species": "green",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 2
+        },
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 2
+        },
+        {
+          "kind": "fusion",
+          "a": 2,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 1
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 1
+        }
+      ],
+      "researchFamily": "N2_TOPOLOGY_CONVERSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 8.0596,
+      "network": {
+        "id": "loop_tail7",
+        "kind": "loop_tail7",
+        "nodes": [
+          {
+            "x": 145,
+            "y": 375
+          },
+          {
+            "x": 245,
+            "y": 220
+          },
+          {
+            "x": 390,
+            "y": 330
+          },
+          {
+            "x": 265,
+            "y": 500
+          },
+          {
+            "x": 485,
+            "y": 455
+          },
+          {
+            "x": 475,
+            "y": 610
+          },
+          {
+            "x": 365,
+            "y": 720
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      },
+      "topology": "loop_tail7"
+    },
+    {
+      "id": "3C2-N2_TOPOLOGY_CONVERSION-02",
+      "world": 1,
+      "local": 5,
+      "goal": [
+        2,
+        2,
+        1
+      ],
+      "min": 7,
+      "title": {
+        "en": "Colour Bridge",
+        "nl": "Colour Bridge"
+      },
+      "note": {
+        "en": "Target 2:2:1. Research optimum 7 moves.",
+        "nl": "Doel 2:2:1. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 4,
+          "species": "violet",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "fusion",
+          "a": 5,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 4
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 4
+        }
+      ],
+      "researchFamily": "N2_TOPOLOGY_CONVERSION",
+      "researchGrade": "AMBER",
+      "difficultyComposite": 8.6236,
+      "network": {
+        "id": "chain6",
+        "kind": "chain6",
+        "nodes": [
+          {
+            "x": 190,
+            "y": 690
+          },
+          {
+            "x": 285,
+            "y": 575
+          },
+          {
+            "x": 220,
+            "y": 455
+          },
+          {
+            "x": 305,
+            "y": 335
+          },
+          {
+            "x": 240,
+            "y": 215
+          },
+          {
+            "x": 335,
+            "y": 100
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      },
+      "topology": "chain6"
+    },
+    {
+      "id": "3C2-N2_TOPOLOGY_CONVERSION-01",
+      "world": 1,
+      "local": 6,
+      "goal": [
+        2,
+        1,
+        3
+      ],
+      "min": 6,
+      "title": {
+        "en": "Twin Conversion",
+        "nl": "Twin Conversion"
+      },
+      "note": {
+        "en": "Target 2:1:3. Research optimum 6 moves.",
+        "nl": "Doel 2:1:3. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "node": 1,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 3,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 6,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 7,
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "a": 6,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "fusion",
+          "a": 3,
+          "b": 2
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 4
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 5
+        }
+      ],
+      "researchFamily": "N2_TOPOLOGY_CONVERSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 8.564,
+      "network": {
+        "id": "double_loop8",
+        "kind": "double_loop8",
+        "nodes": [
+          {
+            "x": 150,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 135
+          },
+          {
+            "x": 390,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 380
+          },
+          {
+            "x": 390,
+            "y": 510
+          },
+          {
+            "x": 270,
+            "y": 635
+          },
+          {
+            "x": 150,
+            "y": 510
+          },
+          {
+            "x": 65,
+            "y": 665
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "double_loop8"
+    },
+    {
+      "id": "3C5-DIVERSE-N2_TOPOLOGY_CONVERSION-212",
+      "world": 1,
+      "local": 7,
+      "goal": [
+        2,
+        1,
+        2
+      ],
+      "min": 7,
+      "title": {
+        "en": "Topology Gate",
+        "nl": "Topology Gate"
+      },
+      "note": {
+        "en": "Target 2:1:2. Research optimum 7 moves.",
+        "nl": "Doel 2:1:2. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 1,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 6,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 7,
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "split",
+          "a": 6,
+          "b": 3
+        },
+        {
+          "kind": "fusion",
+          "a": 3,
+          "b": 6
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 5
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 2
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 6
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 5
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 6,
+          "b": 7
+        }
+      ],
+      "researchFamily": "N2_TOPOLOGY_CONVERSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 9.7763,
+      "network": {
+        "id": "twin_route8",
+        "kind": "twin_route8",
+        "nodes": [
+          {
+            "x": 80,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 250
+          },
+          {
+            "x": 335,
+            "y": 250
+          },
+          {
+            "x": 455,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 570
+          },
+          {
+            "x": 335,
+            "y": 570
+          },
+          {
+            "x": 600,
+            "y": 410
+          },
+          {
+            "x": 600,
+            "y": 590
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "twin_route8"
+    },
+    {
+      "id": "3C2-N3_GROWTH_PATHS-02",
+      "world": 2,
+      "local": 0,
+      "goal": [
+        1,
+        3,
+        1
+      ],
+      "min": 5,
+      "title": {
+        "en": "First Growth Path",
+        "nl": "First Growth Path"
+      },
+      "note": {
+        "en": "Target 1:3:1. Research optimum 5 moves.",
+        "nl": "Doel 1:3:1. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "violet",
+          "role": "brood"
+        },
+        {
+          "node": 5,
+          "species": "green",
+          "role": "brood"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "fusion",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 1
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "brood",
+          "a": 5,
+          "b": 6,
+          "path": [
+            3,
+            6
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 3
+        }
+      ],
+      "researchFamily": "N3_GROWTH_PATHS",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 7.5548,
+      "network": {
+        "id": "twin_route8",
+        "kind": "twin_route8",
+        "nodes": [
+          {
+            "x": 80,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 250
+          },
+          {
+            "x": 335,
+            "y": 250
+          },
+          {
+            "x": 455,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 570
+          },
+          {
+            "x": 335,
+            "y": 570
+          },
+          {
+            "x": 600,
+            "y": 410
+          },
+          {
+            "x": 600,
+            "y": 590
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "twin_route8"
+    },
+    {
+      "id": "3C2-N3_GROWTH_PATHS-08",
+      "world": 2,
+      "local": 1,
+      "goal": [
+        3,
+        1,
+        2
+      ],
+      "min": 6,
+      "title": {
+        "en": "Twin Growth",
+        "nl": "Twin Growth"
+      },
+      "note": {
+        "en": "Target 3:1:2. Research optimum 6 moves.",
+        "nl": "Doel 3:1:2. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "violet",
+          "role": "brood"
+        },
+        {
+          "node": 4,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 6,
+          "species": "blue",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "split",
+          "a": 6,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "kind": "brood",
+          "a": 2,
+          "b": 1,
+          "path": [
+            3,
+            1
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 5
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 3
+        }
+      ],
+      "researchFamily": "N3_GROWTH_PATHS",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 9.182,
+      "network": {
+        "id": "hub7",
+        "kind": "hub7",
+        "nodes": [
+          {
+            "x": 120,
+            "y": 275
+          },
+          {
+            "x": 300,
+            "y": 135
+          },
+          {
+            "x": 480,
+            "y": 275
+          },
+          {
+            "x": 300,
+            "y": 415
+          },
+          {
+            "x": 480,
+            "y": 565
+          },
+          {
+            "x": 300,
+            "y": 700
+          },
+          {
+            "x": 120,
+            "y": 565
+          }
+        ],
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      },
+      "topology": "hub7"
+    },
+    {
+      "id": "3C2-N3_GROWTH_PATHS-03",
+      "world": 2,
+      "local": 2,
+      "goal": [
+        2,
+        3,
+        1
+      ],
+      "min": 6,
+      "title": {
+        "en": "Double Loop Bloom",
+        "nl": "Double Loop Bloom"
+      },
+      "note": {
+        "en": "Target 2:3:1. Research optimum 6 moves.",
+        "nl": "Doel 2:3:1. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 1,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "node": 3,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 6,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 7,
+          "species": "blue",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "fusion",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "kind": "brood",
+          "a": 2,
+          "b": 4,
+          "path": [
+            3,
+            4
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "fusion",
+          "a": 3,
+          "b": 4
+        }
+      ],
+      "researchFamily": "N3_GROWTH_PATHS",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 9.556,
+      "network": {
+        "id": "double_loop8",
+        "kind": "double_loop8",
+        "nodes": [
+          {
+            "x": 150,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 135
+          },
+          {
+            "x": 390,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 380
+          },
+          {
+            "x": 390,
+            "y": 510
+          },
+          {
+            "x": 270,
+            "y": 635
+          },
+          {
+            "x": 150,
+            "y": 510
+          },
+          {
+            "x": 65,
+            "y": 665
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "double_loop8"
+    },
+    {
+      "id": "3C2-N3_GROWTH_PATHS-07",
+      "world": 2,
+      "local": 3,
+      "goal": [
+        1,
+        2,
+        2
+      ],
+      "min": 7,
+      "title": {
+        "en": "Brood Corridor",
+        "nl": "Brood Corridor"
+      },
+      "note": {
+        "en": "Target 1:2:2. Research optimum 7 moves.",
+        "nl": "Doel 1:2:2. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 1,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "node": 5,
+          "species": "blue",
+          "role": "brood"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "fusion",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "brood",
+          "a": 5,
+          "b": 2,
+          "path": [
+            2
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 3
+        }
+      ],
+      "researchFamily": "N3_GROWTH_PATHS",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 9.8156,
+      "network": {
+        "id": "fork6",
+        "kind": "fork6",
+        "nodes": [
+          {
+            "x": 80,
+            "y": 650
+          },
+          {
+            "x": 180,
+            "y": 535
+          },
+          {
+            "x": 300,
+            "y": 420
+          },
+          {
+            "x": 220,
+            "y": 230
+          },
+          {
+            "x": 460,
+            "y": 300
+          },
+          {
+            "x": 460,
+            "y": 560
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      },
+      "topology": "fork6"
+    },
+    {
+      "id": "3C2-N3_GROWTH_PATHS-01",
+      "world": 2,
+      "local": 4,
+      "goal": [
+        1,
+        1,
+        3
+      ],
+      "min": 7,
+      "title": {
+        "en": "Growth Detour",
+        "nl": "Growth Detour"
+      },
+      "note": {
+        "en": "Target 1:1:3. Research optimum 7 moves.",
+        "nl": "Doel 1:1:3. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "node": 5,
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "node": 6,
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "brood",
+          "a": 4,
+          "b": 2,
+          "path": [
+            2
+          ]
+        },
+        {
+          "kind": "fusion",
+          "a": 2,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 3
+        }
+      ],
+      "researchFamily": "N3_GROWTH_PATHS",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 9.9512,
+      "network": {
+        "id": "loop_tail7",
+        "kind": "loop_tail7",
+        "nodes": [
+          {
+            "x": 145,
+            "y": 375
+          },
+          {
+            "x": 245,
+            "y": 220
+          },
+          {
+            "x": 390,
+            "y": 330
+          },
+          {
+            "x": 265,
+            "y": 500
+          },
+          {
+            "x": 485,
+            "y": 455
+          },
+          {
+            "x": 475,
+            "y": 610
+          },
+          {
+            "x": 365,
+            "y": 720
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      },
+      "topology": "loop_tail7"
+    },
+    {
+      "id": "3C2-N3_GROWTH_PATHS-05",
+      "world": 2,
+      "local": 5,
+      "goal": [
+        2,
+        2,
+        1
+      ],
+      "min": 7,
+      "title": {
+        "en": "Bottleneck Bloom",
+        "nl": "Bottleneck Bloom"
+      },
+      "note": {
+        "en": "Target 2:2:1. Research optimum 7 moves.",
+        "nl": "Doel 2:2:1. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 1,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "green",
+          "role": "brood"
+        },
+        {
+          "node": 3,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 7,
+          "species": "green",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 5,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 4
+        },
+        {
+          "kind": "fusion",
+          "a": 4,
+          "b": 0
+        },
+        {
+          "kind": "brood",
+          "a": 2,
+          "b": 0,
+          "path": [
+            1,
+            0
+          ]
+        },
+        {
+          "kind": "fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 3
+        }
+      ],
+      "researchFamily": "N3_GROWTH_PATHS",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 10.3959,
+      "network": {
+        "id": "twin_route8",
+        "kind": "twin_route8",
+        "nodes": [
+          {
+            "x": 80,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 250
+          },
+          {
+            "x": 335,
+            "y": 250
+          },
+          {
+            "x": 455,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 570
+          },
+          {
+            "x": 335,
+            "y": 570
+          },
+          {
+            "x": 600,
+            "y": 410
+          },
+          {
+            "x": 600,
+            "y": 590
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "twin_route8"
+    },
+    {
+      "id": "3C2-N3_GROWTH_PATHS-06",
+      "world": 2,
+      "local": 6,
+      "goal": [
+        1,
+        1,
+        2
+      ],
+      "min": 8,
+      "title": {
+        "en": "Forked Growth",
+        "nl": "Forked Growth"
+      },
+      "note": {
+        "en": "Target 1:1:2. Research optimum 8 moves.",
+        "nl": "Doel 1:1:2. Researchoptimum 8 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 1,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "violet",
+          "role": "brood"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "fusion",
+          "a": 1,
+          "b": 0
+        },
+        {
+          "kind": "split",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "split",
+          "a": 1,
+          "b": 0
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "kind": "brood",
+          "a": 5,
+          "b": 4,
+          "path": [
+            4
+          ]
+        }
+      ],
+      "researchFamily": "N3_GROWTH_PATHS",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 10.7186,
+      "network": {
+        "id": "bottleneck7",
+        "kind": "bottleneck7",
+        "nodes": [
+          {
+            "x": 300,
+            "y": 690
+          },
+          {
+            "x": 175,
+            "y": 565
+          },
+          {
+            "x": 300,
+            "y": 430
+          },
+          {
+            "x": 425,
+            "y": 565
+          },
+          {
+            "x": 300,
+            "y": 285
+          },
+          {
+            "x": 185,
+            "y": 140
+          },
+          {
+            "x": 415,
+            "y": 140
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      },
+      "topology": "bottleneck7"
+    },
+    {
+      "id": "3C5-TARGET-N3_GROWTH_PATHS-132",
+      "world": 2,
+      "local": 7,
+      "goal": [
+        1,
+        3,
+        2
+      ],
+      "min": 8,
+      "title": {
+        "en": "Hub Bloom",
+        "nl": "Hub Bloom"
+      },
+      "note": {
+        "en": "Target 1:3:2. Research optimum 8 moves.",
+        "nl": "Doel 1:3:2. Researchoptimum 8 zetten."
+      },
+      "cells": [
+        {
+          "node": 3,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "node": 5,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 6,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 7,
+          "species": "violet",
+          "role": "brood"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 6
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 0
+        },
+        {
+          "kind": "fusion",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "kind": "brood",
+          "a": 7,
+          "b": 3,
+          "path": [
+            6,
+            3
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 6,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 2
+        }
+      ],
+      "researchFamily": "N3_GROWTH_PATHS",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 11.2914,
+      "network": {
+        "id": "double_loop8",
+        "kind": "double_loop8",
+        "nodes": [
+          {
+            "x": 150,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 135
+          },
+          {
+            "x": 390,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 380
+          },
+          {
+            "x": 390,
+            "y": 510
+          },
+          {
+            "x": 270,
+            "y": 635
+          },
+          {
+            "x": 150,
+            "y": 510
+          },
+          {
+            "x": 65,
+            "y": 665
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "double_loop8"
+    },
+    {
+      "id": "3C6-TARGET-N4_PRUNING_GATES-111-8081",
+      "world": 3,
+      "local": 0,
+      "goal": [
+        1,
+        1,
+        1
+      ],
+      "min": 8,
+      "title": {
+        "en": "First Pruning Gate",
+        "nl": "First Pruning Gate"
+      },
+      "note": {
+        "en": "Target 1:1:1. Research optimum 8 moves.",
+        "nl": "Doel 1:1:1. Researchoptimum 8 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "violet",
+          "role": "destruct"
+        },
+        {
+          "node": 1,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "node": 4,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "node": 6,
+          "species": "green",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "destruct",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "brood",
+          "a": 3,
+          "b": 1,
+          "path": [
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 2
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "brood",
+          "a": 5,
+          "b": 4,
+          "path": [
+            4
+          ]
+        }
+      ],
+      "researchFamily": "N4_PRUNING_GATES",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 11.2472,
+      "network": {
+        "id": "double_loop8",
+        "kind": "double_loop8",
+        "nodes": [
+          {
+            "x": 150,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 135
+          },
+          {
+            "x": 390,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 380
+          },
+          {
+            "x": 390,
+            "y": 510
+          },
+          {
+            "x": 270,
+            "y": 635
+          },
+          {
+            "x": 150,
+            "y": 510
+          },
+          {
+            "x": 65,
+            "y": 665
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "double_loop8"
+    },
+    {
+      "id": "3C2-N4_PRUNING_GATES-02",
+      "world": 3,
+      "local": 1,
+      "goal": [
+        1,
+        2,
+        3
+      ],
+      "min": 6,
+      "title": {
+        "en": "Selective Passage",
+        "nl": "Selective Passage"
+      },
+      "note": {
+        "en": "Target 1:2:3. Research optimum 6 moves.",
+        "nl": "Doel 1:2:3. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 1,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "violet",
+          "role": "destruct"
+        },
+        {
+          "node": 6,
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "node": 7,
+          "species": "violet",
+          "role": "brood"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "destruct",
+          "a": 5,
+          "b": 6
+        },
+        {
+          "kind": "brood",
+          "a": 7,
+          "b": 5,
+          "path": [
+            6,
+            5
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 6,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 1
+        }
+      ],
+      "researchFamily": "N4_PRUNING_GATES",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 8.6256,
+      "network": {
+        "id": "double_loop8",
+        "kind": "double_loop8",
+        "nodes": [
+          {
+            "x": 150,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 135
+          },
+          {
+            "x": 390,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 380
+          },
+          {
+            "x": 390,
+            "y": 510
+          },
+          {
+            "x": 270,
+            "y": 635
+          },
+          {
+            "x": 150,
+            "y": 510
+          },
+          {
+            "x": 65,
+            "y": 665
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "double_loop8"
+    },
+    {
+      "id": "3C2-N4_PRUNING_GATES-08",
+      "world": 3,
+      "local": 2,
+      "goal": [
+        1,
+        1,
+        2
+      ],
+      "min": 6,
+      "title": {
+        "en": "Double-Loop Cut",
+        "nl": "Double-Loop Cut"
+      },
+      "note": {
+        "en": "Target 1:1:2. Research optimum 6 moves.",
+        "nl": "Doel 1:1:2. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "node": 1,
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "violet",
+          "role": "destruct"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "split",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "destruct",
+          "a": 5,
+          "b": 4
+        },
+        {
+          "kind": "fusion",
+          "a": 2,
+          "b": 1
+        },
+        {
+          "kind": "brood",
+          "a": 0,
+          "b": 1,
+          "path": [
+            1
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 3
+        }
+      ],
+      "researchFamily": "N4_PRUNING_GATES",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 8.9106,
+      "network": {
+        "id": "double_loop8",
+        "kind": "double_loop8",
+        "nodes": [
+          {
+            "x": 150,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 135
+          },
+          {
+            "x": 390,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 380
+          },
+          {
+            "x": 390,
+            "y": 510
+          },
+          {
+            "x": 270,
+            "y": 635
+          },
+          {
+            "x": 150,
+            "y": 510
+          },
+          {
+            "x": 65,
+            "y": 665
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "double_loop8"
+    },
+    {
+      "id": "3C5-DIVERSE-N4_PRUNING_GATES-212",
+      "world": 3,
+      "local": 3,
+      "goal": [
+        2,
+        1,
+        2
+      ],
+      "min": 7,
+      "title": {
+        "en": "Pruned Route",
+        "nl": "Pruned Route"
+      },
+      "note": {
+        "en": "Target 2:1:2. Research optimum 7 moves.",
+        "nl": "Doel 2:1:2. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 1,
+          "species": "green",
+          "role": "destruct"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "node": 6,
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "node": 7,
+          "species": "blue",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "fusion",
+          "a": 3,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 2
+        },
+        {
+          "kind": "destruct",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "split",
+          "a": 5,
+          "b": 4
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 4
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 4,
+          "b": 5
+        }
+      ],
+      "researchFamily": "N4_PRUNING_GATES",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 10.2472,
+      "network": {
+        "id": "double_loop8",
+        "kind": "double_loop8",
+        "nodes": [
+          {
+            "x": 150,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 135
+          },
+          {
+            "x": 390,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 380
+          },
+          {
+            "x": 390,
+            "y": 510
+          },
+          {
+            "x": 270,
+            "y": 635
+          },
+          {
+            "x": 150,
+            "y": 510
+          },
+          {
+            "x": 65,
+            "y": 665
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "double_loop8"
+    },
+    {
+      "id": "3C2-N4_PRUNING_GATES-07",
+      "world": 3,
+      "local": 4,
+      "goal": [
+        3,
+        1,
+        1
+      ],
+      "min": 7,
+      "title": {
+        "en": "Ratio Gate",
+        "nl": "Ratio Gate"
+      },
+      "note": {
+        "en": "Target 3:1:1. Research optimum 7 moves.",
+        "nl": "Doel 3:1:1. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "blue",
+          "role": "destruct"
+        },
+        {
+          "node": 1,
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "node": 2,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "node": 5,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 6,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 7,
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "destruct",
+          "a": 0,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 1,
+          "b": 0
+        },
+        {
+          "kind": "split",
+          "a": 6,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 2
+        },
+        {
+          "kind": "fusion",
+          "a": 6,
+          "b": 7
+        }
+      ],
+      "researchFamily": "N4_PRUNING_GATES",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 10.2836,
+      "network": {
+        "id": "twin_route8",
+        "kind": "twin_route8",
+        "nodes": [
+          {
+            "x": 80,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 250
+          },
+          {
+            "x": 335,
+            "y": 250
+          },
+          {
+            "x": 455,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 570
+          },
+          {
+            "x": 335,
+            "y": 570
+          },
+          {
+            "x": 600,
+            "y": 410
+          },
+          {
+            "x": 600,
+            "y": 590
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "twin_route8"
+    },
+    {
+      "id": "3C2-N4_PRUNING_GATES-06",
+      "world": 3,
+      "local": 5,
+      "goal": [
+        2,
+        2,
+        1
+      ],
+      "min": 7,
+      "title": {
+        "en": "Hub Pruning",
+        "nl": "Hub Pruning"
+      },
+      "note": {
+        "en": "Target 2:2:1. Research optimum 7 moves.",
+        "nl": "Doel 2:2:1. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "green",
+          "role": "brood"
+        },
+        {
+          "node": 1,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "blue",
+          "role": "destruct"
+        },
+        {
+          "node": 5,
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "node": 6,
+          "species": "violet",
+          "role": "destruct"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "destruct",
+          "a": 3,
+          "b": 6
+        },
+        {
+          "kind": "brood",
+          "a": 0,
+          "b": 3,
+          "path": [
+            3
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 3
+        },
+        {
+          "kind": "brood",
+          "a": 5,
+          "b": 4,
+          "path": [
+            3,
+            4
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 4
+        }
+      ],
+      "researchFamily": "N4_PRUNING_GATES",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 10.5761,
+      "network": {
+        "id": "hub7",
+        "kind": "hub7",
+        "nodes": [
+          {
+            "x": 120,
+            "y": 275
+          },
+          {
+            "x": 300,
+            "y": 135
+          },
+          {
+            "x": 480,
+            "y": 275
+          },
+          {
+            "x": 300,
+            "y": 415
+          },
+          {
+            "x": 480,
+            "y": 565
+          },
+          {
+            "x": 300,
+            "y": 700
+          },
+          {
+            "x": 120,
+            "y": 565
+          }
+        ],
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      },
+      "topology": "hub7"
+    },
+    {
+      "id": "3C5-DIVERSE-N4_PRUNING_GATES-121",
+      "world": 3,
+      "local": 6,
+      "goal": [
+        1,
+        2,
+        1
+      ],
+      "min": 8,
+      "title": {
+        "en": "Twin Gate",
+        "nl": "Twin Gate"
+      },
+      "note": {
+        "en": "Target 1:2:1. Research optimum 8 moves.",
+        "nl": "Doel 1:2:1. Researchoptimum 8 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "node": 1,
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "node": 3,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "green",
+          "role": "destruct"
+        },
+        {
+          "node": 5,
+          "species": "green",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "destruct",
+          "a": 4,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 5,
+          "b": 4
+        },
+        {
+          "kind": "fusion",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 5
+        }
+      ],
+      "researchFamily": "N4_PRUNING_GATES",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 10.728,
+      "network": {
+        "id": "ring6",
+        "kind": "ring6",
+        "nodes": [
+          {
+            "x": 300,
+            "y": 120
+          },
+          {
+            "x": 475,
+            "y": 245
+          },
+          {
+            "x": 475,
+            "y": 500
+          },
+          {
+            "x": 300,
+            "y": 625
+          },
+          {
+            "x": 125,
+            "y": 500
+          },
+          {
+            "x": 125,
+            "y": 245
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            0
+          ]
+        ]
+      },
+      "topology": "ring6"
+    },
+    {
+      "id": "3C5-TARGET-N4_PRUNING_GATES-124",
+      "world": 3,
+      "local": 7,
+      "goal": [
+        1,
+        2,
+        4
+      ],
+      "min": 8,
+      "title": {
+        "en": "Ring Pruning",
+        "nl": "Ring Pruning"
+      },
+      "note": {
+        "en": "Target 1:2:4. Research optimum 8 moves.",
+        "nl": "Doel 1:2:4. Researchoptimum 8 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "violet",
+          "role": "brood"
+        },
+        {
+          "node": 1,
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "node": 2,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "destruct"
+        },
+        {
+          "node": 5,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 6,
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "node": 7,
+          "species": "green",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "destruct",
+          "a": 3,
+          "b": 5
+        },
+        {
+          "kind": "brood",
+          "a": 0,
+          "b": 5,
+          "path": [
+            4,
+            5
+          ]
+        },
+        {
+          "kind": "fusion",
+          "a": 4,
+          "b": 0
+        },
+        {
+          "kind": "split",
+          "a": 1,
+          "b": 0
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "split",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 1
+        }
+      ],
+      "researchFamily": "N4_PRUNING_GATES",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 11.5238,
+      "network": {
+        "id": "twin_route8",
+        "kind": "twin_route8",
+        "nodes": [
+          {
+            "x": 80,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 250
+          },
+          {
+            "x": 335,
+            "y": 250
+          },
+          {
+            "x": 455,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 570
+          },
+          {
+            "x": 335,
+            "y": 570
+          },
+          {
+            "x": 600,
+            "y": 410
+          },
+          {
+            "x": 600,
+            "y": 590
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "twin_route8"
+    },
+    {
+      "id": "3C2-N5_MIRROR_TISSUE-01",
+      "world": 4,
+      "local": 0,
+      "goal": [
+        3,
+        2,
+        1
+      ],
+      "min": 5,
+      "title": {
+        "en": "Mirror Link",
+        "nl": "Mirror Link"
+      },
+      "note": {
+        "en": "Target 3:2:1. Research optimum 5 moves.",
+        "nl": "Doel 3:2:1. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "node": 1,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 2,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "node": 4,
+          "species": "blue",
+          "role": "imitation"
+        },
+        {
+          "node": 5,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 6,
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "imitation",
+          "a": 4,
+          "b": 2
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 5,
+          "b": 6
+        },
+        {
+          "kind": "split",
+          "a": 5,
+          "b": 6
+        }
+      ],
+      "researchFamily": "N5_MIRROR_TISSUE",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 7.2689,
+      "network": {
+        "id": "loop_tail7",
+        "kind": "loop_tail7",
+        "nodes": [
+          {
+            "x": 145,
+            "y": 375
+          },
+          {
+            "x": 245,
+            "y": 220
+          },
+          {
+            "x": 390,
+            "y": 330
+          },
+          {
+            "x": 265,
+            "y": 500
+          },
+          {
+            "x": 485,
+            "y": 455
+          },
+          {
+            "x": 475,
+            "y": 610
+          },
+          {
+            "x": 365,
+            "y": 720
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      },
+      "topology": "loop_tail7"
+    },
+    {
+      "id": "3C2-N5_MIRROR_TISSUE-03",
+      "world": 4,
+      "local": 1,
+      "goal": [
+        2,
+        2,
+        1
+      ],
+      "min": 5,
+      "title": {
+        "en": "Copied Passage",
+        "nl": "Copied Passage"
+      },
+      "note": {
+        "en": "Target 2:2:1. Research optimum 5 moves.",
+        "nl": "Doel 2:2:1. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "node": 1,
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "node": 2,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "node": 6,
+          "species": "green",
+          "role": "imitation"
+        },
+        {
+          "node": 7,
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "brood",
+          "a": 1,
+          "b": 0,
+          "path": [
+            0
+          ]
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 5
+        },
+        {
+          "kind": "imitation",
+          "a": 6,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 6,
+          "b": 7
+        }
+      ],
+      "researchFamily": "N5_MIRROR_TISSUE",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 7.5385,
+      "network": {
+        "id": "twin_route8",
+        "kind": "twin_route8",
+        "nodes": [
+          {
+            "x": 80,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 250
+          },
+          {
+            "x": 335,
+            "y": 250
+          },
+          {
+            "x": 455,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 570
+          },
+          {
+            "x": 335,
+            "y": 570
+          },
+          {
+            "x": 600,
+            "y": 410
+          },
+          {
+            "x": 600,
+            "y": 590
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "twin_route8"
+    },
+    {
+      "id": "3C6-TARGET-N5_MIRROR_TISSUE-111-9090",
+      "world": 4,
+      "local": 2,
+      "goal": [
+        1,
+        1,
+        1
+      ],
+      "min": 8,
+      "title": {
+        "en": "Mirror Growth",
+        "nl": "Mirror Growth"
+      },
+      "note": {
+        "en": "Target 1:1:1. Research optimum 8 moves.",
+        "nl": "Doel 1:1:1. Researchoptimum 8 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "node": 1,
+          "species": "blue",
+          "role": "imitation"
+        },
+        {
+          "node": 2,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "node": 6,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 7,
+          "species": "blue",
+          "role": "brood"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 5
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 5,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 4
+        },
+        {
+          "kind": "imitation",
+          "a": 1,
+          "b": 0
+        },
+        {
+          "kind": "fusion",
+          "a": 0,
+          "b": 4
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 2
+        }
+      ],
+      "researchFamily": "N5_MIRROR_TISSUE",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 11.1476,
+      "network": {
+        "id": "twin_route8",
+        "kind": "twin_route8",
+        "nodes": [
+          {
+            "x": 80,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 250
+          },
+          {
+            "x": 335,
+            "y": 250
+          },
+          {
+            "x": 455,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 570
+          },
+          {
+            "x": 335,
+            "y": 570
+          },
+          {
+            "x": 600,
+            "y": 410
+          },
+          {
+            "x": 600,
+            "y": 590
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "twin_route8"
+    },
+    {
+      "id": "3C2-N5_MIRROR_TISSUE-05",
+      "world": 4,
+      "local": 3,
+      "goal": [
+        1,
+        1,
+        3
+      ],
+      "min": 6,
+      "title": {
+        "en": "Role Exchange",
+        "nl": "Role Exchange"
+      },
+      "note": {
+        "en": "Target 1:1:3. Research optimum 6 moves.",
+        "nl": "Doel 1:1:3. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "node": 2,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "imitation"
+        },
+        {
+          "node": 4,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 6,
+          "species": "blue",
+          "role": "destruct"
+        },
+        {
+          "node": 7,
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "imitation",
+          "a": 3,
+          "b": 4
+        },
+        {
+          "kind": "destruct",
+          "a": 6,
+          "b": 5
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 4
+        }
+      ],
+      "researchFamily": "N5_MIRROR_TISSUE",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 9.1324,
+      "network": {
+        "id": "double_loop8",
+        "kind": "double_loop8",
+        "nodes": [
+          {
+            "x": 150,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 135
+          },
+          {
+            "x": 390,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 380
+          },
+          {
+            "x": 390,
+            "y": 510
+          },
+          {
+            "x": 270,
+            "y": 635
+          },
+          {
+            "x": 150,
+            "y": 510
+          },
+          {
+            "x": 65,
+            "y": 665
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "double_loop8"
+    },
+    {
+      "id": "3C2-N5_MIRROR_TISSUE-04",
+      "world": 4,
+      "local": 4,
+      "goal": [
+        1,
+        1,
+        2
+      ],
+      "min": 7,
+      "title": {
+        "en": "Mirror Pruning",
+        "nl": "Mirror Pruning"
+      },
+      "note": {
+        "en": "Target 1:1:2. Research optimum 7 moves.",
+        "nl": "Doel 1:1:2. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "imitation"
+        },
+        {
+          "node": 4,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 6,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 7,
+          "species": "blue",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 6,
+          "b": 7
+        },
+        {
+          "kind": "split",
+          "a": 6,
+          "b": 7
+        },
+        {
+          "kind": "imitation",
+          "a": 3,
+          "b": 6
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "fusion",
+          "a": 6,
+          "b": 7
+        }
+      ],
+      "researchFamily": "N5_MIRROR_TISSUE",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 9.7408,
+      "network": {
+        "id": "twin_route8",
+        "kind": "twin_route8",
+        "nodes": [
+          {
+            "x": 80,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 250
+          },
+          {
+            "x": 335,
+            "y": 250
+          },
+          {
+            "x": 455,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 570
+          },
+          {
+            "x": 335,
+            "y": 570
+          },
+          {
+            "x": 600,
+            "y": 410
+          },
+          {
+            "x": 600,
+            "y": 590
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "twin_route8"
+    },
+    {
+      "id": "3C5-DIVERSE-N5_MIRROR_TISSUE-212",
+      "world": 4,
+      "local": 5,
+      "goal": [
+        2,
+        1,
+        2
+      ],
+      "min": 8,
+      "title": {
+        "en": "Tissue Echo",
+        "nl": "Tissue Echo"
+      },
+      "note": {
+        "en": "Target 2:1:2. Research optimum 8 moves.",
+        "nl": "Doel 2:1:2. Researchoptimum 8 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 1,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "node": 5,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 6,
+          "species": "green",
+          "role": "imitation"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "imitation",
+          "a": 6,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 6,
+          "b": 7
+        },
+        {
+          "kind": "fusion",
+          "a": 7,
+          "b": 6
+        },
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 6
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "fusion",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 6
+        }
+      ],
+      "researchFamily": "N5_MIRROR_TISSUE",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 11.2497,
+      "network": {
+        "id": "twin_route8",
+        "kind": "twin_route8",
+        "nodes": [
+          {
+            "x": 80,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 250
+          },
+          {
+            "x": 335,
+            "y": 250
+          },
+          {
+            "x": 455,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 570
+          },
+          {
+            "x": 335,
+            "y": 570
+          },
+          {
+            "x": 600,
+            "y": 410
+          },
+          {
+            "x": 600,
+            "y": 590
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "twin_route8"
+    },
+    {
+      "id": "3C5-DIVERSE-N5_MIRROR_TISSUE-121",
+      "world": 4,
+      "local": 6,
+      "goal": [
+        1,
+        2,
+        1
+      ],
+      "min": 8,
+      "title": {
+        "en": "Copied Route",
+        "nl": "Copied Route"
+      },
+      "note": {
+        "en": "Target 1:2:1. Research optimum 8 moves.",
+        "nl": "Doel 1:2:1. Researchoptimum 8 zetten."
+      },
+      "cells": [
+        {
+          "node": 2,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "blue",
+          "role": "destruct"
+        },
+        {
+          "node": 4,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 5,
+          "species": "blue",
+          "role": "imitation"
+        },
+        {
+          "node": 6,
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "node": 7,
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "destruct",
+          "a": 3,
+          "b": 2
+        },
+        {
+          "kind": "split",
+          "a": 6,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 6,
+          "b": 7
+        },
+        {
+          "kind": "split",
+          "a": 6,
+          "b": 7
+        },
+        {
+          "kind": "imitation",
+          "a": 5,
+          "b": 6
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 3,
+          "b": 6
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 5
+        }
+      ],
+      "researchFamily": "N5_MIRROR_TISSUE",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 11.3619,
+      "network": {
+        "id": "double_loop8",
+        "kind": "double_loop8",
+        "nodes": [
+          {
+            "x": 150,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 135
+          },
+          {
+            "x": 390,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 380
+          },
+          {
+            "x": 390,
+            "y": 510
+          },
+          {
+            "x": 270,
+            "y": 635
+          },
+          {
+            "x": 150,
+            "y": 510
+          },
+          {
+            "x": 65,
+            "y": 665
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "double_loop8"
+    },
+    {
+      "id": "3C5-TARGET-N5_MIRROR_TISSUE-132",
+      "world": 4,
+      "local": 7,
+      "goal": [
+        1,
+        3,
+        2
+      ],
+      "min": 9,
+      "title": {
+        "en": "Mirror Gate",
+        "nl": "Mirror Gate"
+      },
+      "note": {
+        "en": "Target 1:3:2. Research optimum 9 moves.",
+        "nl": "Doel 1:3:2. Researchoptimum 9 zetten."
+      },
+      "cells": [
+        {
+          "node": 1,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "node": 5,
+          "species": "green",
+          "role": "imitation"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 1
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 4
+        },
+        {
+          "kind": "fusion",
+          "a": 4,
+          "b": 2
+        },
+        {
+          "kind": "brood",
+          "a": 3,
+          "b": 2,
+          "path": [
+            2
+          ]
+        },
+        {
+          "kind": "imitation",
+          "a": 5,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 6
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 1
+        },
+        {
+          "kind": "split",
+          "a": 5,
+          "b": 4
+        }
+      ],
+      "researchFamily": "N5_MIRROR_TISSUE",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 11.7059,
+      "network": {
+        "id": "bottleneck7",
+        "kind": "bottleneck7",
+        "nodes": [
+          {
+            "x": 300,
+            "y": 690
+          },
+          {
+            "x": 175,
+            "y": 565
+          },
+          {
+            "x": 300,
+            "y": 430
+          },
+          {
+            "x": 425,
+            "y": 565
+          },
+          {
+            "x": 300,
+            "y": 285
+          },
+          {
+            "x": 185,
+            "y": 140
+          },
+          {
+            "x": 415,
+            "y": 140
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      },
+      "topology": "bottleneck7"
+    },
+    {
+      "id": "3C2-N6_FULL_NETWORK-04",
+      "world": 5,
+      "local": 0,
+      "goal": [
+        2,
+        2,
+        1
+      ],
+      "min": 6,
+      "title": {
+        "en": "Full Network I",
+        "nl": "Full Network I"
+      },
+      "note": {
+        "en": "Target 2:2:1. Research optimum 6 moves.",
+        "nl": "Doel 2:2:1. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 1,
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "node": 3,
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "node": 4,
+          "species": "violet",
+          "role": "brood"
+        },
+        {
+          "node": 5,
+          "species": "blue",
+          "role": "destruct"
+        },
+        {
+          "node": 6,
+          "species": "green",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 2
+        },
+        {
+          "kind": "destruct",
+          "a": 5,
+          "b": 6
+        },
+        {
+          "kind": "brood",
+          "a": 4,
+          "b": 5,
+          "path": [
+            5
+          ]
+        },
+        {
+          "kind": "fusion",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 3
+        }
+      ],
+      "researchFamily": "N6_FULL_NETWORK",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 8.4644,
+      "network": {
+        "id": "loop_tail7",
+        "kind": "loop_tail7",
+        "nodes": [
+          {
+            "x": 145,
+            "y": 375
+          },
+          {
+            "x": 245,
+            "y": 220
+          },
+          {
+            "x": 390,
+            "y": 330
+          },
+          {
+            "x": 265,
+            "y": 500
+          },
+          {
+            "x": 485,
+            "y": 455
+          },
+          {
+            "x": 475,
+            "y": 610
+          },
+          {
+            "x": 365,
+            "y": 720
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      },
+      "topology": "loop_tail7"
+    },
+    {
+      "id": "3C2-N6_FULL_NETWORK-09",
+      "world": 5,
+      "local": 1,
+      "goal": [
+        1,
+        2,
+        1
+      ],
+      "min": 6,
+      "title": {
+        "en": "Full Network II",
+        "nl": "Full Network II"
+      },
+      "note": {
+        "en": "Target 1:2:1. Research optimum 6 moves.",
+        "nl": "Doel 1:2:1. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "node": 1,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "green",
+          "role": "imitation"
+        },
+        {
+          "node": 3,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "green",
+          "role": "brood"
+        },
+        {
+          "node": 5,
+          "species": "blue",
+          "role": "imitation"
+        },
+        {
+          "node": 6,
+          "species": "violet",
+          "role": "destruct"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "imitation",
+          "a": 2,
+          "b": 1
+        },
+        {
+          "kind": "destruct",
+          "a": 6,
+          "b": 5
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "brood",
+          "a": 4,
+          "b": 2,
+          "path": [
+            2
+          ]
+        }
+      ],
+      "researchFamily": "N6_FULL_NETWORK",
+      "researchGrade": "AMBER",
+      "difficultyComposite": 8.5671,
+      "network": {
+        "id": "loop_tail7",
+        "kind": "loop_tail7",
+        "nodes": [
+          {
+            "x": 145,
+            "y": 375
+          },
+          {
+            "x": 245,
+            "y": 220
+          },
+          {
+            "x": 390,
+            "y": 330
+          },
+          {
+            "x": 265,
+            "y": 500
+          },
+          {
+            "x": 485,
+            "y": 455
+          },
+          {
+            "x": 475,
+            "y": 610
+          },
+          {
+            "x": 365,
+            "y": 720
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      },
+      "topology": "loop_tail7"
+    },
+    {
+      "id": "3C2-N6_FULL_NETWORK-01",
+      "world": 5,
+      "local": 2,
+      "goal": [
+        3,
+        1,
+        2
+      ],
+      "min": 6,
+      "title": {
+        "en": "Full Network III",
+        "nl": "Full Network III"
+      },
+      "note": {
+        "en": "Target 3:1:2. Research optimum 6 moves.",
+        "nl": "Doel 3:1:2. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 1,
+          "species": "green",
+          "role": "brood"
+        },
+        {
+          "node": 2,
+          "species": "blue",
+          "role": "imitation"
+        },
+        {
+          "node": 3,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 5,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 6,
+          "species": "blue",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "imitation",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "fusion",
+          "a": 3,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 4,
+          "b": 0
+        },
+        {
+          "kind": "brood",
+          "a": 1,
+          "b": 0,
+          "path": [
+            0
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 2
+        }
+      ],
+      "researchFamily": "N6_FULL_NETWORK",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 9.1419,
+      "network": {
+        "id": "twin_route8",
+        "kind": "twin_route8",
+        "nodes": [
+          {
+            "x": 80,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 250
+          },
+          {
+            "x": 335,
+            "y": 250
+          },
+          {
+            "x": 455,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 570
+          },
+          {
+            "x": 335,
+            "y": 570
+          },
+          {
+            "x": 600,
+            "y": 410
+          },
+          {
+            "x": 600,
+            "y": 590
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "twin_route8"
+    },
+    {
+      "id": "3C2-N6_FULL_NETWORK-03",
+      "world": 5,
+      "local": 3,
+      "goal": [
+        1,
+        1,
+        1
+      ],
+      "min": 7,
+      "title": {
+        "en": "Full Network IV",
+        "nl": "Full Network IV"
+      },
+      "note": {
+        "en": "Target 1:1:1. Research optimum 7 moves.",
+        "nl": "Doel 1:1:1. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 1,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "green",
+          "role": "imitation"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "blue",
+          "role": "imitation"
+        },
+        {
+          "node": 6,
+          "species": "blue",
+          "role": "destruct"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "imitation",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "split",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "destruct",
+          "a": 6,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 2
+        }
+      ],
+      "researchFamily": "N6_FULL_NETWORK",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 9.1992,
+      "network": {
+        "id": "twin_route8",
+        "kind": "twin_route8",
+        "nodes": [
+          {
+            "x": 80,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 250
+          },
+          {
+            "x": 335,
+            "y": 250
+          },
+          {
+            "x": 455,
+            "y": 410
+          },
+          {
+            "x": 195,
+            "y": 570
+          },
+          {
+            "x": 335,
+            "y": 570
+          },
+          {
+            "x": 600,
+            "y": 410
+          },
+          {
+            "x": 600,
+            "y": 590
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "twin_route8"
+    },
+    {
+      "id": "3C2-N6_FULL_NETWORK-07",
+      "world": 5,
+      "local": 4,
+      "goal": [
+        1,
+        3,
+        1
+      ],
+      "min": 7,
+      "title": {
+        "en": "Full Network V",
+        "nl": "Full Network V"
+      },
+      "note": {
+        "en": "Target 1:3:1. Research optimum 7 moves.",
+        "nl": "Doel 1:3:1. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "node": 1,
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "node": 2,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 4,
+          "species": "green",
+          "role": "brood"
+        },
+        {
+          "node": 5,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 6,
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "split",
+          "a": 1,
+          "b": 0
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 2
+        },
+        {
+          "kind": "brood",
+          "a": 4,
+          "b": 3,
+          "path": [
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "fusion",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 4,
+          "b": 6
+        }
+      ],
+      "researchFamily": "N6_FULL_NETWORK",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 10.2354,
+      "network": {
+        "id": "bottleneck7",
+        "kind": "bottleneck7",
+        "nodes": [
+          {
+            "x": 300,
+            "y": 690
+          },
+          {
+            "x": 175,
+            "y": 565
+          },
+          {
+            "x": 300,
+            "y": 430
+          },
+          {
+            "x": 425,
+            "y": 565
+          },
+          {
+            "x": 300,
+            "y": 285
+          },
+          {
+            "x": 185,
+            "y": 140
+          },
+          {
+            "x": 415,
+            "y": 140
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      },
+      "topology": "bottleneck7"
+    },
+    {
+      "id": "3C2-N6_FULL_NETWORK-02",
+      "world": 5,
+      "local": 5,
+      "goal": [
+        1,
+        1,
+        2
+      ],
+      "min": 8,
+      "title": {
+        "en": "Full Network VI",
+        "nl": "Full Network VI"
+      },
+      "note": {
+        "en": "Target 1:1:2. Research optimum 8 moves.",
+        "nl": "Doel 1:1:2. Researchoptimum 8 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 3,
+          "species": "green",
+          "role": "brood"
+        },
+        {
+          "node": 6,
+          "species": "violet",
+          "role": "brood"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "brood",
+          "a": 6,
+          "b": 5,
+          "path": [
+            5
+          ]
+        },
+        {
+          "kind": "fusion",
+          "a": 5,
+          "b": 6
+        },
+        {
+          "kind": "split",
+          "a": 5,
+          "b": 4
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 4
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 1
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 1,
+          "b": 2
+        }
+      ],
+      "researchFamily": "N6_FULL_NETWORK",
+      "researchGrade": "AMBER",
+      "difficultyComposite": 10.3315,
+      "network": {
+        "id": "loop_tail7",
+        "kind": "loop_tail7",
+        "nodes": [
+          {
+            "x": 145,
+            "y": 375
+          },
+          {
+            "x": 245,
+            "y": 220
+          },
+          {
+            "x": 390,
+            "y": 330
+          },
+          {
+            "x": 265,
+            "y": 500
+          },
+          {
+            "x": 485,
+            "y": 455
+          },
+          {
+            "x": 475,
+            "y": 610
+          },
+          {
+            "x": 365,
+            "y": 720
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      },
+      "topology": "loop_tail7"
+    },
+    {
+      "id": "3C2-N6_FULL_NETWORK-06",
+      "world": 5,
+      "local": 6,
+      "goal": [
+        3,
+        1,
+        1
+      ],
+      "min": 7,
+      "title": {
+        "en": "Full Network VII",
+        "nl": "Full Network VII"
+      },
+      "note": {
+        "en": "Target 3:1:1. Research optimum 7 moves.",
+        "nl": "Doel 3:1:1. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "node": 0,
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "green",
+          "role": "brood"
+        },
+        {
+          "node": 3,
+          "species": "blue",
+          "role": "imitation"
+        },
+        {
+          "node": 4,
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "node": 5,
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "imitation",
+          "a": 3,
+          "b": 0
+        },
+        {
+          "kind": "fusion",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 1
+        },
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 4,
+          "b": 5
+        },
+        {
+          "kind": "split",
+          "a": 4,
+          "b": 3
+        }
+      ],
+      "researchFamily": "N6_FULL_NETWORK",
+      "researchGrade": "AMBER",
+      "difficultyComposite": 10.4508,
+      "network": {
+        "id": "double_loop8",
+        "kind": "double_loop8",
+        "nodes": [
+          {
+            "x": 150,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 135
+          },
+          {
+            "x": 390,
+            "y": 250
+          },
+          {
+            "x": 270,
+            "y": 380
+          },
+          {
+            "x": 390,
+            "y": 510
+          },
+          {
+            "x": 270,
+            "y": 635
+          },
+          {
+            "x": 150,
+            "y": 510
+          },
+          {
+            "x": 65,
+            "y": 665
+          }
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      "topology": "double_loop8"
+    },
+    {
+      "id": "3C2-N6_FULL_NETWORK-10",
+      "world": 5,
+      "local": 7,
+      "goal": [
+        3,
+        2,
+        2
+      ],
+      "min": 7,
+      "title": {
+        "en": "Full Network VIII",
+        "nl": "Full Network VIII"
+      },
+      "note": {
+        "en": "Target 3:2:2. Research optimum 7 moves.",
+        "nl": "Doel 3:2:2. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "node": 1,
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "node": 2,
+          "species": "green",
+          "role": "brood"
+        },
+        {
+          "node": 3,
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "node": 4,
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "node": 6,
+          "species": "blue",
+          "role": "imitation"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "split",
+          "a": 3,
+          "b": 0
+        },
+        {
+          "kind": "fusion",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "kind": "brood",
+          "a": 2,
+          "b": 5,
+          "path": [
+            3,
+            5
+          ]
+        },
+        {
+          "kind": "fusion",
+          "a": 1,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 0,
+          "b": 3
+        },
+        {
+          "kind": "mixed_fusion",
+          "a": 2,
+          "b": 3
+        },
+        {
+          "kind": "split",
+          "a": 2,
+          "b": 3
+        }
+      ],
+      "researchFamily": "N6_FULL_NETWORK",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 10.5404,
+      "network": {
+        "id": "hub7",
+        "kind": "hub7",
+        "nodes": [
+          {
+            "x": 120,
+            "y": 275
+          },
+          {
+            "x": 300,
+            "y": 135
+          },
+          {
+            "x": 480,
+            "y": 275
+          },
+          {
+            "x": 300,
+            "y": 415
+          },
+          {
+            "x": 480,
+            "y": 565
+          },
+          {
+            "x": 300,
+            "y": 700
+          },
+          {
+            "x": 120,
+            "y": 565
+          }
+        ],
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      },
+      "topology": "hub7"
+    }
+  ],
+  "source": "ThreeColor Research Lab v0.6 autonomous repaired campaign \u2014 48 selected levels"
+}

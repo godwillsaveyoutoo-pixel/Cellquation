@@ -1,0 +1,3623 @@
+{
+  "schemaVersion": 2,
+  "layoutPass": "v0.7.1-calm-grammar",
+  "levels": {
+    "3C2-N1_ADJACENT_TRI_FUSION-04": {
+      "nodes": [
+        {
+          "x": 80,
+          "y": 650
+        },
+        {
+          "x": 180,
+          "y": 535
+        },
+        {
+          "x": 300,
+          "y": 420
+        },
+        {
+          "x": 220,
+          "y": 230
+        },
+        {
+          "x": 460,
+          "y": 300
+        },
+        {
+          "x": 460,
+          "y": 560
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.028
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.03
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.036
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": -0.028
+        },
+        {
+          "from": 2,
+          "to": 5,
+          "bend": 0.032
+        }
+      ],
+      "targetMedianWorldLength": 0.76,
+      "portraitYStretchMax": 1.04,
+      "compositionFamily": "fork6",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C6-TARGET-N1-211-7070": {
+      "nodes": [
+        {
+          "x": 115,
+          "y": 420
+        },
+        {
+          "x": 235,
+          "y": 260
+        },
+        {
+          "x": 385,
+          "y": 315
+        },
+        {
+          "x": 235,
+          "y": 580
+        },
+        {
+          "x": 385,
+          "y": 525
+        },
+        {
+          "x": 505,
+          "y": 420
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.032
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.028
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": -0.032
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "bend": -0.028
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.03
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.03
+        }
+      ],
+      "targetMedianWorldLength": 0.76,
+      "portraitYStretchMax": 1.04,
+      "compositionFamily": "diamond6",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C5-TARGET-N1-112": {
+      "nodes": [
+        {
+          "x": 190,
+          "y": 690
+        },
+        {
+          "x": 285,
+          "y": 575
+        },
+        {
+          "x": 220,
+          "y": 455
+        },
+        {
+          "x": 305,
+          "y": 335
+        },
+        {
+          "x": 240,
+          "y": 215
+        },
+        {
+          "x": 335,
+          "y": 100
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.02
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.024
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.022
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": -0.024
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.02
+        }
+      ],
+      "targetMedianWorldLength": 0.74,
+      "portraitYStretchMax": 1.02,
+      "compositionFamily": "chain6",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N1_ADJACENT_TRI_FUSION-02": {
+      "nodes": [
+        {
+          "x": 300,
+          "y": 690
+        },
+        {
+          "x": 175,
+          "y": 565
+        },
+        {
+          "x": 300,
+          "y": 430
+        },
+        {
+          "x": 425,
+          "y": 565
+        },
+        {
+          "x": 300,
+          "y": 285
+        },
+        {
+          "x": 185,
+          "y": 140
+        },
+        {
+          "x": 415,
+          "y": 140
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.026
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.026
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "bend": -0.026
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "bend": 0.026
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": 0.0
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.032
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "bend": -0.032
+        }
+      ],
+      "targetMedianWorldLength": 0.73,
+      "portraitYStretchMax": 1.02,
+      "compositionFamily": "bottleneck7",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N1_ADJACENT_TRI_FUSION-08": {
+      "nodes": [
+        {
+          "x": 80,
+          "y": 650
+        },
+        {
+          "x": 180,
+          "y": 535
+        },
+        {
+          "x": 300,
+          "y": 420
+        },
+        {
+          "x": 220,
+          "y": 230
+        },
+        {
+          "x": 460,
+          "y": 300
+        },
+        {
+          "x": 460,
+          "y": 560
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.028
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.03
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.036
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": -0.028
+        },
+        {
+          "from": 2,
+          "to": 5,
+          "bend": 0.032
+        }
+      ],
+      "targetMedianWorldLength": 0.76,
+      "portraitYStretchMax": 1.04,
+      "compositionFamily": "fork6",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C5-TARGET-N1-121": {
+      "nodes": [
+        {
+          "x": 145,
+          "y": 375
+        },
+        {
+          "x": 245,
+          "y": 220
+        },
+        {
+          "x": 390,
+          "y": 330
+        },
+        {
+          "x": 265,
+          "y": 500
+        },
+        {
+          "x": 485,
+          "y": 455
+        },
+        {
+          "x": 475,
+          "y": 610
+        },
+        {
+          "x": 365,
+          "y": 720
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.034
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.034
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.034
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.034
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": 0.028
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.026
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        }
+      ],
+      "targetMedianWorldLength": 0.73,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "loop_tail7",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N1_ADJACENT_TRI_FUSION-05": {
+      "nodes": [
+        {
+          "x": 80,
+          "y": 650
+        },
+        {
+          "x": 180,
+          "y": 535
+        },
+        {
+          "x": 300,
+          "y": 420
+        },
+        {
+          "x": 220,
+          "y": 230
+        },
+        {
+          "x": 460,
+          "y": 300
+        },
+        {
+          "x": 460,
+          "y": 560
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.028
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.03
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.036
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": -0.028
+        },
+        {
+          "from": 2,
+          "to": 5,
+          "bend": 0.032
+        }
+      ],
+      "targetMedianWorldLength": 0.76,
+      "portraitYStretchMax": 1.04,
+      "compositionFamily": "fork6",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C5-TARGET-N1-122": {
+      "nodes": [
+        {
+          "x": 300,
+          "y": 690
+        },
+        {
+          "x": 175,
+          "y": 565
+        },
+        {
+          "x": 300,
+          "y": 430
+        },
+        {
+          "x": 425,
+          "y": 565
+        },
+        {
+          "x": 300,
+          "y": 285
+        },
+        {
+          "x": 185,
+          "y": 140
+        },
+        {
+          "x": 415,
+          "y": 140
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.026
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.026
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "bend": -0.026
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "bend": 0.026
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": 0.0
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.032
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "bend": -0.032
+        }
+      ],
+      "targetMedianWorldLength": 0.73,
+      "portraitYStretchMax": 1.02,
+      "compositionFamily": "bottleneck7",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N2_TOPOLOGY_CONVERSION-05": {
+      "nodes": [
+        {
+          "x": 145,
+          "y": 375
+        },
+        {
+          "x": 245,
+          "y": 220
+        },
+        {
+          "x": 390,
+          "y": 330
+        },
+        {
+          "x": 265,
+          "y": 500
+        },
+        {
+          "x": 485,
+          "y": 455
+        },
+        {
+          "x": 475,
+          "y": 610
+        },
+        {
+          "x": 365,
+          "y": 720
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.034
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.034
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.034
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.034
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": 0.028
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.026
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        }
+      ],
+      "targetMedianWorldLength": 0.73,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "loop_tail7",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N2_TOPOLOGY_CONVERSION-08": {
+      "nodes": [
+        {
+          "x": 115,
+          "y": 420
+        },
+        {
+          "x": 235,
+          "y": 260
+        },
+        {
+          "x": 385,
+          "y": 315
+        },
+        {
+          "x": 235,
+          "y": 580
+        },
+        {
+          "x": 385,
+          "y": 525
+        },
+        {
+          "x": 505,
+          "y": 420
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.032
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": 0.028
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": -0.032
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "bend": -0.028
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.03
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.03
+        }
+      ],
+      "targetMedianWorldLength": 0.76,
+      "portraitYStretchMax": 1.04,
+      "compositionFamily": "diamond6",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N2_TOPOLOGY_CONVERSION-04": {
+      "nodes": [
+        {
+          "x": 190,
+          "y": 690
+        },
+        {
+          "x": 285,
+          "y": 575
+        },
+        {
+          "x": 220,
+          "y": 455
+        },
+        {
+          "x": 305,
+          "y": 335
+        },
+        {
+          "x": 240,
+          "y": 215
+        },
+        {
+          "x": 335,
+          "y": 100
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.02
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.024
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.022
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": -0.024
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.02
+        }
+      ],
+      "targetMedianWorldLength": 0.74,
+      "portraitYStretchMax": 1.02,
+      "compositionFamily": "chain6",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N2_TOPOLOGY_CONVERSION-03": {
+      "nodes": [
+        {
+          "x": 150,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 135
+        },
+        {
+          "x": 390,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 380
+        },
+        {
+          "x": 390,
+          "y": 510
+        },
+        {
+          "x": 270,
+          "y": 635
+        },
+        {
+          "x": 150,
+          "y": 510
+        },
+        {
+          "x": 65,
+          "y": 665
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.024
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.024
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.024
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.024
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 3,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.018
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "double_loop8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C5-DIVERSE-N2_TOPOLOGY_CONVERSION-122": {
+      "nodes": [
+        {
+          "x": 145,
+          "y": 375
+        },
+        {
+          "x": 245,
+          "y": 220
+        },
+        {
+          "x": 390,
+          "y": 330
+        },
+        {
+          "x": 265,
+          "y": 500
+        },
+        {
+          "x": 485,
+          "y": 455
+        },
+        {
+          "x": 475,
+          "y": 610
+        },
+        {
+          "x": 365,
+          "y": 720
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.034
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.034
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.034
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.034
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": 0.028
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.026
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        }
+      ],
+      "targetMedianWorldLength": 0.73,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "loop_tail7",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N2_TOPOLOGY_CONVERSION-02": {
+      "nodes": [
+        {
+          "x": 190,
+          "y": 690
+        },
+        {
+          "x": 285,
+          "y": 575
+        },
+        {
+          "x": 220,
+          "y": 455
+        },
+        {
+          "x": 305,
+          "y": 335
+        },
+        {
+          "x": 240,
+          "y": 215
+        },
+        {
+          "x": 335,
+          "y": 100
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.02
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.024
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.022
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": -0.024
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.02
+        }
+      ],
+      "targetMedianWorldLength": 0.74,
+      "portraitYStretchMax": 1.02,
+      "compositionFamily": "chain6",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N2_TOPOLOGY_CONVERSION-01": {
+      "nodes": [
+        {
+          "x": 150,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 135
+        },
+        {
+          "x": 390,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 380
+        },
+        {
+          "x": 390,
+          "y": 510
+        },
+        {
+          "x": 270,
+          "y": 635
+        },
+        {
+          "x": 150,
+          "y": 510
+        },
+        {
+          "x": 65,
+          "y": 665
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.024
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.024
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.024
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.024
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 3,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.018
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "double_loop8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C5-DIVERSE-N2_TOPOLOGY_CONVERSION-212": {
+      "nodes": [
+        {
+          "x": 80,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 250
+        },
+        {
+          "x": 335,
+          "y": 250
+        },
+        {
+          "x": 455,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 570
+        },
+        {
+          "x": 335,
+          "y": 570
+        },
+        {
+          "x": 600,
+          "y": 410
+        },
+        {
+          "x": 600,
+          "y": 590
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.022
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.018
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.022
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "bend": 0.022
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.018
+        },
+        {
+          "from": 5,
+          "to": 3,
+          "bend": 0.022
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "bend": -0.016
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.014
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.0,
+      "compositionFamily": "twin_route8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N3_GROWTH_PATHS-02": {
+      "nodes": [
+        {
+          "x": 80,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 250
+        },
+        {
+          "x": 335,
+          "y": 250
+        },
+        {
+          "x": 455,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 570
+        },
+        {
+          "x": 335,
+          "y": 570
+        },
+        {
+          "x": 600,
+          "y": 410
+        },
+        {
+          "x": 600,
+          "y": 590
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.022
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.018
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.022
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "bend": 0.022
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.018
+        },
+        {
+          "from": 5,
+          "to": 3,
+          "bend": 0.022
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "bend": -0.016
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.014
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.0,
+      "compositionFamily": "twin_route8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N3_GROWTH_PATHS-08": {
+      "nodes": [
+        {
+          "x": 120,
+          "y": 275
+        },
+        {
+          "x": 300,
+          "y": 135
+        },
+        {
+          "x": 480,
+          "y": 275
+        },
+        {
+          "x": 300,
+          "y": 415
+        },
+        {
+          "x": 480,
+          "y": 565
+        },
+        {
+          "x": 300,
+          "y": 700
+        },
+        {
+          "x": 120,
+          "y": 565
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 3,
+          "bend": 0.012
+        },
+        {
+          "from": 1,
+          "to": 3,
+          "bend": -0.01
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.012
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": -0.012
+        },
+        {
+          "from": 3,
+          "to": 5,
+          "bend": 0.01
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "bend": -0.012
+        }
+      ],
+      "targetMedianWorldLength": 0.74,
+      "portraitYStretchMax": 1.0,
+      "compositionFamily": "hub7",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N3_GROWTH_PATHS-03": {
+      "nodes": [
+        {
+          "x": 150,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 135
+        },
+        {
+          "x": 390,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 380
+        },
+        {
+          "x": 390,
+          "y": 510
+        },
+        {
+          "x": 270,
+          "y": 635
+        },
+        {
+          "x": 150,
+          "y": 510
+        },
+        {
+          "x": 65,
+          "y": 665
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.024
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.024
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.024
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.024
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 3,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.018
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "double_loop8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N3_GROWTH_PATHS-07": {
+      "nodes": [
+        {
+          "x": 80,
+          "y": 650
+        },
+        {
+          "x": 180,
+          "y": 535
+        },
+        {
+          "x": 300,
+          "y": 420
+        },
+        {
+          "x": 220,
+          "y": 230
+        },
+        {
+          "x": 460,
+          "y": 300
+        },
+        {
+          "x": 460,
+          "y": 560
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.028
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.03
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.036
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": -0.028
+        },
+        {
+          "from": 2,
+          "to": 5,
+          "bend": 0.032
+        }
+      ],
+      "targetMedianWorldLength": 0.76,
+      "portraitYStretchMax": 1.04,
+      "compositionFamily": "fork6",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N3_GROWTH_PATHS-01": {
+      "nodes": [
+        {
+          "x": 145,
+          "y": 375
+        },
+        {
+          "x": 245,
+          "y": 220
+        },
+        {
+          "x": 390,
+          "y": 330
+        },
+        {
+          "x": 265,
+          "y": 500
+        },
+        {
+          "x": 485,
+          "y": 455
+        },
+        {
+          "x": 475,
+          "y": 610
+        },
+        {
+          "x": 365,
+          "y": 720
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.034
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.034
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.034
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.034
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": 0.028
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.026
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        }
+      ],
+      "targetMedianWorldLength": 0.73,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "loop_tail7",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N3_GROWTH_PATHS-05": {
+      "nodes": [
+        {
+          "x": 80,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 250
+        },
+        {
+          "x": 335,
+          "y": 250
+        },
+        {
+          "x": 455,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 570
+        },
+        {
+          "x": 335,
+          "y": 570
+        },
+        {
+          "x": 600,
+          "y": 410
+        },
+        {
+          "x": 600,
+          "y": 590
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.022
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.018
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.022
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "bend": 0.022
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.018
+        },
+        {
+          "from": 5,
+          "to": 3,
+          "bend": 0.022
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "bend": -0.016
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.014
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.0,
+      "compositionFamily": "twin_route8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N3_GROWTH_PATHS-06": {
+      "nodes": [
+        {
+          "x": 300,
+          "y": 690
+        },
+        {
+          "x": 175,
+          "y": 565
+        },
+        {
+          "x": 300,
+          "y": 430
+        },
+        {
+          "x": 425,
+          "y": 565
+        },
+        {
+          "x": 300,
+          "y": 285
+        },
+        {
+          "x": 185,
+          "y": 140
+        },
+        {
+          "x": 415,
+          "y": 140
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.026
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.026
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "bend": -0.026
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "bend": 0.026
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": 0.0
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.032
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "bend": -0.032
+        }
+      ],
+      "targetMedianWorldLength": 0.73,
+      "portraitYStretchMax": 1.02,
+      "compositionFamily": "bottleneck7",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C5-TARGET-N3_GROWTH_PATHS-132": {
+      "nodes": [
+        {
+          "x": 150,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 135
+        },
+        {
+          "x": 390,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 380
+        },
+        {
+          "x": 390,
+          "y": 510
+        },
+        {
+          "x": 270,
+          "y": 635
+        },
+        {
+          "x": 150,
+          "y": 510
+        },
+        {
+          "x": 65,
+          "y": 665
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.024
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.024
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.024
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.024
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 3,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.018
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "double_loop8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C6-TARGET-N4_PRUNING_GATES-111-8081": {
+      "nodes": [
+        {
+          "x": 150,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 135
+        },
+        {
+          "x": 390,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 380
+        },
+        {
+          "x": 390,
+          "y": 510
+        },
+        {
+          "x": 270,
+          "y": 635
+        },
+        {
+          "x": 150,
+          "y": 510
+        },
+        {
+          "x": 65,
+          "y": 665
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.024
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.024
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.024
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.024
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 3,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.018
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "double_loop8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N4_PRUNING_GATES-02": {
+      "nodes": [
+        {
+          "x": 150,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 135
+        },
+        {
+          "x": 390,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 380
+        },
+        {
+          "x": 390,
+          "y": 510
+        },
+        {
+          "x": 270,
+          "y": 635
+        },
+        {
+          "x": 150,
+          "y": 510
+        },
+        {
+          "x": 65,
+          "y": 665
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.024
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.024
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.024
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.024
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 3,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.018
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "double_loop8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N4_PRUNING_GATES-08": {
+      "nodes": [
+        {
+          "x": 150,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 135
+        },
+        {
+          "x": 390,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 380
+        },
+        {
+          "x": 390,
+          "y": 510
+        },
+        {
+          "x": 270,
+          "y": 635
+        },
+        {
+          "x": 150,
+          "y": 510
+        },
+        {
+          "x": 65,
+          "y": 665
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.024
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.024
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.024
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.024
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 3,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.018
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "double_loop8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C5-DIVERSE-N4_PRUNING_GATES-212": {
+      "nodes": [
+        {
+          "x": 150,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 135
+        },
+        {
+          "x": 390,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 380
+        },
+        {
+          "x": 390,
+          "y": 510
+        },
+        {
+          "x": 270,
+          "y": 635
+        },
+        {
+          "x": 150,
+          "y": 510
+        },
+        {
+          "x": 65,
+          "y": 665
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.024
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.024
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.024
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.024
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 3,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.018
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "double_loop8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N4_PRUNING_GATES-07": {
+      "nodes": [
+        {
+          "x": 80,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 250
+        },
+        {
+          "x": 335,
+          "y": 250
+        },
+        {
+          "x": 455,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 570
+        },
+        {
+          "x": 335,
+          "y": 570
+        },
+        {
+          "x": 600,
+          "y": 410
+        },
+        {
+          "x": 600,
+          "y": 590
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.022
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.018
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.022
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "bend": 0.022
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.018
+        },
+        {
+          "from": 5,
+          "to": 3,
+          "bend": 0.022
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "bend": -0.016
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.014
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.0,
+      "compositionFamily": "twin_route8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N4_PRUNING_GATES-06": {
+      "nodes": [
+        {
+          "x": 120,
+          "y": 275
+        },
+        {
+          "x": 300,
+          "y": 135
+        },
+        {
+          "x": 480,
+          "y": 275
+        },
+        {
+          "x": 300,
+          "y": 415
+        },
+        {
+          "x": 480,
+          "y": 565
+        },
+        {
+          "x": 300,
+          "y": 700
+        },
+        {
+          "x": 120,
+          "y": 565
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 3,
+          "bend": 0.012
+        },
+        {
+          "from": 1,
+          "to": 3,
+          "bend": -0.01
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.012
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": -0.012
+        },
+        {
+          "from": 3,
+          "to": 5,
+          "bend": 0.01
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "bend": -0.012
+        }
+      ],
+      "targetMedianWorldLength": 0.74,
+      "portraitYStretchMax": 1.0,
+      "compositionFamily": "hub7",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C5-DIVERSE-N4_PRUNING_GATES-121": {
+      "nodes": [
+        {
+          "x": 300,
+          "y": 120
+        },
+        {
+          "x": 475,
+          "y": 245
+        },
+        {
+          "x": 475,
+          "y": 500
+        },
+        {
+          "x": 300,
+          "y": 625
+        },
+        {
+          "x": 125,
+          "y": 500
+        },
+        {
+          "x": 125,
+          "y": 245
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.026
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.026
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.026
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": -0.026
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.026
+        },
+        {
+          "from": 5,
+          "to": 0,
+          "bend": -0.026
+        }
+      ],
+      "targetMedianWorldLength": 0.74,
+      "portraitYStretchMax": 1.0,
+      "compositionFamily": "ring6",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C5-TARGET-N4_PRUNING_GATES-124": {
+      "nodes": [
+        {
+          "x": 80,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 250
+        },
+        {
+          "x": 335,
+          "y": 250
+        },
+        {
+          "x": 455,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 570
+        },
+        {
+          "x": 335,
+          "y": 570
+        },
+        {
+          "x": 600,
+          "y": 410
+        },
+        {
+          "x": 600,
+          "y": 590
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.022
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.018
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.022
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "bend": 0.022
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.018
+        },
+        {
+          "from": 5,
+          "to": 3,
+          "bend": 0.022
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "bend": -0.016
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.014
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.0,
+      "compositionFamily": "twin_route8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N5_MIRROR_TISSUE-01": {
+      "nodes": [
+        {
+          "x": 145,
+          "y": 375
+        },
+        {
+          "x": 245,
+          "y": 220
+        },
+        {
+          "x": 390,
+          "y": 330
+        },
+        {
+          "x": 265,
+          "y": 500
+        },
+        {
+          "x": 485,
+          "y": 455
+        },
+        {
+          "x": 475,
+          "y": 610
+        },
+        {
+          "x": 365,
+          "y": 720
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.034
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.034
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.034
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.034
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": 0.028
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.026
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        }
+      ],
+      "targetMedianWorldLength": 0.73,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "loop_tail7",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N5_MIRROR_TISSUE-03": {
+      "nodes": [
+        {
+          "x": 80,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 250
+        },
+        {
+          "x": 335,
+          "y": 250
+        },
+        {
+          "x": 455,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 570
+        },
+        {
+          "x": 335,
+          "y": 570
+        },
+        {
+          "x": 600,
+          "y": 410
+        },
+        {
+          "x": 600,
+          "y": 590
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.022
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.018
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.022
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "bend": 0.022
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.018
+        },
+        {
+          "from": 5,
+          "to": 3,
+          "bend": 0.022
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "bend": -0.016
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.014
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.0,
+      "compositionFamily": "twin_route8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C6-TARGET-N5_MIRROR_TISSUE-111-9090": {
+      "nodes": [
+        {
+          "x": 80,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 250
+        },
+        {
+          "x": 335,
+          "y": 250
+        },
+        {
+          "x": 455,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 570
+        },
+        {
+          "x": 335,
+          "y": 570
+        },
+        {
+          "x": 600,
+          "y": 410
+        },
+        {
+          "x": 600,
+          "y": 590
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.022
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.018
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.022
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "bend": 0.022
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.018
+        },
+        {
+          "from": 5,
+          "to": 3,
+          "bend": 0.022
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "bend": -0.016
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.014
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.0,
+      "compositionFamily": "twin_route8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N5_MIRROR_TISSUE-05": {
+      "nodes": [
+        {
+          "x": 150,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 135
+        },
+        {
+          "x": 390,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 380
+        },
+        {
+          "x": 390,
+          "y": 510
+        },
+        {
+          "x": 270,
+          "y": 635
+        },
+        {
+          "x": 150,
+          "y": 510
+        },
+        {
+          "x": 65,
+          "y": 665
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.024
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.024
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.024
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.024
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 3,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.018
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "double_loop8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N5_MIRROR_TISSUE-04": {
+      "nodes": [
+        {
+          "x": 80,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 250
+        },
+        {
+          "x": 335,
+          "y": 250
+        },
+        {
+          "x": 455,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 570
+        },
+        {
+          "x": 335,
+          "y": 570
+        },
+        {
+          "x": 600,
+          "y": 410
+        },
+        {
+          "x": 600,
+          "y": 590
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.022
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.018
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.022
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "bend": 0.022
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.018
+        },
+        {
+          "from": 5,
+          "to": 3,
+          "bend": 0.022
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "bend": -0.016
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.014
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.0,
+      "compositionFamily": "twin_route8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C5-DIVERSE-N5_MIRROR_TISSUE-212": {
+      "nodes": [
+        {
+          "x": 80,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 250
+        },
+        {
+          "x": 335,
+          "y": 250
+        },
+        {
+          "x": 455,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 570
+        },
+        {
+          "x": 335,
+          "y": 570
+        },
+        {
+          "x": 600,
+          "y": 410
+        },
+        {
+          "x": 600,
+          "y": 590
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.022
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.018
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.022
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "bend": 0.022
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.018
+        },
+        {
+          "from": 5,
+          "to": 3,
+          "bend": 0.022
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "bend": -0.016
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.014
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.0,
+      "compositionFamily": "twin_route8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C5-DIVERSE-N5_MIRROR_TISSUE-121": {
+      "nodes": [
+        {
+          "x": 150,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 135
+        },
+        {
+          "x": 390,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 380
+        },
+        {
+          "x": 390,
+          "y": 510
+        },
+        {
+          "x": 270,
+          "y": 635
+        },
+        {
+          "x": 150,
+          "y": 510
+        },
+        {
+          "x": 65,
+          "y": 665
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.024
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.024
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.024
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.024
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 3,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.018
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "double_loop8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C5-TARGET-N5_MIRROR_TISSUE-132": {
+      "nodes": [
+        {
+          "x": 300,
+          "y": 690
+        },
+        {
+          "x": 175,
+          "y": 565
+        },
+        {
+          "x": 300,
+          "y": 430
+        },
+        {
+          "x": 425,
+          "y": 565
+        },
+        {
+          "x": 300,
+          "y": 285
+        },
+        {
+          "x": 185,
+          "y": 140
+        },
+        {
+          "x": 415,
+          "y": 140
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.026
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.026
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "bend": -0.026
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "bend": 0.026
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": 0.0
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.032
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "bend": -0.032
+        }
+      ],
+      "targetMedianWorldLength": 0.73,
+      "portraitYStretchMax": 1.02,
+      "compositionFamily": "bottleneck7",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N6_FULL_NETWORK-04": {
+      "nodes": [
+        {
+          "x": 145,
+          "y": 375
+        },
+        {
+          "x": 245,
+          "y": 220
+        },
+        {
+          "x": 390,
+          "y": 330
+        },
+        {
+          "x": 265,
+          "y": 500
+        },
+        {
+          "x": 485,
+          "y": 455
+        },
+        {
+          "x": 475,
+          "y": 610
+        },
+        {
+          "x": 365,
+          "y": 720
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.034
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.034
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.034
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.034
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": 0.028
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.026
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        }
+      ],
+      "targetMedianWorldLength": 0.73,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "loop_tail7",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N6_FULL_NETWORK-09": {
+      "nodes": [
+        {
+          "x": 145,
+          "y": 375
+        },
+        {
+          "x": 245,
+          "y": 220
+        },
+        {
+          "x": 390,
+          "y": 330
+        },
+        {
+          "x": 265,
+          "y": 500
+        },
+        {
+          "x": 485,
+          "y": 455
+        },
+        {
+          "x": 475,
+          "y": 610
+        },
+        {
+          "x": 365,
+          "y": 720
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.034
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.034
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.034
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.034
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": 0.028
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.026
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        }
+      ],
+      "targetMedianWorldLength": 0.73,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "loop_tail7",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N6_FULL_NETWORK-01": {
+      "nodes": [
+        {
+          "x": 80,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 250
+        },
+        {
+          "x": 335,
+          "y": 250
+        },
+        {
+          "x": 455,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 570
+        },
+        {
+          "x": 335,
+          "y": 570
+        },
+        {
+          "x": 600,
+          "y": 410
+        },
+        {
+          "x": 600,
+          "y": 590
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.022
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.018
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.022
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "bend": 0.022
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.018
+        },
+        {
+          "from": 5,
+          "to": 3,
+          "bend": 0.022
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "bend": -0.016
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.014
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.0,
+      "compositionFamily": "twin_route8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N6_FULL_NETWORK-03": {
+      "nodes": [
+        {
+          "x": 80,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 250
+        },
+        {
+          "x": 335,
+          "y": 250
+        },
+        {
+          "x": 455,
+          "y": 410
+        },
+        {
+          "x": 195,
+          "y": 570
+        },
+        {
+          "x": 335,
+          "y": 570
+        },
+        {
+          "x": 600,
+          "y": 410
+        },
+        {
+          "x": 600,
+          "y": 590
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.022
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.018
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.022
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "bend": 0.022
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.018
+        },
+        {
+          "from": 5,
+          "to": 3,
+          "bend": 0.022
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "bend": -0.016
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": 0.014
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.0,
+      "compositionFamily": "twin_route8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N6_FULL_NETWORK-07": {
+      "nodes": [
+        {
+          "x": 300,
+          "y": 690
+        },
+        {
+          "x": 175,
+          "y": 565
+        },
+        {
+          "x": 300,
+          "y": 430
+        },
+        {
+          "x": 425,
+          "y": 565
+        },
+        {
+          "x": 300,
+          "y": 285
+        },
+        {
+          "x": 185,
+          "y": 140
+        },
+        {
+          "x": 415,
+          "y": 140
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": 0.026
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.026
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "bend": -0.026
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "bend": 0.026
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": 0.0
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.032
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "bend": -0.032
+        }
+      ],
+      "targetMedianWorldLength": 0.73,
+      "portraitYStretchMax": 1.02,
+      "compositionFamily": "bottleneck7",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N6_FULL_NETWORK-02": {
+      "nodes": [
+        {
+          "x": 145,
+          "y": 375
+        },
+        {
+          "x": 245,
+          "y": 220
+        },
+        {
+          "x": 390,
+          "y": 330
+        },
+        {
+          "x": 265,
+          "y": 500
+        },
+        {
+          "x": 485,
+          "y": 455
+        },
+        {
+          "x": 475,
+          "y": 610
+        },
+        {
+          "x": 365,
+          "y": 720
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.034
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.034
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.034
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.034
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "bend": 0.028
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": -0.026
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        }
+      ],
+      "targetMedianWorldLength": 0.73,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "loop_tail7",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N6_FULL_NETWORK-06": {
+      "nodes": [
+        {
+          "x": 150,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 135
+        },
+        {
+          "x": 390,
+          "y": 250
+        },
+        {
+          "x": 270,
+          "y": 380
+        },
+        {
+          "x": 390,
+          "y": 510
+        },
+        {
+          "x": 270,
+          "y": 635
+        },
+        {
+          "x": 150,
+          "y": 510
+        },
+        {
+          "x": 65,
+          "y": 665
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 1,
+          "bend": -0.024
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "bend": -0.024
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "bend": -0.024
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": 0.024
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "bend": 0.024
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 3,
+          "bend": 0.024
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "bend": -0.018
+        }
+      ],
+      "targetMedianWorldLength": 0.72,
+      "portraitYStretchMax": 1.01,
+      "compositionFamily": "double_loop8",
+      "layoutPass": "v0.7.1-calm-grammar"
+    },
+    "3C2-N6_FULL_NETWORK-10": {
+      "nodes": [
+        {
+          "x": 120,
+          "y": 275
+        },
+        {
+          "x": 300,
+          "y": 135
+        },
+        {
+          "x": 480,
+          "y": 275
+        },
+        {
+          "x": 300,
+          "y": 415
+        },
+        {
+          "x": 480,
+          "y": 565
+        },
+        {
+          "x": 300,
+          "y": 700
+        },
+        {
+          "x": 120,
+          "y": 565
+        }
+      ],
+      "edges": [
+        {
+          "from": 0,
+          "to": 3,
+          "bend": 0.012
+        },
+        {
+          "from": 1,
+          "to": 3,
+          "bend": -0.01
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "bend": 0.012
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "bend": -0.012
+        },
+        {
+          "from": 3,
+          "to": 5,
+          "bend": 0.01
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "bend": -0.012
+        }
+      ],
+      "targetMedianWorldLength": 0.74,
+      "portraitYStretchMax": 1.0,
+      "compositionFamily": "hub7",
+      "layoutPass": "v0.7.1-calm-grammar"
+    }
+  }
+}

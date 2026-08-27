@@ -1,0 +1,206 @@
+/* Cellquation Core v0.7.7a.7 — Menu Luminance & Bioluminescence Pass.
+   Purpose: lift the menu out of the grey/dark range while preserving the deep-sea identity.
+   Status semantics from v0.7.7a.6 remain unchanged. Gameplay rendering is untouched. */
+
+body[data-screen="home"],body[data-screen="browser"]{
+  --cq-bg:#031018;
+  --cq-bg-deep:#04131b;
+  --cq-surface:rgba(8,30,40,.90);
+  --cq-surface-strong:rgba(10,37,48,.96);
+  --cq-line:rgba(132,226,248,.23);
+  --cq-line-strong:rgba(137,231,252,.42);
+  --cq-text:#f6fdff;
+  --cq-text-2:#c8dce3;
+  --cq-text-3:#91acb6;
+  --cq-shadow:0 15px 42px rgba(0,0,0,.23),inset 0 1px 0 rgba(220,249,255,.065);
+  background:#031018;
+}
+
+/* Let the artwork breathe: the old overlays suppressed much of its blue/teal range. */
+body[data-screen="home"] .cq-shell::before,
+body[data-screen="browser"] .cq-shell::before{
+  background:
+    linear-gradient(180deg,rgba(2,11,17,.04),rgba(1,9,14,.24)),
+    radial-gradient(ellipse 74% 58% at 50% 17%,rgba(26,132,161,.10),transparent 72%),
+    url("assets/backgrounds/deepsea_playfield_v07646.png") center/cover no-repeat,
+    #05202b;
+}
+body[data-screen="home"] .cq-shell::after,
+body[data-screen="browser"] .cq-shell::after{
+  background:
+    radial-gradient(ellipse at 50% 28%,rgba(30,142,171,.055) 0 23%,rgba(2,18,25,.055) 50%,rgba(0,7,11,.34) 100%);
+}
+
+/* Shared chrome: lighter glass, clearer contours, less grey. */
+body[data-screen="home"] .cq-back,
+body[data-screen="home"] .cq-utility,
+body[data-screen="home"] .cq-icon-button,
+body[data-screen="browser"] .cq-back,
+body[data-screen="browser"] .cq-utility,
+body[data-screen="browser"] .cq-icon-button{
+  border-color:rgba(132,226,248,.24);
+  background:linear-gradient(180deg,rgba(9,34,44,.84),rgba(4,20,28,.82));
+  color:#dff3f8;
+  box-shadow:inset 0 1px 0 rgba(230,252,255,.06),0 8px 22px rgba(0,0,0,.10);
+}
+.cq-kicker{color:#9ad8e6}
+.cq-topmeta{color:#a7c4cd}
+.cq-brand{text-shadow:0 0 28px rgba(91,222,255,.20)}
+.cq-home-hero h2{color:#f1fafc}
+
+/* Home campaign cards and controls. */
+body[data-screen="home"] .cq-colour-toggle{
+  border-color:rgba(128,222,246,.23);
+  background:rgba(4,21,29,.82);
+  box-shadow:inset 0 1px 0 rgba(221,250,255,.04);
+}
+body[data-screen="home"] .cq-colour-toggle button{color:#97b5bf}
+body[data-screen="home"] .cq-colour-toggle button.is-active{
+  border-color:rgba(94,228,255,.39);
+  background:linear-gradient(180deg,rgba(13,58,72,.80),rgba(7,37,48,.80));
+  box-shadow:inset 0 1px 0 rgba(220,252,255,.08),0 0 18px rgba(94,228,255,.035);
+}
+body[data-screen="home"] .cq-card{
+  border-color:rgba(128,222,246,.23);
+  background:linear-gradient(145deg,rgba(11,40,51,.94),rgba(5,22,30,.95));
+  box-shadow:var(--cq-shadow);
+}
+body[data-screen="home"] .cq-card[data-accent="network"]{border-color:rgba(103,233,189,.31)}
+body[data-screen="home"] .cq-card[data-accent="three"]{border-color:rgba(196,134,255,.31)}
+body[data-screen="home"] .cq-card__icon{
+  border-color:rgba(119,218,244,.24);
+  background:radial-gradient(circle at 50% 33%,rgba(19,88,108,.78),rgba(6,27,36,.62));
+  box-shadow:inset 0 1px 0 rgba(228,252,255,.055),0 0 18px rgba(94,228,255,.035);
+}
+body[data-screen="home"] .cq-card__kicker{color:#99ceda}
+body[data-screen="home"] .cq-card__desc{color:#c4d9df}
+body[data-screen="home"] .cq-card__meta{color:#abc4cc}
+body[data-screen="home"] .cq-card__chev{color:#9ce4f2}
+body[data-screen="home"] .cq-secondary-action{color:#b1cbd3;border-top-color:rgba(128,222,246,.15)}
+body[data-screen="home"] .cq-continue{
+  border-color:rgba(98,225,255,.42);
+  background:linear-gradient(145deg,rgba(12,51,64,.96),rgba(5,24,33,.96));
+  box-shadow:0 14px 38px rgba(0,0,0,.20),inset 3px 0 0 rgba(94,228,255,.62),inset 0 1px 0 rgba(232,253,255,.065);
+}
+body[data-screen="home"] .cq-continue__kicker{color:#91dfef}
+body[data-screen="home"] .cq-continue__sub{color:#a9c5ce}
+
+/* World tabs: unselected stays calm, selected becomes unmistakably alive. */
+body[data-screen="browser"] .cq-world-tab{
+  border-color:rgba(128,222,246,.20);
+  background:linear-gradient(180deg,rgba(8,31,40,.86),rgba(4,21,29,.84));
+  color:#91acb6;
+}
+body[data-screen="browser"] .cq-world-tab__status{color:#82a2ad}
+body[data-screen="browser"] .cq-world-tab.is-active{
+  border-color:rgba(94,228,255,.49);
+  background:linear-gradient(180deg,rgba(13,62,76,.92),rgba(7,39,50,.92));
+  color:#f4fdff;
+  box-shadow:inset 0 1px 0 rgba(231,253,255,.07),0 0 20px rgba(94,228,255,.035);
+}
+body[data-screen="browser"] .cq-world-tab.is-active .cq-world-tab__status{color:#9ae6f4}
+body[data-screen="browser"] .cq-world-summary{
+  border-bottom-color:rgba(128,222,246,.16);
+}
+body[data-screen="browser"] .cq-world-summary p{color:#bdd3da}
+body[data-screen="browser"] .cq-world-summary__progress{color:#aac4cc}
+body[data-screen="browser"] .cq-swipe-hint{color:#7fa5b0}
+
+/* NEW: neutral, but no longer sunk into the page background. */
+body[data-screen="browser"] .cq-level-tile{
+  border-color:rgba(128,222,246,.22);
+  background:linear-gradient(155deg,rgba(10,37,48,.94),rgba(5,21,29,.96));
+  box-shadow:0 14px 35px rgba(0,0,0,.21),inset 0 1px 0 rgba(222,250,255,.05);
+}
+
+/* COMPLETED: a restrained accent wash, not a full green/purple fill. */
+body[data-screen="browser"] .cq-level-tile.is-done{
+  border-color:rgba(105,222,246,.41);
+  background:linear-gradient(155deg,rgba(12,45,53,.95),rgba(5,23,30,.97));
+}
+body[data-screen="browser"] .cq-browser[data-accent="network"] .cq-level-tile.is-done{
+  border-color:rgba(100,233,173,.39);
+  background:linear-gradient(155deg,rgba(11,46,47,.95),rgba(5,24,30,.97));
+}
+body[data-screen="browser"] .cq-browser[data-accent="three"] .cq-level-tile.is-done,
+body[data-screen="browser"] .cq-shell[data-colour="three"] .cq-level-tile.is-done{
+  border-color:rgba(196,134,255,.41);
+  background:linear-gradient(155deg,rgba(39,31,54,.95),rgba(11,21,31,.97));
+}
+body[data-screen="browser"] .cq-shell[data-colour="three"][data-accent="network"] .cq-level-tile.is-done{
+  border-color:rgba(181,143,242,.40);
+  background:linear-gradient(155deg,rgba(33,34,53,.95),rgba(10,23,31,.97));
+}
+
+/* CONTINUE remains the strongest navigation signal. */
+body[data-screen="browser"] .cq-level-tile.is-resume{
+  border-color:rgba(94,228,255,.48);
+  background:linear-gradient(155deg,rgba(12,48,61,.97),rgba(5,24,33,.97));
+  box-shadow:0 15px 38px rgba(0,0,0,.20),inset 4px 0 0 rgba(94,228,255,.86),inset 0 1px 0 rgba(228,252,255,.065);
+}
+body[data-screen="browser"] .cq-shell[data-colour="three"] .cq-level-tile.is-resume{
+  border-color:rgba(196,134,255,.47);
+  background:linear-gradient(155deg,rgba(45,32,61,.97),rgba(14,22,32,.97));
+  box-shadow:0 15px 38px rgba(0,0,0,.20),inset 4px 0 0 rgba(196,134,255,.84),inset 0 1px 0 rgba(241,232,255,.065);
+}
+
+/* Bioluminescent details: small concentrated light sources instead of broad glow. */
+body[data-screen="browser"] .cq-level-tile__number{color:#f8fdff;text-shadow:0 0 16px rgba(132,226,248,.05)}
+body[data-screen="browser"] .cq-level-tile__title{color:#f3fbfd}
+body[data-screen="browser"] .cq-level-tile__status-badge{
+  border-color:rgba(128,222,246,.44);
+  background:radial-gradient(circle at 40% 32%,rgba(96,224,247,.30),rgba(7,34,44,.86));
+  box-shadow:0 0 15px rgba(94,228,255,.12),inset 0 1px 0 rgba(240,254,255,.12);
+}
+body[data-screen="browser"] .cq-browser[data-accent="network"] .cq-level-tile__status-badge.is-complete{
+  border-color:rgba(100,233,173,.47);
+  background:radial-gradient(circle at 40% 32%,rgba(100,233,173,.24),rgba(7,35,38,.88));
+  box-shadow:0 0 15px rgba(100,233,173,.11),inset 0 1px 0 rgba(240,255,249,.11);
+}
+body[data-screen="browser"] .cq-level-tile__status-badge.is-continue{
+  color:#76ecff;
+  border-color:rgba(94,228,255,.49);
+  background:radial-gradient(circle at 40% 32%,rgba(94,228,255,.25),rgba(7,35,46,.88));
+}
+body[data-screen="browser"] .cq-ratio__part{
+  border-color:rgba(86,219,255,.54);
+  background:rgba(8,55,72,.78);
+  box-shadow:inset 0 1px 0 rgba(222,250,255,.035);
+}
+body[data-screen="browser"] .cq-ratio__part.is-green{border-color:rgba(95,232,157,.54);background:rgba(7,58,37,.76)}
+body[data-screen="browser"] .cq-ratio__part.is-violet{border-color:rgba(199,126,255,.56);background:rgba(62,27,83,.76)}
+body[data-screen="browser"] .cq-ratio__colon{color:#7997a1}
+body[data-screen="browser"] .cq-level-tile__stars{color:#edf9fb;text-shadow:0 0 9px rgba(185,239,249,.05)}
+body[data-screen="browser"] .cq-level-tile__best{color:#9fb8c1}
+body[data-screen="browser"] .cq-level-tile__state.is-new{color:#92adb6}
+body[data-screen="browser"] .cq-level-tile__state.is-continue{color:#84e9fb;text-shadow:0 0 10px rgba(94,228,255,.10)}
+body[data-screen="browser"] .cq-shell[data-colour="three"] .cq-level-tile__state.is-continue{color:#dab2ff;text-shadow:0 0 10px rgba(196,134,255,.10)}
+
+@media(hover:hover){
+  body[data-screen="home"] .cq-card:hover,
+  body[data-screen="browser"] .cq-level-tile:hover,
+  body[data-screen="browser"] .cq-back:hover,
+  body[data-screen="home"] .cq-icon-button:hover{
+    border-color:rgba(139,231,252,.43);
+  }
+}
+
+/* Three-colour mode keeps its violet identity after the global luminance lift. */
+body[data-screen="home"] .cq-shell[data-colour="three"] .cq-colour-toggle button.is-active{
+  border-color:rgba(196,134,255,.42);
+  background:linear-gradient(180deg,rgba(66,40,86,.82),rgba(35,27,52,.82));
+  box-shadow:inset 0 1px 0 rgba(248,238,255,.075),0 0 18px rgba(196,134,255,.035);
+}
+body[data-screen="home"] .cq-shell[data-colour="three"] .cq-continue{
+  border-color:rgba(196,134,255,.42);
+  background:linear-gradient(145deg,rgba(58,39,76,.95),rgba(20,25,39,.96));
+  box-shadow:0 14px 38px rgba(0,0,0,.20),inset 3px 0 0 rgba(196,134,255,.60),inset 0 1px 0 rgba(247,238,255,.065);
+}
+body[data-screen="home"] .cq-shell[data-colour="three"] .cq-continue__kicker{color:#d5aaff}
+body[data-screen="browser"] .cq-shell[data-colour="three"] .cq-world-tab.is-active{
+  border-color:rgba(196,134,255,.49);
+  background:linear-gradient(180deg,rgba(62,42,82,.91),rgba(33,29,51,.92));
+  color:#fbf7ff;
+  box-shadow:inset 0 1px 0 rgba(248,239,255,.07),0 0 20px rgba(196,134,255,.035);
+}
+body[data-screen="browser"] .cq-shell[data-colour="three"] .cq-world-tab.is-active .cq-world-tab__status{color:#dab5ff}

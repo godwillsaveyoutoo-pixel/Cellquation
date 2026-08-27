@@ -1,0 +1,26 @@
+Cellquation v0.7.6.4.13 — Final Machine Checks
+=================================================
+
+[1] JavaScript syntax
+PASS — 31 JavaScript files
+
+[2] JSON parsing
+PASS — 9 JSON files
+
+[3] CSS parsing
+PASS — 2 CSS files, 0 parser errors
+
+[4] HTML local references + SW precache
+PASS — 16 HTML pages; SW CORE 64 entries, 0 missing
+
+[5] Protected-content hash regression vs v0.7.6.4.12
+PASS — 13 protected gameplay/campaign/preset/synapse files byte-identical
+
+[6] v0.7.6.4.13 presentation assertions
+PASS — glow/world-readability values present
+
+[7] run.sh executable
+PASS
+
+RESULT: 0 ERRORS / 0 WARNINGS in static machine checks.
+Live managed Chromium WebGL smoke is not counted because SwiftShader/managed Chromium did not complete reliably.

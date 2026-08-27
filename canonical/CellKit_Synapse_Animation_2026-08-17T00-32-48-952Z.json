@@ -1,0 +1,222 @@
+{
+  "schema": "cellkit-synapse-animation-editor",
+  "schemaVersion": 12,
+  "buildId": "CellKit-Synapse-Lab-v0.8.7",
+  "exportedAt": "2026-08-17T00:32:48.950Z",
+  "settings": {
+    "distance": 0.84,
+    "angle": 157,
+    "gap": 0.041,
+    "curve": 0,
+    "waist": 0.03,
+    "endWidth": 0.126,
+    "shoulderWidth": 1,
+    "mouthWidth": 0.88,
+    "mouthAngle": 0.71,
+    "mouthBowl": 0.21,
+    "mouthWrap": 1,
+    "mouthFlatness": 0,
+    "opacity": 1,
+    "glow": 0.93,
+    "relief": 0.55,
+    "living": 0.84,
+    "breatheStrength": 0.42,
+    "breatheSpeed": 0.46,
+    "edgeLife": 0.56,
+    "mouthFlex": 0.48,
+    "innerShadowThickness": 0,
+    "innerShadowDarkness": 0,
+    "membraneTint": 2.2,
+    "rimTint": 0.4,
+    "flowTint": 2.8,
+    "flowSpeed": 0.78,
+    "flowStrength": 0.48,
+    "speciesA": "blue",
+    "speciesB": "green",
+    "transportScale": 0.4,
+    "exitRetraction": 0.16,
+    "egressScale": 0.48,
+    "fusionTakeover": 0.8,
+    "fusionGrowEnd": 0.56,
+    "mouthAction": 0.44,
+    "globalSpeed": 1,
+    "intakeDuration": 0.78,
+    "compressionDuration": 0.52,
+    "transitDuration": 0.88,
+    "egressDuration": 0.64,
+    "recoveryDuration": 0.22,
+    "shrinkStart": 0.18,
+    "egressVisibleStart": 0.03,
+    "synapseReturnStart": 0.26,
+    "fusionDuration": 1.5,
+    "inspectorFps": 60
+  },
+  "animation": {
+    "schema": "cellkit-synapse-animation-keys",
+    "version": 2,
+    "frames": [
+      {
+        "time": 0,
+        "values": {
+          "cellX": 0.38661203845002484,
+          "cellY": -0.16410707396549515,
+          "cellScale": 1
+        },
+        "auto": {
+          "cellX": false,
+          "cellY": false,
+          "cellScale": false
+        }
+      },
+      {
+        "time": 0.17376851012390468,
+        "values": {
+          "cellX": 0.26884264749931963,
+          "cellY": -0.1141169333865774,
+          "cellScale": 1
+        },
+        "auto": {
+          "cellX": false,
+          "cellY": false,
+          "cellScale": false
+        }
+      },
+      {
+        "time": 0.2153218495013602,
+        "values": {
+          "cellScale": 0.9254718231380187
+        },
+        "auto": {
+          "cellScale": false
+        }
+      },
+      {
+        "time": 0.23043215472952583,
+        "values": {
+          "cellScale": 0.7311225126995576
+        },
+        "auto": {
+          "cellScale": false
+        }
+      },
+      {
+        "time": 0.24176488365065,
+        "values": {
+          "cellScale": 0.6025678439416126
+        },
+        "auto": {
+          "cellScale": false
+        }
+      },
+      {
+        "time": 0.2455424599576914,
+        "values": {
+          "cellScale": 0.5437924703477276
+        },
+        "auto": {
+          "cellScale": false
+        }
+      },
+      {
+        "time": 0.526,
+        "values": {
+          "cellX": -0.10109304350158643,
+          "cellY": 0.044468751680720245
+        },
+        "auto": {
+          "cellX": false,
+          "cellY": false
+        }
+      },
+      {
+        "time": 0.543,
+        "values": {
+          "cellX": -0.0837948337644256,
+          "cellY": 0.03622760419435143
+        },
+        "auto": {
+          "cellX": false,
+          "cellY": false
+        }
+      },
+      {
+        "time": 0.552,
+        "values": {
+          "cellScale": 0.43483644953198985
+        },
+        "auto": {
+          "cellScale": false
+        }
+      },
+      {
+        "time": 0.5557775763070415,
+        "values": {
+          "cellScale": 0.604954905639548
+        },
+        "auto": {
+          "cellScale": false
+        }
+      },
+      {
+        "time": 0.5671103052281656,
+        "values": {
+          "cellScale": 0.719586140835556
+        },
+        "auto": {
+          "cellScale": false
+        }
+      },
+      {
+        "time": 0.5822206104563312,
+        "values": {
+          "cellScale": 0.7958487793608134
+        },
+        "auto": {
+          "cellScale": false
+        }
+      },
+      {
+        "time": 0.5859981867633726,
+        "values": {
+          "cellScale": 0.8587924764245172
+        },
+        "auto": {
+          "cellScale": false
+        }
+      },
+      {
+        "time": 0.6048860682985795,
+        "values": {
+          "cellScale": 0.9953138031477942,
+          "cellX": -0.12911088922139188,
+          "cellY": 0.052980867393131695
+        },
+        "auto": {
+          "cellScale": false,
+          "cellX": false,
+          "cellY": false
+        }
+      },
+      {
+        "time": 0.607,
+        "values": {
+          "cellX": -0.14192592497691087,
+          "cellY": 0.06222380659518913
+        },
+        "auto": {
+          "cellX": false,
+          "cellY": false
+        }
+      },
+      {
+        "time": 0.785,
+        "values": {
+          "cellScale": 0.9956252991656508
+        },
+        "auto": {
+          "cellScale": false
+        }
+      }
+    ]
+  }
+}

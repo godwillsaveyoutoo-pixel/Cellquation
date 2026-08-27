@@ -1,0 +1,3066 @@
+{
+  "schemaVersion": 2,
+  "id": "threecolor-foundations-full-v071",
+  "mode": "threecolor_foundations",
+  "colours": [
+    "blue",
+    "green",
+    "violet"
+  ],
+  "worlds": [
+    {
+      "index": 0,
+      "offset": 0,
+      "count": 6,
+      "title": {
+        "en": "TRI FUSION",
+        "nl": "TRI FUSION"
+      },
+      "intro": {
+        "en": "Different-colour Fusion cells create the missing third colour as a Split cell.",
+        "nl": "Different-colour Fusion cells create the missing third colour as a Split cell."
+      }
+    },
+    {
+      "index": 1,
+      "offset": 6,
+      "count": 6,
+      "title": {
+        "en": "CONVERSION CHAINS",
+        "nl": "CONVERSION CHAINS"
+      },
+      "intro": {
+        "en": "Build deliberate chains of Fusion, mixed Fusion and Split without relying on Swap.",
+        "nl": "Build deliberate chains of Fusion, mixed Fusion and Split without relying on Swap."
+      }
+    },
+    {
+      "index": 2,
+      "offset": 12,
+      "count": 6,
+      "title": {
+        "en": "THREE-COLOUR GROWTH",
+        "nl": "THREE-COLOUR GROWTH"
+      },
+      "intro": {
+        "en": "Brood adds growth pressure: create the right colour population before converting it.",
+        "nl": "Brood adds growth pressure: create the right colour population before converting it."
+      }
+    },
+    {
+      "index": 3,
+      "offset": 18,
+      "count": 6,
+      "title": {
+        "en": "THREE-COLOUR PRUNING",
+        "nl": "THREE-COLOUR PRUNING"
+      },
+      "intro": {
+        "en": "Destruct and Brood make cell economy part of the three-colour ratio puzzle.",
+        "nl": "Destruct and Brood make cell economy part of the three-colour ratio puzzle."
+      }
+    },
+    {
+      "index": 4,
+      "offset": 24,
+      "count": 6,
+      "title": {
+        "en": "MIRROR CORE",
+        "nl": "MIRROR CORE"
+      },
+      "intro": {
+        "en": "Imitation copies a role from a cell of the same colour, then the three-colour system takes over.",
+        "nl": "Imitation copies a role from a cell of the same colour, then the three-colour system takes over."
+      }
+    }
+  ],
+  "rules": {
+    "swap": false,
+    "mixedFusion": "blue+green\u2192violet; blue+violet\u2192green; green+violet\u2192blue",
+    "sameFusion": "same colour \u2192 same-colour split",
+    "split": "split \u2192 two same-colour fusion",
+    "imitation": "copies the role of a same-colour cell; colour is preserved"
+  },
+  "levels": [
+    {
+      "id": "3C2-F1_TRI_FUSION-01",
+      "world": 0,
+      "local": 0,
+      "goal": [
+        1,
+        1,
+        2
+      ],
+      "min": 4,
+      "title": {
+        "en": "Third Colour",
+        "nl": "Third Colour"
+      },
+      "note": {
+        "en": "Target 1:1:2. Research optimum 4 moves.",
+        "nl": "Doel 1:1:2. Researchoptimum 4 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "fusion",
+          "sourceType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "blue",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F1_TRI_FUSION",
+      "researchGrade": "AMBER",
+      "difficultyComposite": 5.2455
+    },
+    {
+      "id": "3C2-F1_TRI_FUSION-03",
+      "world": 0,
+      "local": 1,
+      "goal": [
+        2,
+        1,
+        1
+      ],
+      "min": 4,
+      "title": {
+        "en": "Cross Fusion",
+        "nl": "Cross Fusion"
+      },
+      "note": {
+        "en": "Target 2:1:1. Research optimum 4 moves.",
+        "nl": "Doel 2:1:1. Researchoptimum 4 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "violet",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F1_TRI_FUSION",
+      "researchGrade": "AMBER",
+      "difficultyComposite": 5.3687
+    },
+    {
+      "id": "3C2-F1_TRI_FUSION-04",
+      "world": 0,
+      "local": 2,
+      "goal": [
+        1,
+        2,
+        1
+      ],
+      "min": 4,
+      "title": {
+        "en": "Colour Triangle",
+        "nl": "Colour Triangle"
+      },
+      "note": {
+        "en": "Target 1:2:1. Research optimum 4 moves.",
+        "nl": "Doel 1:2:1. Researchoptimum 4 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "blue",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F1_TRI_FUSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 5.2641
+    },
+    {
+      "id": "3C2-F1_TRI_FUSION-08",
+      "world": 0,
+      "local": 3,
+      "goal": [
+        2,
+        1,
+        2
+      ],
+      "min": 5,
+      "title": {
+        "en": "Two Against One",
+        "nl": "Two Against One"
+      },
+      "note": {
+        "en": "Target 2:1:2. Research optimum 5 moves.",
+        "nl": "Doel 2:1:2. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "fusion",
+          "sourceType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "blue",
+            "split"
+          ]
+        }
+      ],
+      "researchFamily": "F1_TRI_FUSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 6.4692
+    },
+    {
+      "id": "3C6-TARGET-F1-122-6063",
+      "world": 0,
+      "local": 4,
+      "goal": [
+        1,
+        2,
+        2
+      ],
+      "min": 5,
+      "title": {
+        "en": "Balanced Branch",
+        "nl": "Balanced Branch"
+      },
+      "note": {
+        "en": "Target 1:2:2. Research optimum 5 moves.",
+        "nl": "Doel 1:2:2. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "blue",
+            "split"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F1_TRI_FUSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 6.6152
+    },
+    {
+      "id": "3C6-TARGET-F1-212-11016",
+      "world": 0,
+      "local": 5,
+      "goal": [
+        2,
+        1,
+        2
+      ],
+      "min": 5,
+      "title": {
+        "en": "Triad Balance",
+        "nl": "Triad Balance"
+      },
+      "note": {
+        "en": "Target 2:1:2. Research optimum 5 moves.",
+        "nl": "Doel 2:1:2. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "species": "violet",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "violet",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F1_TRI_FUSION",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 6.4761
+    },
+    {
+      "id": "3C2-F2_CONVERSION_CHAINS-07",
+      "world": 1,
+      "local": 0,
+      "goal": [
+        1,
+        2,
+        2
+      ],
+      "min": 4,
+      "title": {
+        "en": "Conversion Step",
+        "nl": "Conversion Step"
+      },
+      "note": {
+        "en": "Target 1:2:2. Research optimum 4 moves.",
+        "nl": "Doel 1:2:2. Researchoptimum 4 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "blue",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F2_CONVERSION_CHAINS",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 5.4242
+    },
+    {
+      "id": "3C2-F2_CONVERSION_CHAINS-01",
+      "world": 1,
+      "local": 1,
+      "goal": [
+        1,
+        1,
+        3
+      ],
+      "min": 4,
+      "title": {
+        "en": "Missing Colour",
+        "nl": "Missing Colour"
+      },
+      "note": {
+        "en": "Target 1:1:3. Research optimum 4 moves.",
+        "nl": "Doel 1:1:3. Researchoptimum 4 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "fusion",
+          "sourceType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F2_CONVERSION_CHAINS",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 5.5285
+    },
+    {
+      "id": "3C2-F2_CONVERSION_CHAINS-05",
+      "world": 1,
+      "local": 2,
+      "goal": [
+        2,
+        1,
+        2
+      ],
+      "min": 4,
+      "title": {
+        "en": "Chain Reaction",
+        "nl": "Chain Reaction"
+      },
+      "note": {
+        "en": "Target 2:1:2. Research optimum 4 moves.",
+        "nl": "Doel 2:1:2. Researchoptimum 4 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "fusion",
+          "sourceType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F2_CONVERSION_CHAINS",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 5.4708
+    },
+    {
+      "id": "3C2-F2_CONVERSION_CHAINS-08",
+      "world": 1,
+      "local": 3,
+      "goal": [
+        1,
+        2,
+        1
+      ],
+      "min": 5,
+      "title": {
+        "en": "Third-Colour Turn",
+        "nl": "Third-Colour Turn"
+      },
+      "note": {
+        "en": "Target 1:2:1. Research optimum 5 moves.",
+        "nl": "Doel 1:2:1. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "fusion",
+          "sourceType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "blue",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F2_CONVERSION_CHAINS",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 6.272
+    },
+    {
+      "id": "3C2-F2_CONVERSION_CHAINS-10",
+      "world": 1,
+      "local": 4,
+      "goal": [
+        2,
+        1,
+        1
+      ],
+      "min": 5,
+      "title": {
+        "en": "Double Conversion",
+        "nl": "Double Conversion"
+      },
+      "note": {
+        "en": "Target 2:1:1. Research optimum 5 moves.",
+        "nl": "Doel 2:1:1. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "species": "violet",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "violet",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F2_CONVERSION_CHAINS",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 6.3771
+    },
+    {
+      "id": "3C2-F2_CONVERSION_CHAINS-02",
+      "world": 1,
+      "local": 5,
+      "goal": [
+        2,
+        2,
+        1
+      ],
+      "min": 4,
+      "title": {
+        "en": "Conversion Mastery",
+        "nl": "Conversion Mastery"
+      },
+      "note": {
+        "en": "Target 2:2:1. Research optimum 4 moves.",
+        "nl": "Doel 2:2:1. Researchoptimum 4 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "violet",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F2_CONVERSION_CHAINS",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 5.5894
+    },
+    {
+      "id": "3C2-F3_GROWTH-07",
+      "world": 2,
+      "local": 0,
+      "goal": [
+        2,
+        1,
+        1
+      ],
+      "min": 5,
+      "title": {
+        "en": "First Growth",
+        "nl": "First Growth"
+      },
+      "note": {
+        "en": "Target 2:1:1. Research optimum 5 moves.",
+        "nl": "Doel 2:1:1. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "brood"
+        },
+        {
+          "species": "violet",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "violet",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "green",
+            "brood"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F3_GROWTH",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 6.5914
+    },
+    {
+      "id": "3C6-TARGET-F3-232-10010",
+      "world": 2,
+      "local": 1,
+      "goal": [
+        2,
+        3,
+        2
+      ],
+      "min": 6,
+      "title": {
+        "en": "Brood Balance",
+        "nl": "Brood Balance"
+      },
+      "note": {
+        "en": "Target 2:3:2. Research optimum 6 moves.",
+        "nl": "Doel 2:3:2. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "brood"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "blue",
+            "brood"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "violet",
+            "brood"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        }
+      ],
+      "researchFamily": "F3_GROWTH",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 7.9505
+    },
+    {
+      "id": "3C2-F3_GROWTH-05",
+      "world": 2,
+      "local": 2,
+      "goal": [
+        1,
+        3,
+        1
+      ],
+      "min": 6,
+      "title": {
+        "en": "Growth Conversion",
+        "nl": "Growth Conversion"
+      },
+      "note": {
+        "en": "Target 1:3:1. Research optimum 6 moves.",
+        "nl": "Doel 1:3:1. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "species": "violet",
+          "role": "brood"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "blue",
+            "split"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "violet",
+            "brood"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F3_GROWTH",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 8.0193
+    },
+    {
+      "id": "3C2-F3_GROWTH-03",
+      "world": 2,
+      "local": 3,
+      "goal": [
+        3,
+        1,
+        2
+      ],
+      "min": 7,
+      "title": {
+        "en": "Three-Colour Bloom",
+        "nl": "Three-Colour Bloom"
+      },
+      "note": {
+        "en": "Target 3:1:2. Research optimum 7 moves.",
+        "nl": "Doel 3:1:2. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "blue",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "blue",
+            "brood"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "violet",
+            "split"
+          ]
+        }
+      ],
+      "researchFamily": "F3_GROWTH",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 8.7086
+    },
+    {
+      "id": "3C5-TARGET-F3_GROWTH-213",
+      "world": 2,
+      "local": 4,
+      "goal": [
+        2,
+        1,
+        3
+      ],
+      "min": 7,
+      "title": {
+        "en": "Growth Detour",
+        "nl": "Growth Detour"
+      },
+      "note": {
+        "en": "Target 2:1:3. Research optimum 7 moves.",
+        "nl": "Doel 2:1:3. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "brood"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "blue",
+            "split"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "violet",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "violet",
+            "brood"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F3_GROWTH",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 8.7218
+    },
+    {
+      "id": "3C2-F3_GROWTH-01",
+      "world": 2,
+      "local": 5,
+      "goal": [
+        3,
+        2,
+        1
+      ],
+      "min": 7,
+      "title": {
+        "en": "Living Ratio",
+        "nl": "Living Ratio"
+      },
+      "note": {
+        "en": "Target 3:2:1. Research optimum 7 moves.",
+        "nl": "Doel 3:2:1. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "brood"
+        },
+        {
+          "species": "violet",
+          "role": "brood"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "blue",
+            "split"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "violet",
+            "brood"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F3_GROWTH",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 9.1037
+    },
+    {
+      "id": "3C2-F4_PRUNING-03",
+      "world": 3,
+      "local": 0,
+      "goal": [
+        2,
+        2,
+        1
+      ],
+      "min": 4,
+      "title": {
+        "en": "First Pruning",
+        "nl": "First Pruning"
+      },
+      "note": {
+        "en": "Target 2:2:1. Research optimum 4 moves.",
+        "nl": "Doel 2:2:1. Researchoptimum 4 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "destruct"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "brood"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "species": "violet",
+          "role": "brood"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "destruct",
+          "sourceType": [
+            "blue",
+            "destruct"
+          ],
+          "targetType": [
+            "violet",
+            "split"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "green",
+            "brood"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F4_PRUNING",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 5.8959
+    },
+    {
+      "id": "3C2-F4_PRUNING-02",
+      "world": 3,
+      "local": 1,
+      "goal": [
+        1,
+        3,
+        1
+      ],
+      "min": 5,
+      "title": {
+        "en": "Selective Cut",
+        "nl": "Selective Cut"
+      },
+      "note": {
+        "en": "Target 1:3:1. Research optimum 5 moves.",
+        "nl": "Doel 1:3:1. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "destruct"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "species": "green",
+          "role": "brood"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "blue",
+            "split"
+          ]
+        },
+        {
+          "kind": "destruct",
+          "sourceType": [
+            "blue",
+            "destruct"
+          ],
+          "targetType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "green",
+            "brood"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F4_PRUNING",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 6.8439
+    },
+    {
+      "id": "3C2-F4_PRUNING-01",
+      "world": 3,
+      "local": 2,
+      "goal": [
+        1,
+        1,
+        2
+      ],
+      "min": 6,
+      "title": {
+        "en": "Prune and Convert",
+        "nl": "Prune and Convert"
+      },
+      "note": {
+        "en": "Target 1:1:2. Research optimum 6 moves.",
+        "nl": "Doel 1:1:2. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "species": "green",
+          "role": "destruct"
+        },
+        {
+          "species": "violet",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "destruct",
+          "sourceType": [
+            "green",
+            "destruct"
+          ],
+          "targetType": [
+            "blue",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "violet",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "blue",
+            "brood"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F4_PRUNING",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 7.7811
+    },
+    {
+      "id": "3C2-F4_PRUNING-06",
+      "world": 3,
+      "local": 3,
+      "goal": [
+        1,
+        3,
+        2
+      ],
+      "min": 6,
+      "title": {
+        "en": "Colour Economy",
+        "nl": "Colour Economy"
+      },
+      "note": {
+        "en": "Target 1:3:2. Research optimum 6 moves.",
+        "nl": "Doel 1:3:2. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "split"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "destruct"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "violet",
+            "split"
+          ]
+        },
+        {
+          "kind": "destruct",
+          "sourceType": [
+            "violet",
+            "destruct"
+          ],
+          "targetType": [
+            "blue",
+            "brood"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "blue",
+            "brood"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F4_PRUNING",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 8.2982
+    },
+    {
+      "id": "3C5-TARGET-F4_PRUNING-124",
+      "world": 3,
+      "local": 4,
+      "goal": [
+        1,
+        2,
+        4
+      ],
+      "min": 6,
+      "title": {
+        "en": "Pruning Chain",
+        "nl": "Pruning Chain"
+      },
+      "note": {
+        "en": "Target 1:2:4. Research optimum 6 moves.",
+        "nl": "Doel 1:2:4. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "blue",
+          "role": "destruct"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "brood"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "split",
+          "sourceType": [
+            "blue",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "green",
+            "brood"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "destruct",
+          "sourceType": [
+            "blue",
+            "destruct"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "violet",
+            "split"
+          ]
+        }
+      ],
+      "researchFamily": "F4_PRUNING",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 8.4233
+    },
+    {
+      "id": "3C2-F4_PRUNING-04",
+      "world": 3,
+      "local": 5,
+      "goal": [
+        2,
+        3,
+        1
+      ],
+      "min": 6,
+      "title": {
+        "en": "Balanced Reduction",
+        "nl": "Balanced Reduction"
+      },
+      "note": {
+        "en": "Target 2:3:1. Research optimum 6 moves.",
+        "nl": "Doel 2:3:1. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "brood"
+        },
+        {
+          "species": "green",
+          "role": "destruct"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "brood"
+        },
+        {
+          "species": "violet",
+          "role": "brood"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "green",
+            "brood"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "violet",
+            "brood"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "destruct",
+          "sourceType": [
+            "green",
+            "destruct"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F4_PRUNING",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 8.466
+    },
+    {
+      "id": "3C2-F5_MIRROR-10",
+      "world": 4,
+      "local": 0,
+      "goal": [
+        1,
+        1,
+        1
+      ],
+      "min": 6,
+      "title": {
+        "en": "Mirror Seed",
+        "nl": "Mirror Seed"
+      },
+      "note": {
+        "en": "Target 1:1:1. Research optimum 6 moves.",
+        "nl": "Doel 1:1:1. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "green",
+          "role": "imitation"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "blue",
+            "split"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "imitation",
+          "sourceType": [
+            "green",
+            "imitation"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F5_MIRROR",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 7.0783
+    },
+    {
+      "id": "3C2-F5_MIRROR-01",
+      "world": 4,
+      "local": 1,
+      "goal": [
+        2,
+        1,
+        2
+      ],
+      "min": 5,
+      "title": {
+        "en": "Copied Role",
+        "nl": "Copied Role"
+      },
+      "note": {
+        "en": "Target 2:1:2. Research optimum 5 moves.",
+        "nl": "Doel 2:1:2. Researchoptimum 5 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "brood"
+        },
+        {
+          "species": "green",
+          "role": "imitation"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "imitation",
+          "sourceType": [
+            "green",
+            "imitation"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "green",
+            "brood"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F5_MIRROR",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 7.1612
+    },
+    {
+      "id": "3C2-F5_MIRROR-08",
+      "world": 4,
+      "local": 2,
+      "goal": [
+        1,
+        2,
+        3
+      ],
+      "min": 6,
+      "title": {
+        "en": "Mirror Split",
+        "nl": "Mirror Split"
+      },
+      "note": {
+        "en": "Target 1:2:3. Research optimum 6 moves.",
+        "nl": "Doel 1:2:3. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "green",
+          "role": "imitation"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        },
+        {
+          "species": "violet",
+          "role": "split"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "imitation",
+          "sourceType": [
+            "green",
+            "imitation"
+          ],
+          "targetType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        }
+      ],
+      "researchFamily": "F5_MIRROR",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 7.8204
+    },
+    {
+      "id": "3C2-F5_MIRROR-02",
+      "world": 4,
+      "local": 3,
+      "goal": [
+        1,
+        1,
+        2
+      ],
+      "min": 6,
+      "title": {
+        "en": "Mirror Growth",
+        "nl": "Mirror Growth"
+      },
+      "note": {
+        "en": "Target 1:1:2. Research optimum 6 moves.",
+        "nl": "Doel 1:1:2. Researchoptimum 6 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "brood"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "brood"
+        },
+        {
+          "species": "green",
+          "role": "imitation"
+        },
+        {
+          "species": "violet",
+          "role": "fusion"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "brood",
+          "sourceType": [
+            "blue",
+            "brood"
+          ]
+        },
+        {
+          "kind": "imitation",
+          "sourceType": [
+            "green",
+            "imitation"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "green",
+            "brood"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F5_MIRROR",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 8.0295
+    },
+    {
+      "id": "3C2-F5_MIRROR-03",
+      "world": 4,
+      "local": 4,
+      "goal": [
+        1,
+        3,
+        2
+      ],
+      "min": 7,
+      "title": {
+        "en": "Mirror Conversion",
+        "nl": "Mirror Conversion"
+      },
+      "note": {
+        "en": "Target 1:3:2. Research optimum 7 moves.",
+        "nl": "Doel 1:3:2. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "fusion"
+        },
+        {
+          "species": "green",
+          "role": "imitation"
+        },
+        {
+          "species": "violet",
+          "role": "brood"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "violet",
+            "brood"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "imitation",
+          "sourceType": [
+            "green",
+            "imitation"
+          ],
+          "targetType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "green",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        }
+      ],
+      "researchFamily": "F5_MIRROR",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 8.8828
+    },
+    {
+      "id": "3C5-TARGET-F5_MIRROR-134",
+      "world": 4,
+      "local": 5,
+      "goal": [
+        1,
+        3,
+        4
+      ],
+      "min": 7,
+      "title": {
+        "en": "Mirror Core",
+        "nl": "Mirror Core"
+      },
+      "note": {
+        "en": "Target 1:3:4. Research optimum 7 moves.",
+        "nl": "Doel 1:3:4. Researchoptimum 7 zetten."
+      },
+      "cells": [
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "fusion"
+        },
+        {
+          "species": "blue",
+          "role": "split"
+        },
+        {
+          "species": "blue",
+          "role": "imitation"
+        },
+        {
+          "species": "green",
+          "role": "brood"
+        },
+        {
+          "species": "violet",
+          "role": "split"
+        },
+        {
+          "species": "violet",
+          "role": "destruct"
+        }
+      ],
+      "researchSolution": [
+        {
+          "kind": "imitation",
+          "sourceType": [
+            "blue",
+            "imitation"
+          ],
+          "targetType": [
+            "blue",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "violet",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "violet",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "split",
+          "sourceType": [
+            "green",
+            "split"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        },
+        {
+          "kind": "brood",
+          "sourceType": [
+            "green",
+            "brood"
+          ]
+        },
+        {
+          "kind": "mixed_fusion",
+          "sourceType": [
+            "blue",
+            "fusion"
+          ],
+          "targetType": [
+            "green",
+            "fusion"
+          ]
+        }
+      ],
+      "researchFamily": "F5_MIRROR",
+      "researchGrade": "GREEN",
+      "difficultyComposite": 9.6828
+    }
+  ],
+  "source": "ThreeColor Research Lab v0.6 autonomous repaired campaign \u2014 30 selected levels"
+}

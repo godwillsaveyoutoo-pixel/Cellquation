@@ -1,0 +1,448 @@
+/* Generated from the user-approved CellKit aesthetic export. */
+export const USER_AESTHETIC_PRESET = {
+  "schema": "cellkit-aesthetic-settings",
+  "schemaVersion": 3,
+  "sourceBuildId": "CellKit-v0.12.3.5-compact-aesthetic-lab",
+  "sourceExportedAt": "2026-08-22T14:46:03.662Z",
+  "palettes": {
+    "blue": {
+      "deep": [
+        0,
+        0.02,
+        0.145
+      ],
+      "mid": [
+        0,
+        0.205,
+        0.72
+      ],
+      "bright": [
+        0.03,
+        0.76,
+        1
+      ],
+      "glow": [
+        0,
+        0.56,
+        1
+      ]
+    },
+    "green": {
+      "deep": [
+        0,
+        0.095,
+        0.026
+      ],
+      "mid": [
+        0.02,
+        0.425,
+        0.105
+      ],
+      "bright": [
+        0.18,
+        0.94,
+        0.35
+      ],
+      "glow": [
+        0.06,
+        0.72,
+        0.18
+      ]
+    },
+    "violet": {
+      "deep": [
+        0.09,
+        0,
+        0.15
+      ],
+      "mid": [
+        0.42,
+        0.025,
+        0.68
+      ],
+      "bright": [
+        0.9,
+        0.18,
+        1
+      ],
+      "glow": [
+        0.7,
+        0.06,
+        1
+      ]
+    },
+    "destructNucleus": {
+      "deep": [
+        0.155,
+        0.004,
+        0
+      ],
+      "mid": [
+        0.72,
+        0.04,
+        0.004
+      ],
+      "bright": [
+        1,
+        0.39,
+        0.035
+      ],
+      "glow": [
+        1,
+        0.105,
+        0.01
+      ]
+    }
+  },
+  "idleIdentity": {
+    "fusion": {
+      "enabled": 1,
+      "master": 1.15,
+      "cellPulseAmplitude": 0.02,
+      "cellPulseSpeed": 0.66,
+      "rimDriftStrength": 0.78,
+      "rimDriftSpeed": -0.58,
+      "membraneWobble": 0.22,
+      "nucleusDriftAmplitude": 0.0085,
+      "nucleusDriftSpeed": 0.56,
+      "nucleusPulseAmplitude": 0.046,
+      "nucleusPulseSpeed": 0.91,
+      "phaseVariation": 1.5
+    },
+    "split": {
+      "enabled": 1,
+      "master": 0.79,
+      "cellPulseAmplitude": 0.043,
+      "cellPulseSpeed": 1.25,
+      "rimDriftStrength": 1.6,
+      "rimDriftSpeed": 0.8,
+      "membraneWobble": 0.38,
+      "nucleusDriftAmplitude": 0.0125,
+      "nucleusDriftSpeed": 0.52,
+      "nucleusPulseAmplitude": 0.049,
+      "nucleusPulseSpeed": 1.44,
+      "phaseVariation": 1.1
+    },
+    "brood": {
+      "enabled": 1,
+      "master": 1.17,
+      "cellPulseAmplitude": 0.046,
+      "cellPulseSpeed": 1.26,
+      "rimDriftStrength": 1.6,
+      "rimDriftSpeed": 0.8,
+      "membraneWobble": 0.4,
+      "nucleusDriftAmplitude": 0.0052,
+      "nucleusDriftSpeed": 0.46,
+      "nucleusPulseAmplitude": 0.025,
+      "nucleusPulseSpeed": 0.62,
+      "phaseVariation": 0.42
+    },
+    "destruct": {
+      "enabled": 1,
+      "master": 0.84,
+      "cellPulseAmplitude": 0.032,
+      "cellPulseSpeed": 0.94,
+      "rimDriftStrength": 1.09,
+      "rimDriftSpeed": 0.31,
+      "membraneWobble": 0.33,
+      "nucleusDriftAmplitude": 0.0075,
+      "nucleusDriftSpeed": 2,
+      "nucleusPulseAmplitude": 0.06,
+      "nucleusPulseSpeed": 1.18,
+      "phaseVariation": 1.14
+    },
+    "swap": {
+      "enabled": 1,
+      "master": 0.96,
+      "cellPulseAmplitude": 0.046,
+      "cellPulseSpeed": 0.73,
+      "rimDriftStrength": 0.91,
+      "rimDriftSpeed": 0.255,
+      "membraneWobble": 0.1,
+      "nucleusDriftAmplitude": 0.0045,
+      "nucleusDriftSpeed": 0.68,
+      "nucleusPulseAmplitude": 0.04,
+      "nucleusPulseSpeed": 0.93,
+      "phaseVariation": 1.05
+    },
+    "imitate": {
+      "enabled": 1,
+      "master": 0.94,
+      "cellPulseAmplitude": 0.048,
+      "cellPulseSpeed": 0.95,
+      "rimDriftStrength": 1.06,
+      "rimDriftSpeed": 0.22,
+      "membraneWobble": 0.08,
+      "nucleusDriftAmplitude": 0.0025,
+      "nucleusDriftSpeed": 0.69,
+      "nucleusPulseAmplitude": 0.046,
+      "nucleusPulseSpeed": 0.66,
+      "phaseVariation": 1.18
+    }
+  },
+  "materials": {
+    "fusion": {
+      "enabled": 1,
+      "master": 0.77,
+      "bodyTransmission": 0,
+      "innerDarkness": 0.39,
+      "rimBrightness": 1.21,
+      "rimSoftness": 0.18,
+      "innerRimStrength": 1.14,
+      "innerGlowStrength": 1.5,
+      "highlightStrength": 1.17,
+      "gelDepth": 1.47,
+      "nucleusHaloStrength": 0,
+      "nucleusOpacity": 0.66,
+      "nucleusContrast": 1.23,
+      "nucleusDepth": 0.62
+    },
+    "split": {
+      "enabled": 1,
+      "master": 0.76,
+      "bodyTransmission": 0.14,
+      "innerDarkness": 0.2,
+      "rimBrightness": 1.85,
+      "rimSoftness": 1.08,
+      "innerRimStrength": 0.69,
+      "innerGlowStrength": 1.6,
+      "highlightStrength": 0.91,
+      "gelDepth": 1.33,
+      "nucleusHaloStrength": 0.95,
+      "nucleusOpacity": 0.91,
+      "nucleusContrast": 1.43,
+      "nucleusDepth": 0.73
+    },
+    "brood": {
+      "enabled": 1,
+      "master": 0.76,
+      "bodyTransmission": 0.49,
+      "innerDarkness": 0.27,
+      "rimBrightness": 1.34,
+      "rimSoftness": 1.42,
+      "innerRimStrength": 0.28,
+      "innerGlowStrength": 2.21,
+      "highlightStrength": 0.99,
+      "gelDepth": 2.14,
+      "nucleusHaloStrength": 0.85,
+      "nucleusOpacity": 0.9,
+      "nucleusContrast": 1.68,
+      "nucleusDepth": 0.46
+    },
+    "destruct": {
+      "enabled": 1,
+      "master": 1,
+      "bodyTransmission": 0,
+      "innerDarkness": 0.34,
+      "rimBrightness": 1.39,
+      "rimSoftness": 0.96,
+      "innerRimStrength": 0.24,
+      "innerGlowStrength": 1.22,
+      "highlightStrength": 0.97,
+      "gelDepth": 1.81,
+      "nucleusHaloStrength": 1.48,
+      "nucleusOpacity": 0.98,
+      "nucleusContrast": 1.34,
+      "nucleusDepth": 0.12
+    },
+    "swap": {
+      "enabled": 1,
+      "master": 0.69,
+      "bodyTransmission": 0.44,
+      "innerDarkness": 0.4,
+      "rimBrightness": 1.38,
+      "rimSoftness": 1.37,
+      "innerRimStrength": 1.34,
+      "innerGlowStrength": 2.33,
+      "highlightStrength": 1.83,
+      "gelDepth": 2.02,
+      "nucleusHaloStrength": 1.24,
+      "nucleusOpacity": 0.92,
+      "nucleusContrast": 1.98,
+      "nucleusDepth": 0.2
+    },
+    "imitate": {
+      "enabled": 1,
+      "master": 0.41,
+      "bodyTransmission": 0.19,
+      "innerDarkness": 0.27,
+      "rimBrightness": 2.55,
+      "rimSoftness": 1.16,
+      "innerRimStrength": 0.36,
+      "innerGlowStrength": 1.97,
+      "highlightStrength": 1.14,
+      "gelDepth": 1.36,
+      "nucleusHaloStrength": 1.28,
+      "nucleusOpacity": 0.88,
+      "nucleusContrast": 1.08,
+      "nucleusDepth": 0.24
+    }
+  },
+  "profiles": {
+    "fusion": {
+      "radius": 0.156,
+      "nucleusRadius": 0.038,
+      "activity": 1.6,
+      "membraneLiving": 1.8,
+      "membraneAmp1": 0,
+      "membraneAmp2": 0.0058,
+      "membraneAmp3": 0.009,
+      "membraneThickness": 0.55,
+      "membraneGlints": 0.6,
+      "volumeDepth": 1.05,
+      "densityContrast": 0.73,
+      "fluidWarp": 0.069,
+      "fluidSpeed": 1.12,
+      "liquidLights": 3,
+      "fineDetail": 2.44,
+      "nucleusGlow": 0.92,
+      "nucleusPlasma": 0.88,
+      "nucleusSheen": 0.56,
+      "distortionStrength": 0.9,
+      "glowStrength": 0.94,
+      "exposure": 1.4,
+      "grainStrength": 0.3,
+      "nucleusPulse": 0.08
+    },
+    "split": {
+      "radius": 0.185,
+      "nucleusRadius": 0.04,
+      "nucleusSeparation": 0.081,
+      "activity": 1.51,
+      "membraneLiving": 1.8,
+      "membraneAmp1": 0.0065,
+      "membraneAmp2": 0.005,
+      "membraneAmp3": 0.008,
+      "membraneThickness": 0.55,
+      "membraneGlints": 1.39,
+      "volumeDepth": 1.1,
+      "densityContrast": 2.16,
+      "fluidWarp": 0.076,
+      "fluidSpeed": 1.56,
+      "liquidLights": 3,
+      "fineDetail": 2.6,
+      "nucleusGlow": 0.97,
+      "nucleusPlasma": 0.96,
+      "nucleusSheen": 0.25,
+      "distortionStrength": 0.94,
+      "glowStrength": 0.98,
+      "exposure": 1.42,
+      "grainStrength": 0.3,
+      "nucleusPulse": 0.08
+    },
+    "brood": {
+      "radius": 0.167,
+      "nucleusRadius": 0.041,
+      "activity": 1.19,
+      "membraneLiving": 0.91,
+      "membraneAmp1": 0,
+      "membraneAmp2": 0.0048,
+      "membraneAmp3": 0.004,
+      "membraneThickness": 0.55,
+      "membraneGlints": 1.41,
+      "volumeDepth": 1.08,
+      "densityContrast": 2.2,
+      "fluidWarp": 0.076,
+      "fluidSpeed": 1.7,
+      "liquidLights": 3,
+      "fineDetail": 2.6,
+      "nucleusGlow": 0.84,
+      "nucleusPlasma": 0.87,
+      "nucleusSheen": 0.52,
+      "distortionStrength": 0.86,
+      "glowStrength": 0.94,
+      "exposure": 1.39,
+      "grainStrength": 0.28,
+      "nucleusPulse": 0.06,
+      "broodNucleusRadius": 0.017,
+      "broodOrbitInner": 0.056,
+      "broodOrbitOuter": 0.097,
+      "broodNucleusGlow": 2.18
+    },
+    "destruct": {
+      "radius": 0.155,
+      "nucleusRadius": 0.038,
+      "activity": 1.6,
+      "membraneLiving": 1.8,
+      "membraneAmp1": 0.0215,
+      "membraneAmp2": 0.0064,
+      "membraneAmp3": 0.0035,
+      "membraneThickness": 0.55,
+      "membraneGlints": 1.6,
+      "volumeDepth": 1.08,
+      "densityContrast": 1.22,
+      "fluidWarp": 0.14,
+      "fluidSpeed": 2.63,
+      "liquidLights": 2.74,
+      "fineDetail": 2.6,
+      "nucleusGlow": 0.78,
+      "nucleusPlasma": 0.74,
+      "nucleusSheen": 1.12,
+      "nucleusPulse": 0.68,
+      "distortionStrength": 0.94,
+      "glowStrength": 0.98,
+      "exposure": 1.43,
+      "grainStrength": 0.3
+    },
+    "swap": {
+      "radius": 0.155,
+      "nucleusRadius": 0.041,
+      "activity": 0.84,
+      "membraneLiving": 1.61,
+      "membraneAmp1": 0,
+      "membraneAmp2": 0.0058,
+      "membraneAmp3": 0,
+      "membraneThickness": 0.55,
+      "membraneGlints": 0.84,
+      "volumeDepth": 1.05,
+      "densityContrast": 1.31,
+      "fluidWarp": 0.079,
+      "fluidSpeed": 1.83,
+      "liquidLights": 3,
+      "fineDetail": 0,
+      "nucleusGlow": 1.8,
+      "nucleusPlasma": 1.8,
+      "nucleusSheen": 0.78,
+      "distortionStrength": 0.9,
+      "glowStrength": 0.96,
+      "exposure": 1.4,
+      "grainStrength": 0.3,
+      "nucleusPulse": 0.1,
+      "swapRingRadius": 0.053,
+      "swapRingWidth": 0.012,
+      "swapRingGlow": 3,
+      "swapPulseSpeed": 4.81
+    },
+    "imitation": {
+      "radius": 0.174,
+      "nucleusRadius": 0.041,
+      "activity": 1.33,
+      "membraneLiving": 1.47,
+      "membraneAmp1": 0,
+      "membraneAmp2": 0.0058,
+      "membraneAmp3": 0.0045,
+      "membraneThickness": 0.55,
+      "membraneGlints": 1.15,
+      "volumeDepth": 1.06,
+      "densityContrast": 1.39,
+      "fluidWarp": 0.085,
+      "fluidSpeed": 1.1,
+      "liquidLights": 2.17,
+      "fineDetail": 2.33,
+      "nucleusGlow": 1.8,
+      "nucleusPlasma": 1.8,
+      "nucleusSheen": 1.32,
+      "distortionStrength": 0.92,
+      "glowStrength": 0.98,
+      "exposure": 1.41,
+      "grainStrength": 0.3,
+      "nucleusPulse": 0.11,
+      "mimicOrbitRadius": 0.123,
+      "mimicOrganelles": 11,
+      "mimicSize": 0.016,
+      "mimicGlow": 2.22,
+      "mimicPulseSpeed": 2.24,
+      "mimicPrismShift": 1
+    }
+  }
+};

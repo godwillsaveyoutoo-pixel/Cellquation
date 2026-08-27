@@ -1,0 +1,15 @@
+Cellquation Core v0.7.7a.8 — final machine checks
+
+[x] JS syntax: network_game_v0611.js
+[x] JS syntax: threecolor_network_game_v071.js
+[x] JS syntax: menu_architecture_v076412.js
+[x] JS syntax: game_preload_v0724.js
+[x] JS syntax: sw.js
+[x] Target PNGs: RGBA, 256x256, non-empty alpha
+[x] Target PNGs: centre is body colour, not old white nucleus/highlight orb
+[x] Living wobble drift = 0.0175 in both network engines
+[x] Broad component gradient removed from both network engines
+[x] Stage broad radial glow removed
+[x] networkAura opacity = 0.46
+[x] v0.7.7a.8 cache bust present in 2-colour and 3-colour Living play pages
+[x] service-worker cache key bumped to v0.7.7a.8

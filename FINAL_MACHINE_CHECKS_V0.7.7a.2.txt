@@ -1,0 +1,37 @@
+Cellquation v0.7.7a.2 FINAL MACHINE CHECKS
+======================================================
+JSON/manifests parsed: 10
+CSS files parsed: 2; parser errors: 0
+Local module imports checked: 72
+Local HTML refs checked: 79
+PWA CORE entries checked: 64
+WebGL background shader present: OK
+WebGL background draw present: OK
+background image loaded by renderer: OK
+Living default halo 0.46: OK
+CSS world image removed: OK
+2C Foundations halo zero: OK
+3C Foundations halo zero: OK
+new SW cache id: OK
+Protected reference/USER_AESTHETIC_PRESET_2026-08-22.json: IDENTICAL
+Protected canonical/CellKit_Synapse_Animation_2026-08-17T00-32-48-952Z.json: IDENTICAL
+Protected runtime/synapse_renderer_v053.js: IDENTICAL
+Protected cellkit_latest/profiles.js: IDENTICAL
+Protected cellkit_latest/transition.js: IDENTICAL
+Protected cellkit_latest/cell.js: IDENTICAL
+Protected cellkit_latest/brood.js: IDENTICAL
+Protected content/runtime/FOUNDATIONS_30_RUNTIME.json: IDENTICAL
+Protected content/runtime/LIVING_NETWORKS_48_V28_RUNTIME.json: IDENTICAL
+Protected content/threecolor/FOUNDATIONS_FULL_30_V071.json: IDENTICAL
+Protected content/threecolor/LIVING_NETWORKS_FULL_48_V071.json: IDENTICAL
+Protected content/threecolor/LIVING_NETWORKS_LAYOUT_FULL_48_V071.json: IDENTICAL
+Protected content/full/LIVING_NETWORKS_LAYOUT_48_V060.json: IDENTICAL
+Active packaged audio files: 0
+
+ERRORS: 0
+
+WARNINGS: 0
+
+JavaScript syntax (node --check): 31 files OK
+Manifest verification: 103 entries OK
+Final manifest verification after release audit: 105 entries OK
