@@ -1,0 +1,18 @@
+Cellquation Core v0.7.7a.12 — Settings & Background Integration
+
+PASS — JS syntax: settings_v077a12.js
+PASS — JS syntax: ambient_audio_v077a12.js
+PASS — JS syntax: success_sfx_v077a12.js
+PASS — JS syntax: ui_runtime_v076412.js
+PASS — JS syntax: 4 gameplay scripts
+PASS — Static HTML/JS local-reference audit: 0 missing assets
+PASS — Menu screens expose Settings and no standalone Fullscreen
+PASS — Gameplay static pause footer contains no standalone Fullscreen
+PASS — Runtime unified Settings: 2 tabs / 5 tracks / 5 backgrounds
+PASS — Fullscreen runtime placement: Display panel only
+PASS — Background selection persistence + wrap semantics
+PASS — Ambient continuity regression: 25 repeated play calls -> 1 actual play
+PASS — Playlist deterministic wrap: 1→2→3→4→5→1
+PASS — Success cue separate from ambience; ambient playback remains uninterrupted
+PASS — Success cue duration ~2.28 s / integrated loudness ~-18.4 LUFS
+PASS — Service worker cache bumped to cellquation-v0.7.7a.12

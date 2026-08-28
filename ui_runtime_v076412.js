@@ -16,7 +16,7 @@
   function syncFullscreen(){
     const active=!!fsElement();
     doc.querySelectorAll('[data-cq-fullscreen]').forEach(b=>{
-      b.hidden=!fsSupported();if(b.parentElement?.classList.contains('cq-home-tools'))b.parentElement.hidden=!fsSupported();b.setAttribute('aria-pressed',String(active));b.setAttribute('aria-label',active?'Exit fullscreen':'Enter fullscreen');
+      b.hidden=!fsSupported();b.setAttribute('aria-pressed',String(active));b.setAttribute('aria-label',active?'Exit fullscreen':'Enter fullscreen');
       const label=b.querySelector('[data-fs-label]');if(label)label.textContent=active?'Exit fullscreen':'Fullscreen';
     });
   }
@@ -24,7 +24,7 @@
     doc.body.classList.toggle('is-paused',!!paused);
     const overlay=doc.getElementById('pauseOverlay'),button=doc.getElementById('pause'),active=doc.activeElement;
     if(overlay){const wasInside=overlay.contains(active);overlay.hidden=!paused;overlay.setAttribute('aria-hidden',String(!paused));if(paused)requestAnimationFrame(()=>doc.getElementById('resumeOverlay')?.focus());else if(wasInside)requestAnimationFrame(()=>doc.getElementById('gl')?.focus())}
-    if(button){button.textContent=paused?'Resume':'Pause';button.setAttribute('aria-pressed',String(!!paused))}
+    if(button){button.textContent='Settings';button.setAttribute('aria-pressed',String(!!paused));button.setAttribute('aria-expanded',String(!!paused));button.setAttribute('aria-label',paused?'Close settings':'Open settings')}
   }
   function showResult(backdrop,focusTarget){
     if(!backdrop)return;resultReturnFocus=doc.activeElement;backdrop.classList.add('show');backdrop.setAttribute('aria-hidden','false');
@@ -45,7 +45,7 @@
   }
   function init(){
     registerServiceWorker();
-    doc.querySelectorAll('[data-cq-fullscreen]').forEach(b=>b.addEventListener('click',toggleFullscreen));
+    doc.addEventListener('click',e=>{const b=e.target.closest?.('[data-cq-fullscreen]');if(!b)return;e.preventDefault();toggleFullscreen()});
     doc.getElementById('resumeOverlay')?.addEventListener('click',()=>doc.getElementById('pause')?.click());
     doc.querySelectorAll('.pause-overlay,.result-backdrop').forEach(x=>x.addEventListener('keydown',trapDialog));
     doc.addEventListener('keydown',e=>{if(e.key!=='Escape')return;const pause=doc.getElementById('pauseOverlay');if(pause&&!pause.hidden){e.preventDefault();doc.getElementById('pause')?.click();}});

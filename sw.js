@@ -1,14 +1,25 @@
-/* Cellquation v0.7.7a.8 — Target Cell + Wobble + Background Cleanup cache. */
-const CACHE='cellquation-v0.7.7a.8-target-wobble-glow-cleanup';
+/* Cellquation v0.7.7a.13 — final regression / low-end release hardening. */
+const CACHE='cellquation-v0.7.7a.13';
 const CORE=[
   './',
   './assets/app/icon-192.png',
   './assets/app/icon-512.png',
-  './assets/audio/underwater_ambience.mp3',
-  './ambient_audio_v077a7.js',
+  './ambient_audio_v077a12.js',
+  './settings_v077a12.js',
+  './settings_v077a12.css',
+  './success_sfx_v077a12.js',
+  './audio_settings_v077a10.css',
   './menu_luminance_v077a7.css',
-  './assets/backgrounds/deepsea_playfield_v076413.png',
-  './assets/backgrounds/deepsea_playfield_v07646.png',
+  './assets/backgrounds/options/abyss_void.png',
+  './assets/backgrounds/options/bioluminescent_reef.png',
+  './assets/backgrounds/options/midnight_trench.png',
+  './assets/backgrounds/options/emerald_depths.png',
+  './assets/backgrounds/options/quiet_ocean.png',
+  './assets/backgrounds/thumbs/abyss_void.jpg',
+  './assets/backgrounds/thumbs/bioluminescent_reef.jpg',
+  './assets/backgrounds/thumbs/midnight_trench.jpg',
+  './assets/backgrounds/thumbs/emerald_depths.jpg',
+  './assets/backgrounds/thumbs/quiet_ocean.jpg',
   './assets/ui/hud_goal_blue.png',
   './assets/ui/hud_goal_green.png',
   './assets/ui/hud_goal_violet.png',
@@ -84,6 +95,9 @@ self.addEventListener('activate',event=>{
 self.addEventListener('fetch',event=>{
   if(event.request.method!=='GET')return;
   const request=event.request;
+  // Let the browser handle media byte-range requests directly. This avoids stale/partial
+  // service-worker audio responses and makes track seeking/resume more reliable.
+  if(request.destination==='audio'||new URL(request.url).pathname.includes('/assets/audio/'))return;
   if(request.mode==='navigate'){
     event.respondWith(fetch(request).then(response=>{
       if(response&&response.ok){const copy=response.clone();caches.open(CACHE).then(cache=>cache.put(request,copy)).catch(()=>{});}

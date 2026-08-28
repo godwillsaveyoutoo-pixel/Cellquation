@@ -1128,11 +1128,21 @@ export class CellRenderer {
     this.backgroundImageAspect = 1.0;
     this.backgroundOpacity = 0.94;
     this.backgroundPositionY = 0.50;
+    this.backgroundUrl = '';
     this.#createQuad();
     this.#cacheUniforms();
     this.#cacheNucleusUniforms();
     this.#cacheBackgroundUniforms();
-    this.setBackgroundImage('assets/backgrounds/deepsea_playfield_v076413.png');
+    /* v0.7.7a.13 — Settings and WebGL must use the exact same background. */
+    const selected=window.CellquationBackgroundState;
+    this.setBackgroundImage(selected?.src||'assets/backgrounds/options/abyss_void.png',{
+      opacity:0.94,positionY:Number.isFinite(selected?.positionY)?selected.positionY:0.50
+    });
+    this._cqBackgroundHandler=(event)=>{
+      const detail=event?.detail||{};
+      if(detail.src)this.setBackgroundImage(detail.src,{opacity:0.94,positionY:Number.isFinite(detail.positionY)?detail.positionY:0.50});
+    };
+    window.addEventListener('cellquation:backgroundchange',this._cqBackgroundHandler);
   }
 
   setIdleIdentity(settings) {
@@ -1245,32 +1255,36 @@ export class CellRenderer {
 
   setBackgroundImage(url,{opacity=0.94,positionY=0.50}={}) {
     const gl=this.gl;
+    const absoluteUrl=new URL(url,document.baseURI).href;
     this.backgroundOpacity=Math.max(0,Math.min(1,Number(opacity)||0));
     this.backgroundPositionY=Math.max(0,Math.min(1,Number(positionY)||0.5));
-    const texture=gl.createTexture();
-    gl.bindTexture(gl.TEXTURE_2D,texture);
-    gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);
-    gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
-    gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);
-    gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
-    gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,1,1,0,gl.RGBA,gl.UNSIGNED_BYTE,new Uint8Array([0,5,8,255]));
-    this.backgroundTexture=texture;
+    if(this.backgroundUrl===absoluteUrl&&this.backgroundReady)return;
     const image=new Image();
     image.decoding='async';
     image.onload=()=>{
+      let texture=null;
       try{
+        texture=gl.createTexture();
         gl.bindTexture(gl.TEXTURE_2D,texture);
+        gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);
+        gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
+        gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);
+        gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);
         gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,true);
         gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image);
         gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL,false);
+        const oldTexture=this.backgroundTexture;
+        this.backgroundTexture=texture;
         this.backgroundImageAspect=Math.max(0.01,image.naturalWidth/Math.max(1,image.naturalHeight));
+        this.backgroundUrl=absoluteUrl;
         this.backgroundReady=true;
+        if(oldTexture&&oldTexture!==texture){try{gl.deleteTexture(oldTexture)}catch{}}
       }catch(err){
-        this.backgroundReady=false;
+        if(texture){try{gl.deleteTexture(texture)}catch{}}
         console.warn('Cellquation background texture upload failed',err);
       }
     };
-    image.onerror=()=>{ this.backgroundReady=false; };
+    image.onerror=()=>{console.warn('Cellquation background image unavailable',url)};
     image.src=url;
   }
 
@@ -1284,13 +1298,26 @@ export class CellRenderer {
     gl.bindTexture(gl.TEXTURE_2D,this.backgroundTexture);
     gl.uniform1i(BU.u_background,0);
     gl.uniform2f(BU.u_resolution,this.canvas.width,this.canvas.height);
-    const canvasAspect=this.canvas.width/Math.max(1,this.canvas.height), imageAspect=this.backgroundImageAspect;
-    let sx=1,sy=1;
-    if(canvasAspect>imageAspect) sy=imageAspect/canvasAspect;
-    else sx=canvasAspect/imageAspect;
-    const ox=(1-sx)*0.5;
-    const visibleY=1-sy;
-    const oy=visibleY*(1-this.backgroundPositionY);
+    /* v0.7.7a.11: sample the background as one full-viewport plate.
+       The CSS play-app uses the same image with background-size:cover. Mapping this
+       canvas to its viewport sub-rectangle makes the image continue seamlessly behind
+       the translucent top and bottom HUD instead of restarting at the stage edges. */
+    const rect=this.canvas.getBoundingClientRect();
+    const viewW=Math.max(1,window.innerWidth||document.documentElement.clientWidth||rect.width);
+    const viewH=Math.max(1,window.innerHeight||document.documentElement.clientHeight||rect.height);
+    const viewportAspect=viewW/viewH, imageAspect=this.backgroundImageAspect;
+    let fullSx=1,fullSy=1;
+    if(viewportAspect>imageAspect) fullSy=imageAspect/viewportAspect;
+    else fullSx=viewportAspect/imageAspect;
+    const fullOx=(1-fullSx)*0.5;
+    const fullOy=(1-fullSy)*(1-this.backgroundPositionY);
+    const stageX=Math.max(0,rect.left)/viewW;
+    const stageYFromBottom=Math.max(0,viewH-(rect.top+rect.height))/viewH;
+    const stageW=Math.max(0,rect.width)/viewW;
+    const stageH=Math.max(0,rect.height)/viewH;
+    const sx=fullSx*stageW, sy=fullSy*stageH;
+    const ox=fullOx+fullSx*stageX;
+    const oy=fullOy+fullSy*stageYFromBottom;
     gl.uniform2f(BU.u_uvScale,sx,sy);
     gl.uniform2f(BU.u_uvOffset,ox,oy);
     gl.uniform1f(BU.u_opacity,this.backgroundOpacity);

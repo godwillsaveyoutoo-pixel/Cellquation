@@ -1,0 +1,10 @@
+Cellquation Core v0.7.7a.11 — machine checks
+- node --check ambient_audio_v077a11.js: PASS
+- node --check cellkit_latest/renderer.js: PASS
+- playlist sequential wrap 1→2→3→4→5→1: PASS
+- rapid requested-index navigation from track 5: PASS
+- reverse navigation: PASS
+- new deepsea asset present: PASS
+- play UI CSS references full-playfield background: PASS
+- WebGL renderer references same background asset: PASS
+- service-worker cache bumped to v0.7.7a.11: PASS

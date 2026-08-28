@@ -1,0 +1,19 @@
+Cellquation Core v0.7.7a.12.1 — hotfix checks
+
+PASS — settings_v077a12.js syntax
+PASS — ambient_audio_v077a12.js syntax
+PASS — CellKit renderer.js syntax
+PASS — gameplay module syntax (2-colour / 3-colour Foundations + Living Networks)
+PASS — tutorial module syntax
+PASS — nature carousel browser DOM test: 5 -> 1 -> 2 -> 3 -> 4
+PASS — nature carousel reverse wrap: 1 -> 5
+PASS — active nature card centered at every tested step (delta 0px)
+PASS — background selection publishes cellquation:backgroundchange
+PASS — background state changes from abyss -> emerald in browser DOM test
+PASS — renderer no longer contains hardcoded v0.7.7a.11 playfield background
+PASS — renderer subscribes to live background-change events
+PASS — service worker cache version v0.7.7a.12.1
+
+Note: full local play.html navigation is blocked by the sandbox browser administrator policy,
+so the full WebGL page cannot be end-to-end opened here. The affected UI/runtime components
+were tested independently in Chromium plus syntax/static integration checks.

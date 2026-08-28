@@ -1,0 +1,34 @@
+/* Cellquation v0.7.7a.12 — unified menu/game settings and background picker. */
+:root{--cq-playfield-bg:url("assets/backgrounds/options/abyss_void.png");--cq-playfield-pos:50% 50%}
+.cq-settings-trigger{color:#cfe9f0}.cq-settings-trigger svg{width:20px;height:20px}.cq-settings-trigger span{white-space:nowrap}
+.cq-topbar:has(.cq-settings-trigger){display:grid;grid-template-columns:auto minmax(0,1fr) auto}.cq-topbar:has(.cq-settings-trigger) .cq-topmeta{text-align:center}
+.pause-card[data-cq-unified-settings="1"]{width:min(94%,500px);max-height:min(92dvh,620px);overflow:hidden;display:flex;flex-direction:column}
+.cq-settings-tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:0 0 9px;padding:4px;border:1px solid rgba(128,222,246,.13);border-radius:12px;background:rgba(2,13,19,.58)}
+.cq-settings-tabs button{min-height:36px;border:1px solid transparent;border-radius:9px;background:transparent;color:#8facb7;font-size:11px;font-weight:840;letter-spacing:.05em;text-transform:uppercase}
+.cq-settings-tabs button.is-active{border-color:rgba(94,228,255,.30);background:rgba(10,48,60,.68);color:#eefcff}
+.cq-settings-panel{min-height:0}.cq-settings-panel[hidden]{display:none!important}
+.cq-display-settings{text-align:left}.cq-display-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:8px}.cq-display-head>div{min-width:0}.cq-display-head span{display:block;font:800 9.5px/1.15 var(--cq-mono);letter-spacing:.13em;color:#74b7c9}.cq-display-head strong{display:block;margin-top:2px;font-size:14px;color:#edfaff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cq-display-head em{flex:none;margin-top:2px;font:720 9.5px/1.2 var(--cq-mono);font-style:normal;color:#82a8b4}
+.cq-background-carousel-shell{display:grid;grid-template-columns:30px minmax(0,1fr) 30px;gap:5px;align-items:stretch}.cq-background-carousel{display:flex;gap:7px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;touch-action:pan-x;border-radius:13px}.cq-background-carousel::-webkit-scrollbar{display:none}.cq-background-card{position:relative;flex:0 0 100%;min-width:0;min-height:148px;padding:0 0 9px;overflow:hidden;border:1px solid rgba(128,222,246,.14);border-radius:13px;background:linear-gradient(155deg,rgba(7,31,41,.86),rgba(3,18,25,.94));color:#d5edf3;text-align:left;scroll-snap-align:center}.cq-background-card.is-active{border-color:rgba(94,228,255,.43);box-shadow:inset 0 0 24px rgba(64,220,244,.05)}.cq-background-card img{display:block;width:100%;height:84px;object-fit:cover;object-position:center}.cq-background-card__count{display:block;margin:7px 10px 2px;font:760 9px/1 var(--cq-mono);letter-spacing:.10em;color:#6f9dac}.cq-background-card strong{display:block;margin:0 10px;font-size:14px;color:#f0fbff}.cq-background-card small{display:block;margin:3px 10px 0!important;font:650 9.7px/1.2 var(--cq-mono)!important;letter-spacing:0!important;color:#87a8b2!important}.cq-background-nav{min-width:30px;border:1px solid rgba(128,222,246,.13);border-radius:10px;background:rgba(3,18,25,.66);color:#8bbbc8;font-size:22px;line-height:1}.cq-background-nav:active{color:#e9fbff;background:rgba(11,48,59,.74)}
+.cq-display-actions{margin-top:8px;padding-top:8px;border-top:1px solid rgba(128,222,246,.10)}.cq-display-actions button{width:100%;min-height:40px;border:1px solid rgba(128,222,246,.17);border-radius:10px;background:rgba(4,22,29,.82);color:#d7edf3;font-size:11.5px;font-weight:800}.cq-fullscreen-icon{margin-right:7px;color:#76ddf0;font-size:15px}
+.cq-menu-settings-overlay{position:fixed;z-index:1000}.cq-menu-settings-overlay[hidden]{display:none!important}body.is-settings-open{overflow:hidden}
+html.cq-background-loading::after{content:"";position:fixed;right:12px;bottom:12px;width:7px;height:7px;border-radius:50%;background:#75e4f6;box-shadow:0 0 10px rgba(117,228,246,.6);z-index:1100;animation:cqBgPulse .7s ease-in-out infinite alternate}@keyframes cqBgPulse{to{opacity:.25}}
+@media(max-width:520px){.cq-settings-trigger span{display:none}.cq-settings-trigger{padding:0;min-width:48px}}
+@media(max-height:650px) and (orientation:landscape){
+  .cq-settings-trigger span{display:none}
+  .pause-card[data-cq-unified-settings="1"]{width:min(96%,520px);max-height:96dvh;padding:8px 11px}.pause-card[data-cq-unified-settings="1"]>small{font-size:8px}.pause-card[data-cq-unified-settings="1"] h2{font-size:17px;margin:0 0 4px}.cq-settings-tabs{margin-bottom:5px;padding:3px}.cq-settings-tabs button{min-height:29px;font-size:9.6px}.cq-display-head{margin-bottom:5px}.cq-display-head strong{font-size:12.5px}.cq-background-card{min-height:102px;padding-bottom:5px}.cq-background-card img{height:53px}.cq-background-card__count{margin:5px 8px 1px}.cq-background-card strong{margin:0 8px;font-size:12px}.cq-background-card small{margin:2px 8px 0!important;font-size:8.2px!important}.cq-display-actions{margin-top:5px;padding-top:5px}.cq-display-actions button{min-height:32px}.pause-card[data-cq-unified-settings="1"] .pause-actions{margin-top:5px}.pause-card[data-cq-unified-settings="1"] .pause-actions button{min-height:34px!important}
+}
+
+/* v0.7.7a.12.2 — browser topbar hotfix.
+   Navigation owns the left column; Settings is a compact utility target on the right.
+   This remains true when .cq-topmeta is hidden on compact landscape layouts. */
+.cq-topbar > .cq-back{grid-column:1;justify-self:start}
+.cq-topbar > .cq-topmeta{grid-column:2;min-width:0}
+.cq-topbar > .cq-settings-trigger{
+  grid-column:3;
+  justify-self:end;
+  width:48px;
+  min-width:48px;
+  max-width:48px;
+  padding:0;
+}
+.cq-topbar > .cq-settings-trigger span{display:none}

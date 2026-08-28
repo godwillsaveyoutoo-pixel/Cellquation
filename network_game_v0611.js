@@ -1,4 +1,4 @@
-import {CellRenderer} from './cellkit_latest/renderer.js?v=0.7.7a.2';
+import {CellRenderer} from './cellkit_latest/renderer.js?v=0.7.7a.13';
 import {Cell} from './cellkit_latest/cell.js?v=0.12.3.2';
 import {paletteForSpecies,FUSION_VISUAL_DEFAULTS,SPLIT_VISUAL_DEFAULTS,BROOD_VISUAL_DEFAULTS,DESTRUCT_VISUAL_DEFAULTS,SWITCH_VISUAL_DEFAULTS,MIMIC_VISUAL_DEFAULTS,DESTRUCT_NUCLEUS_COLORS,CELL_TYPE_IDLE_IDENTITY_DEFAULTS,CELL_TYPE_MATERIAL_DEFAULTS,FUSION_SPLIT_TRANSITION_DEFAULTS,cloneProfile} from './cellkit_latest/profiles.js?v=0.12.3.4';
 import {broodNucleusLocalPosition,broodNucleusRadius} from './cellkit_latest/brood.js?v=0.12.3.2';
@@ -424,7 +424,7 @@ function handleNode(i){if(runtime.mode!=='playing'||runtime.paused)return;const 
   syncHud()
 }
 function pointerUp(e){e.preventDefault();const p=renderer.screenToWorld(e.clientX,e.clientY);let best=-1,dist=Infinity;for(let i=0;i<nodeWorld.length;i++){const d=Math.hypot(p[0]-nodeWorld[i][0],p[1]-nodeWorld[i][1]);if(d<dist){dist=d;best=i}}if(best>=0&&dist<nodeRadius()*1.55)handleNode(best)}
-function completeLevel(){if(runtime.mode==='complete')return;runtime.mode='complete';const stars=starsForMoves(runtime.moves);progress=recordCompletion('network',progress,{levelId:level.id,levelIndex:runtime.levelIndex,moves:runtime.moves,stars,levelCount:campaign.levels.length});starsEl.textContent='★'.repeat(stars)+'☆'.repeat(3-stars);starsEl.setAttribute('aria-label',`${stars} of 3 stars`);resultSummary.textContent=`${runtime.moves} ${runtime.moves===1?'MOVE':'MOVES'} · OPTIMAL ${level.min}`;const best=progress.best[level.id];bestSummary.textContent=`BEST ${best.moves} MOVES · ${best.stars}/3 ★`;continueBtn.textContent=runtime.levelIndex<campaign.levels.length-1?'NEXT LEVEL':'CAMPAIGN COMPLETE';window.CellquationUI?.showResult(resultBackdrop,continueBtn)}
+function completeLevel(){if(runtime.mode==='complete')return;runtime.mode='complete';const stars=starsForMoves(runtime.moves);progress=recordCompletion('network',progress,{levelId:level.id,levelIndex:runtime.levelIndex,moves:runtime.moves,stars,levelCount:campaign.levels.length});starsEl.textContent='★'.repeat(stars)+'☆'.repeat(3-stars);starsEl.setAttribute('aria-label',`${stars} of 3 stars`);resultSummary.textContent=`${runtime.moves} ${runtime.moves===1?'MOVE':'MOVES'} · OPTIMAL ${level.min}`;const best=progress.best[level.id];bestSummary.textContent=`BEST ${best.moves} MOVES · ${best.stars}/3 ★`;continueBtn.textContent=runtime.levelIndex<campaign.levels.length-1?'NEXT LEVEL':'CAMPAIGN COMPLETE';window.CellquationSFX?.success();window.CellquationUI?.showResult(resultBackdrop,continueBtn)}
 function nextLevel(){if(runtime.levelIndex<campaign.levels.length-1)startLevel(runtime.levelIndex+1);else location.href='living.html'}
 function togglePause(){if(runtime.mode==='complete')return;runtime.paused=!runtime.paused;runtime.lastNow=performance.now();priorRaf=runtime.lastNow;window.CellquationUI?.setPaused(runtime.paused)}
 

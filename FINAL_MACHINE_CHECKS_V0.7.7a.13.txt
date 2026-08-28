@@ -1,0 +1,24 @@
+Cellquation Core v0.7.7a.13 — Final Regression & Low-End Machine Checks
+
+PASS — JavaScript syntax: 38 files checked
+PASS — JSON parse: 9 files checked
+PASS — HTML duplicate IDs: none
+PASS — HTML static references: all referenced files exist
+PASS — CSS asset references: all referenced files exist
+PASS — ES module imports: all relative imports exist
+PASS — Settings → WebGL background bridge: event dispatch/listener and selected source verified
+PASS — No hardcoded legacy playfield in renderer: renderer uses selected background state
+PASS — Nature playlist track count: 5 tracks
+PASS — Nature playlist assets: all five audio assets present
+PASS — Ambient repeated-play no-op invariant: live audio play() calls return without seek/reload
+PASS — Success SFX completion wiring: 4/4 gameplay families
+PASS — Compact Settings topbar rule: 48px utility target pinned to column 3
+PASS — Service worker release cache: v0.7.7a.13; obsolete playfields removed
+PASS — Five selectable background images: abyss_void.png:941x1672, bioluminescent_reef.png:941x1672, emerald_depths.png:941x1672, midnight_trench.png:941x1672, quiet_ocean.png:941x1672
+PASS — Success SFX duration: 2.280s
+
+Campaign content sanity:
+PASS — 2-colour Foundations: 30 levels / 5 worlds; unique IDs and level goal/cell payloads present
+PASS — 2-colour Living Networks: 48 levels / 6 worlds; unique IDs and level goal/cell payloads present
+PASS — 3-colour Foundations: 30 levels / 5 worlds; unique IDs and level goal/cell payloads present
+PASS — 3-colour Living Networks: 48 levels / 6 worlds; unique IDs and level goal/cell payloads present

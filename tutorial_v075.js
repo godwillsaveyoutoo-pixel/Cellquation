@@ -4,7 +4,7 @@ import {
 } from './cellkit_latest/profiles.js?v=0.12.3.4';
 import {FusionSplitTransition,TransitionPhase,evaluateFusionSplitMechanics,lerp,smooth01} from './cellkit_latest/transition.js?v=0.12.3.2';
 import {broodNucleusLocalPosition,broodNucleusRadius} from './cellkit_latest/brood.js?v=0.12.3.2';
-import {CellRenderer} from './cellkit_latest/renderer.js?v=0.7.7a.2';
+import {CellRenderer} from './cellkit_latest/renderer.js?v=0.7.7a.13';
 import {CellWorld} from './runtime/world_v0611.js?v=0.6.1.1';
 import {applyVisualIdentityV062} from './visual_profiles_v062.js?v=0.7.3';
 import {createAdaptiveMobilePerformance} from './runtime/mobile_performance_v0764.js?v=0.7.6.4';

@@ -23,7 +23,7 @@ body{min-height:100dvh;overflow-x:hidden}a,button{font:inherit}button{cursor:poi
 
 /* ---------- Shared deep-sea menu shell ---------- */
 .cq-shell{width:min(100%,900px);min-height:100dvh;margin:0 auto;padding:calc(14px + env(safe-area-inset-top)) 16px calc(20px + env(safe-area-inset-bottom));position:relative;isolation:isolate}
-.cq-shell::before{content:"";position:fixed;inset:0;z-index:-3;pointer-events:none;background:linear-gradient(180deg,rgba(1,8,13,.18),rgba(1,8,13,.57)),url("assets/backgrounds/deepsea_playfield_v07646.png") center/cover no-repeat,#031019}
+.cq-shell::before{content:"";position:fixed;inset:0;z-index:-3;pointer-events:none;background:linear-gradient(180deg,rgba(1,8,13,.18),rgba(1,8,13,.57)),var(--cq-playfield-bg) var(--cq-playfield-pos)/cover no-repeat,#031019}
 .cq-shell::after{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(ellipse at 50% 34%,rgba(0,10,16,.06) 0 28%,rgba(0,5,9,.28) 72%,rgba(0,4,7,.58) 100%)}
 .cq-topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:50px}
 .cq-back,.cq-utility,.cq-icon-button{min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:0 14px;border:1px solid var(--cq-line);border-radius:15px;background:rgba(3,15,21,.78);color:#d0e7ee;text-decoration:none;font-size:var(--cq-meta);font-weight:780;box-shadow:inset 0 1px 0 rgba(205,246,255,.025)}
@@ -101,7 +101,7 @@ body[data-screen="play"] .bottom button,body[data-screen="play"] .bottom a{displ
 body[data-screen="play"] .bottom button::before,body[data-screen="play"] .bottom a::before{content:"";display:block;width:22px;height:22px;margin:auto auto 0;background:center/contain no-repeat;opacity:.82}
 body[data-screen="play"] .bottom #levelsLink::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2382a8ba' stroke-width='1.7' stroke-linecap='round'%3E%3Cpath d='M5 6h14M5 12h14M5 18h14'/%3E%3Cpath d='M3 6h.01M3 12h.01M3 18h.01'/%3E%3C/svg%3E")}
 body[data-screen="play"] .bottom #restart::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2382a8ba' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 11a8 8 0 1 1-2.34-5.66L20 7'/%3E%3Cpath d='M20 3v4h-4'/%3E%3C/svg%3E")}
-body[data-screen="play"] .bottom #pause::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2382a8ba' stroke-width='1.8'%3E%3Cpath d='M8 5v14M16 5v14'/%3E%3C/svg%3E")}
+body[data-screen="play"] .bottom #pause::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2382a8ba' stroke-width='1.7' stroke-linecap='round'%3E%3Cpath d='M4 7h10M18 7h2M4 17h3M11 17h9M4 12h5M13 12h7'/%3E%3Ccircle cx='16' cy='7' r='2'/%3E%3Ccircle cx='9' cy='17' r='2'/%3E%3Ccircle cx='11' cy='12' r='2'/%3E%3C/svg%3E")}
 body[data-screen="play"] .bottom #debugToggle::before{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2382a8ba' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M5 19V9M12 19V4M19 19v-7'/%3E%3Cpath d='M3 19h18'/%3E%3C/svg%3E")}
 @media(max-height:650px) and (orientation:landscape){.cq-home-tools [data-fs-label]{display:none}.cq-home-tools .cq-icon-button{padding:0}}
 /* ---------- Production interaction feedback ---------- */
@@ -119,3 +119,24 @@ body[data-screen="play"] .bottom #debugToggle::before{background-image:url("data
 .pause-audio output{font:760 11px/1 var(--cq-mono);color:#a7c4cd;text-align:right}
 .pause-audio button{min-height:38px;border:1px solid var(--cq-line);border-radius:10px;background:rgba(5,22,30,.86);color:#cfe4eb;font-size:11.5px;font-weight:790}
 @media(max-height:650px) and (orientation:landscape){.pause-card{width:min(88%,390px);padding:12px 14px}.pause-card h2{margin:3px 0 8px;font-size:22px}.pause-audio{margin-bottom:8px;padding:8px 10px}.pause-audio__head{margin-bottom:5px}.pause-audio__row{grid-template-columns:minmax(0,1fr) 38px 62px}.pause-audio button{min-height:34px}.pause-actions button{min-height:44px}}
+
+
+/* v0.7.7a.11 — seamless deep-sea plate behind the full play UI.
+   The WebGL renderer samples the same viewport-aligned plate, so the stage no longer
+   looks like a separate rectangle. HUD bars remain lightweight translucent glass. */
+body[data-screen="play"]{background:#02131d}
+body[data-screen="play"] .play-app{
+  background-color:#02131d;
+  background-image:var(--cq-playfield-bg);
+  background-position:var(--cq-playfield-pos);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+body[data-screen="play"] .top{
+  background:linear-gradient(180deg,rgba(4,22,30,.78),rgba(3,16,23,.70));
+}
+body[data-screen="play"] .bottom{
+  background:linear-gradient(180deg,rgba(4,20,28,.70),rgba(3,15,22,.79));
+}
+body[data-screen="play"] .stage{background:transparent;box-shadow:none}
+body[data-screen="play"] canvas#gl{background:transparent}

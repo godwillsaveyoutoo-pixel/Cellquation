@@ -22,7 +22,7 @@ body[data-screen="browser"] .cq-shell::before{
   background:
     linear-gradient(180deg,rgba(2,11,17,.04),rgba(1,9,14,.24)),
     radial-gradient(ellipse 74% 58% at 50% 17%,rgba(26,132,161,.10),transparent 72%),
-    url("assets/backgrounds/deepsea_playfield_v07646.png") center/cover no-repeat,
+    var(--cq-playfield-bg) var(--cq-playfield-pos)/cover no-repeat,
     #05202b;
 }
 body[data-screen="home"] .cq-shell::after,
