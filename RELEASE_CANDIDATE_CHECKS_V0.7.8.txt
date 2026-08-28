@@ -1,0 +1,29 @@
+Cellquation v0.7.8 Release Candidate — machine checks
+UTC: 2026-08-28T00:32:22Z
+
+PASS JS syntax: 34 files
+PASS JSON/manifest syntax: 10 files
+PASS service-worker CORE entries: 79
+PASS HTML local references: 125
+PASS active JS/CSS query version: 0.7.8-rc1
+PASS RC title/cache/PWA landscape orientation
+PASS 5 nature tracks + success FX + 5 backgrounds present
+PASS superseded single-track ambience removed
+PASS runtime option counts: 5 audio / 5 backgrounds
+PASS success FX runtime wired on all 4 gameplay pages
+PASS Settings → WebGL background change wiring
+PASS independent FX volume preference wiring
+PASS ffprobe audio metadata: 6 files
+PASS primary page set present
+Package uncompressed size: 38M
+
+PASS campaign content count: content/runtime/FOUNDATIONS_30_RUNTIME.json = 30
+PASS campaign content count: content/runtime/LIVING_NETWORKS_48_V28_RUNTIME.json = 48
+PASS campaign content count: content/threecolor/FOUNDATIONS_FULL_30_V071.json = 30
+PASS campaign content count: content/threecolor/LIVING_NETWORKS_FULL_48_V071.json = 48
+PASS compact menu Settings trigger invariant: right column, 48 × 48 px
+PASS ambience continuity guard: repeated live start is a strict no-op
+PASS audio carousel geometry fix retained: viewport-relative centering + programmatic-scroll suppression
+PASS background carousel geometry fix retained
+PASS renderer reads persisted background and live background-change events
+PASS JS relative module imports: 72

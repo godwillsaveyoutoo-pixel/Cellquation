@@ -1,0 +1,26 @@
+Cellquation v0.7.8b final machine checks
+UTC: 2026-08-28T01:21:51Z
+
+[1] JavaScript syntax
+PASS: JS syntax
+
+[2] JSON parse
+PASS: JSON parse
+
+[3] HTML local references
+PASS: HTML references
+
+[4] Dual-orientation wiring
+PASS: shared orientation engine active in 2C + 3C
+
+[5] Orientation/cache policy
+PASS: orientation=any, v0.7.8b cache/query refs
+
+[6] Campaign/layout coverage
+PASS: 48/48 2C + 48/48 3C layouts mapped
+
+[7] Existing release systems retained
+PASS: audio/settings/background assets retained
+
+[8] Headless browser note
+INFO: container Chromium cannot initialize EGL/WebGL; physical A20/Oppo shader/frame-pacing smoke test remains required.

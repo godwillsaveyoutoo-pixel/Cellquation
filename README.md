@@ -1,25 +1,13 @@
-# Cellquation Core v0.7.7a.12
+# Cellquation Core v0.7.8i — Ratio Clarity
 
-**Pass:** Settings & Background Integration.
+Build based on v0.7.8h with one focused onboarding clarification. Gameplay remains unchanged and minimal.
 
-This build continues directly from v0.7.7a.11 and integrates the final environment/preferences layer before the regression/low-end pass.
+- Foundations tutorials now begin with a short non-interactive ratio primer.
+- 2-colour primer: `1 : 2 = 2 : 4 = 3 : 6`.
+- 3-colour primer: `1 : 2 : 1 = 2 : 4 : 2`.
+- The first world of a campaign shows a subtle reminder only while that campaign has zero completed levels.
+- Once a level is completed, that reminder disappears automatically.
+- The gameplay target HUD remains exactly as before: no `RATIO` or `TARGET RATIO` label was added.
+- Fresh script/CSS filenames and cache `cellquation-v0.7.8i` prevent stale tutorial/menu assets.
 
-## Included
-- One consistent Settings system across Home, campaign/level browsers and gameplay.
-- Fullscreen moved out of Home and into **Settings → Display**.
-- Five selectable, persistent deep-sea playfield backgrounds.
-- Existing 5-track normalized radio aporee nature playlist with deterministic navigation and playback continuity.
-- Separate short harp/glissando success cue on level completion, without interrupting ambience.
-- Existing target-cell restyle, stronger Living Networks wobble, level-status clarity and seamless full-height gameplay background retained.
-
-See:
-- `V0_7_7a_12_PATCH_NOTES.md`
-- `BACKGROUND_OPTIONS_V0.7.7a.12.md`
-- `SUCCESS_SFX_SOURCE_NOTE_V0.7.7a.12.md`
-- `FINAL_MACHINE_CHECKS_V0.7.7a.12.txt`
-
-## Run locally
-
-```bash
-./run.sh
-```
+All v0.7.8h menu scaling, persistent audio, Scott Buckley default track, backgrounds, dual-orientation Living Networks, Fusion source→target behaviour and Brood count fix remain intact.

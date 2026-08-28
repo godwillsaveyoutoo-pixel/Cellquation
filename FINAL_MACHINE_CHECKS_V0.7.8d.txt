@@ -1,0 +1,15 @@
+Cellquation Core v0.7.8d — Brood Count Visual Fix
+
+PASS — changed JS files parse with node --check.
+PASS — actual Cell.ensureBroodNuclei runtime sequence tested: 1,2,3,4,3,2,1,5,4,3.
+PASS — for every tested target, liveBroodNuclei.length exactly equals the logical target count.
+PASS — Brood layout generator tested for counts 1..12; returns exactly N positions and no duplicate positions.
+PASS — Foundations idle Brood render uses liveBroodNuclei only.
+PASS — 3-colour Foundations idle Brood render uses liveBroodNuclei only.
+PASS — Tutorial Brood render uses liveBroodNuclei only.
+PASS — 2-colour Living Networks Brood render uses liveBroodNuclei only.
+PASS — 3-colour Living Networks Brood render uses liveBroodNuclei only.
+PASS — service-worker cache bumped to cellquation-v0.7.8d.
+PASS — changed gameplay/tutorial pages use v=0.7.8d cache busting.
+
+Scope: visual count correction only. Gameplay rules and level data unchanged.

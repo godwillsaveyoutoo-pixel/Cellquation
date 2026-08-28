@@ -1,4 +1,4 @@
-import {CellRenderer} from './cellkit_latest/renderer.js?v=0.7.7a.13';
+import {CellRenderer} from './cellkit_latest/renderer.js?v=0.7.8d';
 import {Cell} from './cellkit_latest/cell.js?v=0.12.3.2';
 import {paletteForSpecies,FUSION_VISUAL_DEFAULTS,SPLIT_VISUAL_DEFAULTS,BROOD_VISUAL_DEFAULTS,DESTRUCT_VISUAL_DEFAULTS,SWITCH_VISUAL_DEFAULTS,MIMIC_VISUAL_DEFAULTS,DESTRUCT_NUCLEUS_COLORS,CELL_TYPE_IDLE_IDENTITY_DEFAULTS,CELL_TYPE_MATERIAL_DEFAULTS,FUSION_SPLIT_TRANSITION_DEFAULTS,cloneProfile} from './cellkit_latest/profiles.js?v=0.12.3.4';
 import {broodNucleusLocalPosition,broodNucleusRadius} from './cellkit_latest/brood.js?v=0.12.3.2';
@@ -15,10 +15,10 @@ import {loadProgress,recordCompletion} from './progress_v060.js?v=0.7.7a.6';
 import {saveGameplayResume} from './resume_state_v076412.js?v=0.7.6.4.12';
 import {applyVisualIdentityV062} from './visual_profiles_v062.js?v=0.7.3';
 import {createAdaptiveMobilePerformance} from './runtime/mobile_performance_v0764.js?v=0.7.6.4';
-const BUILD_ID='Cellquation_Core_v0.7.7a.8_TARGET_CELL_WOBBLE_GLOW_CLEANUP';
+import {optimizeNetworkLayout} from './runtime/network_orientation_layout_v078b.js?v=0.7.8b';
+const BUILD_ID='Cellquation_Core_v0.7.8d_BROOD_COUNT_VISUAL_FIX';
 const ACTION_SPEED=2.0;
 const NETWORK_MAX_DT=0.12,NETWORK_MAX_SUB=1/60,NETWORK_MAX_STEPS=4;
-const PORTRAIT_MAX_Y_STRETCH=1.32;
 const GOAL_CONFIRM=0;
 // v0.7.7a.8 — Living Cell Wobble Tuning
 // Visual-only movement around authored network anchors. Gameplay topology,
@@ -181,36 +181,26 @@ function currentVisualStyle(styleP){
 function transformNetwork(){
   const authored=currentLayout(),pts=authored?.nodes||level.network.nodes,edges=level.network.edges;
   edgeBendMap=new Map();for(const e of authored?.edges||[]){const bend=Number(e.bend||0);edgeBendMap.set(`${e.from}:${e.to}`,bend);edgeBendMap.set(`${e.to}:${e.from}`,-bend)}
-  const lengths=edges.map(([a,b])=>Math.hypot(pts[b].x-pts[a].x,pts[b].y-pts[a].y)).sort((a,b)=>a-b);
-  const median=lengths[Math.floor(lengths.length/2)]||150;
-  const scale=Number(level.transportScale)||(Number(authored?.targetMedianWorldLength||.84)/median);
-  const xs=pts.map(p=>p.x),ys=pts.map(p=>p.y),cx=(Math.min(...xs)+Math.max(...xs))/2,cy=(Math.min(...ys)+Math.max(...ys))/2;
-  nodeWorld=pts.map(p=>[(p.x-cx)*scale,(cy-p.y)*scale]);
-  const rect=canvas.getBoundingClientRect(),aspect=Math.max(.25,rect.width/Math.max(1,rect.height));
-  // Portrait-first use of space: once width determines the camera, spend otherwise
-  // unused vertical room on the authored network instead of leaving it clustered
-  // around the centre. Curves and transport are recomputed from these positions.
-  const portrait=aspect<.82, padX=portrait?.22:.30, padY=portrait?.20:.27, minView=portrait?1.04:1.18, cameraPad=portrait?1.025:1.055;
-  let maxX=Math.max(...nodeWorld.map(p=>Math.abs(p[0])))+padX;
-  let rawMaxY=Math.max(...nodeWorld.map(p=>Math.abs(p[1])));
-  const widthScale=Math.max(minView,maxX*2)*cameraPad;
-  if(portrait&&rawMaxY>.001){
-    const availableHalfY=widthScale/(2*aspect)-padY;
-    const yStretch=clamp(availableHalfY/rawMaxY,1,PORTRAIT_MAX_Y_STRETCH);
-    nodeWorld=nodeWorld.map(([x,y])=>[x,y*yStretch]);
-  }
-  maxX=Math.max(...nodeWorld.map(p=>Math.abs(p[0])))+padX;
-  const maxY=Math.max(...nodeWorld.map(p=>Math.abs(p[1])))+padY;
-  // Fit against the renderer's actual world bounds. On landscape screens the
-  // horizontal world span grows with aspect ratio while the vertical span does
-  // not. The previous formula multiplied vertical demand by aspect, making a
-  // network progressively *smaller* on wide/fullscreen desktops.
-  const halfWidthFactor=Math.max(1,aspect);
-  const halfHeightFactor=Math.max(1,1/aspect);
-  const neededScaleX=(maxX*2)/halfWidthFactor;
-  const neededScaleY=(maxY*2)/halfHeightFactor;
-  renderer.setViewScale(Math.max(minView,neededScaleX,neededScaleY)*cameraPad);
+  const rect=canvas.getBoundingClientRect();
+  const optimized=optimizeNetworkLayout({
+    authoredPoints:pts,
+    edges,
+    authored,
+    levelId:level?.id||'',
+    stageWidth:rect.width,
+    stageHeight:rect.height,
+    viewportWidth:window.innerWidth,
+    viewportHeight:window.innerHeight,
+    transportScale:Number(level.transportScale)||0,
+    targetMedianWorldLength:Number(authored?.targetMedianWorldLength||.84),
+    cellRadius:Number(fusionVisual.radius)||.155,
+    wobbleRadius:IDLE_MOTION.drift
+  });
+  nodeWorld=optimized.points;
+  renderer.setViewScale(optimized.viewScale);
   renderer.resize();
+  // Exposed for layout QA/debugging only; gameplay never reads this object.
+  globalThis.__CQ_NETWORK_LAYOUT__={level:level?.id||'',...optimized.metrics};
 }
 function makeCell(spec,nodeId,seed){
   const type=spec.role==='imitation'?'imitate':spec.role;
@@ -268,7 +258,7 @@ function trimmedEndpoints(i,j,rA=fusionVisual.radius,rB=fusionVisual.radius){con
 function staticEdgePalettes(i,j){const [sa,sb]=edgeSpecies(i,j);return [cohesivePalette(sa),cohesivePalette(sb)]}
 function drawIdleEdges(skip=null){for(const [i,j] of level.network.edges){if(skip&&((skip[0]===i&&skip[1]===j)||(skip[0]===j&&skip[1]===i)))continue;const [a,b]=trimmedEndpoints(i,j,nodeCell(i)?.radius||fusionVisual.radius,nodeCell(j)?.radius||fusionVisual.radius),[pa,pb]=staticEdgePalettes(i,j);synapse.draw(baseSynapseOptions(a,b,pa,pb,{curve:edgeBend(i,j)}))}}
 function mixPalette(a,b,t){const u=clamp(t,0,1),mm=(x,y)=>x.map((v,i)=>v+(y[i]-v)*u);return {deep:mm(a.deep,b.deep),mid:mm(a.mid,b.mid),bright:mm(a.bright,b.bright),glow:mm(a.glow,b.glow)}}
-function drawBroodNuclei(cell,opacity=1){const count=Math.max(1,occupancy.filter(c=>c?.species===cell.species).length),nr=broodNucleusRadius(count,broodVisual);cell.ensureBroodNuclei(count);for(let i=0;i<cell.broodNuclei.length;i++){const n=cell.broodNuclei[i],local=broodNucleusLocalPosition(n,runtime.simTime,cell.radius,broodVisual,count,i);renderer.drawBroodNucleus({time:runtime.simTime,center:[cell.position[0]+local[0],cell.position[1]+local[1]],radius:nr,parentCenter:cell.position,parentRadius:cell.radius,phase:n.visualSeed,opacity,clipInside:1,colors:paletteForSpecies(cell.species),glow:broodVisual.broodNucleusGlow})}}
+function drawBroodNuclei(cell,opacity=1){const count=Math.max(1,occupancy.filter(c=>c?.species===cell.species).length),nr=broodNucleusRadius(count,broodVisual);cell.ensureBroodNuclei(count);const live=cell.liveBroodNuclei;for(let i=0;i<live.length;i++){const n=live[i],local=broodNucleusLocalPosition(n,runtime.simTime,cell.radius,broodVisual,count,i);renderer.drawBroodNucleus({time:runtime.simTime,center:[cell.position[0]+local[0],cell.position[1]+local[1]],radius:nr,parentCenter:cell.position,parentRadius:cell.radius,phase:n.visualSeed,opacity,clipInside:1,colors:paletteForSpecies(cell.species),glow:broodVisual.broodNucleusGlow})}}
 function drawNetworkCell(c,{opacity=1,scale=1,palette=null,actionProgress=null}={}){
   const base=TYPE_VISUALS[c.type]||fusionVisual,visual=scale===1?base:{...base,radius:base.radius*scale,nucleusRadius:base.nucleusRadius*scale,nucleusSeparation:(base.nucleusSeparation||0)*scale};let colors=palette||paletteForSpecies(c.species),nucleusColors=c.type==='destruct'?DESTRUCT_NUCLEUS_COLORS:colors,swap=null,mimic=null;
   if(c.type==='swap'){const target=paletteForSpecies(c.species==='green'?'blue':'green');swap={enabled:true,action:actionProgress!=null,progress:actionProgress||0,targetColors:target,ringRadius:switchVisual.swapRingRadius,ringWidth:switchVisual.swapRingWidth,ringGlow:switchVisual.swapRingGlow,pulseSpeed:switchVisual.swapPulseSpeed}}
@@ -357,7 +347,7 @@ class EdgeTransport{
 }
 
 function createNodeCell(type,species,node,seed=0){const role=type==='imitate'?'imitation':type,c=makeCell({role,species},node,100+runtime.moves*7+seed);c.position=[...nodeWorld[node]];c.nodeId=node;return c}
-function startFusion(anchor,source){const a=occupancy[anchor],b=occupancy[source];if(!a||!b||a.type!=='fusion'||b.type!=='fusion'||a.species!==b.species||!adjacent(anchor,source))return false;active=new EdgeTransport({sourceNode:source,targetNode:anchor,species:a.species,mode:'fusion'});active.context='fusion';runtime.mode='acting';runtime.moves++;clearSelection();return true}
+function startFusion(source,target){const a=occupancy[source],b=occupancy[target];if(!a||!b||a.type!=='fusion'||b.type!=='fusion'||a.species!==b.species||!adjacent(source,target))return false;active=new EdgeTransport({sourceNode:source,targetNode:target,species:a.species,mode:'fusion'});active.context='fusion';runtime.mode='acting';runtime.moves++;clearSelection();return true}
 function startSplit(source,target){const c=occupancy[source];if(!c||c.type!=='split'||occupancy[target]||!adjacent(source,target))return false;const angle=Math.atan2(nodeWorld[target][1]-nodeWorld[source][1],nodeWorld[target][0]-nodeWorld[source][0]);const tr={center:[...nodeWorld[source]],angle,finalInstancePhase:(c.visualSeed*.731)%(Math.PI*2),sourceShapePhaseA:1.1+(c.visualSeed*.731)%(Math.PI*2),sourceShapePhaseB:1.1+(c.visualSeed*1.17)%(Math.PI*2),nucleusPhaseA:.4+(c.nuclei[0]?.visualSeed||1),nucleusPhaseB:.4+(c.nuclei[1]?.visualSeed||2),sourceFluidPhaseA:c.visualSeed*.23,sourceFluidPhaseB:c.visualSeed*.41,sourceRotationA:c.rotation,sourceRotationB:c.rotation};const timer=new FusionSplitTransition(dynamics);timer.setPlaybackSpeed(ACTION_SPEED);timer.beginDivision();localDivision={source,target,species:c.species,tr,timer,startPairSep:fusionVisual.radius*.58};runtime.mode='acting';runtime.moves++;clearSelection();return true}
 function startSwap(source){const c=occupancy[source];if(!c||c.type!=='swap')return false;localAction={kind:'swap',source,elapsed:0,duration:Math.max(.45,Number(switchVisual.swapDuration)||.5),fromSpecies:c.species,toSpecies:c.species==='blue'?'green':'blue'};runtime.mode='acting';runtime.moves++;clearSelection();return true}
 function startDestruct(source,target){const c=occupancy[source];if(!c||c.type!=='destruct'||!occupancy[target]||!adjacent(source,target))return false;localAction={kind:'destruct',source,target,elapsed:0,duration:Math.max(.42,Number(destructVisual.destructDuration)||.5)};runtime.mode='acting';runtime.moves++;clearSelection();return true}

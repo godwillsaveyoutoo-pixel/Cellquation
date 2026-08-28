@@ -204,3 +204,10 @@ body[data-screen="browser"] .cq-shell[data-colour="three"] .cq-world-tab.is-acti
   box-shadow:inset 0 1px 0 rgba(248,239,255,.07),0 0 20px rgba(196,134,255,.035);
 }
 body[data-screen="browser"] .cq-shell[data-colour="three"] .cq-world-tab.is-active .cq-world-tab__status{color:#dab5ff}
+
+/* v0.7.8g — target-cell ratios carry their colour/material in the gameplay asset itself. */
+body[data-screen="browser"] .cq-ratio__part.cq-ratio__cell,
+body[data-screen="browser"] .cq-ratio__part.cq-ratio__cell.is-green,
+body[data-screen="browser"] .cq-ratio__part.cq-ratio__cell.is-violet{
+  border:0;background:transparent;box-shadow:none;
+}

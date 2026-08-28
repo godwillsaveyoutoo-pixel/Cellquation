@@ -20,7 +20,7 @@
     modulePreload(cfg.module);
     // These are shared heavy modules; explicit warmup helps browsers that do
     // not recursively process all modulepreload dependencies until evaluation.
-    modulePreload('./cellkit_latest/renderer.js?v=0.7.7a.2');
+    modulePreload('./cellkit_latest/renderer.js?v=0.7.8d');
     modulePreload('./cellkit_latest/profiles.js?v=0.12.3.4');
     modulePreload('./cellkit_latest/transition.js?v=0.12.3.2');
     if(mode.includes('network')){

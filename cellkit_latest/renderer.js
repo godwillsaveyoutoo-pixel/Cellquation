@@ -1566,9 +1566,16 @@ export class CellRenderer {
     time, transition, mechanics, fusionVisual, splitVisual, style, colors, sourceColors = null, phase, opacity = 1, materialProfile = null, outerHaloStrength = 0.46
   }) {
     this.#useProgram(this.program,this.mainPosLoc);
+    const customBound=transition.customPair
+      ? Math.max(
+          Math.hypot(transition.customPair.a?.[0]??0,transition.customPair.a?.[1]??0),
+          Math.hypot(transition.customPair.b?.[0]??0,transition.customPair.b?.[1]??0)
+        ) + fusionVisual.radius + 0.072
+      : 0;
     const bound=Math.max(
       splitVisual.radius+0.082,
-      mechanics.pairSep + fusionVisual.radius+0.072
+      mechanics.pairSep + fusionVisual.radius+0.072,
+      customBound
     );
     this.#setScissor(transition.center,bound);
     this.#applyCommon({
@@ -1594,6 +1601,7 @@ export class CellRenderer {
       mechanics,
       sourceVisual:fusionVisual,
       targetVisual:splitVisual,
+      customPair:transition.customPair??null,
       style,
       colors,
       sourceColors,

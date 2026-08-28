@@ -4,12 +4,14 @@
   const api={};
   const doc=document;
   let resultReturnFocus=null;
-  function fsElement(){return doc.fullscreenElement||doc.webkitFullscreenElement||null}
-  function fsSupported(){return !!(doc.documentElement.requestFullscreen||doc.documentElement.webkitRequestFullscreen)}
+  function fsDoc(){try{return window.top&&window.top.document?window.top.document:doc}catch{return doc}}
+  function fsElement(){const d=fsDoc();return d.fullscreenElement||d.webkitFullscreenElement||null}
+  function fsSupported(){const d=fsDoc();return !!(d.documentElement.requestFullscreen||d.documentElement.webkitRequestFullscreen)}
   async function toggleFullscreen(){
     try{
-      if(fsElement()){const exit=doc.exitFullscreen||doc.webkitExitFullscreen;if(exit)await exit.call(doc)}
-      else{const req=doc.documentElement.requestFullscreen||doc.documentElement.webkitRequestFullscreen;if(req){try{await req.call(doc.documentElement,{navigationUI:'hide'})}catch(_){await req.call(doc.documentElement)}}}
+      const d=fsDoc();
+      if(fsElement()){const exit=d.exitFullscreen||d.webkitExitFullscreen;if(exit)await exit.call(d)}
+      else{const req=d.documentElement.requestFullscreen||d.documentElement.webkitRequestFullscreen;if(req){try{await req.call(d.documentElement,{navigationUI:'hide'})}catch(_){await req.call(d.documentElement)}}}
     }catch(e){console.warn('Fullscreen unavailable',e)}
     syncFullscreen();
   }
@@ -54,5 +56,5 @@
   api.toggleFullscreen=toggleFullscreen;api.setPaused=setPaused;api.showResult=showResult;api.hideResult=hideResult;api.syncFullscreen=syncFullscreen;
   window.CellquationUI=api;
   if(doc.readyState==='loading')doc.addEventListener('DOMContentLoaded',init,{once:true});else init();
-  doc.addEventListener('fullscreenchange',syncFullscreen);doc.addEventListener('webkitfullscreenchange',syncFullscreen);
+  doc.addEventListener('fullscreenchange',syncFullscreen);doc.addEventListener('webkitfullscreenchange',syncFullscreen);try{const d=fsDoc();if(d!==doc){d.addEventListener('fullscreenchange',syncFullscreen);d.addEventListener('webkitfullscreenchange',syncFullscreen)}}catch{}
 })();

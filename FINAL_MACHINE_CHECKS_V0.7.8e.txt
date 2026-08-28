@@ -1,0 +1,20 @@
+Cellquation Core v0.7.8e — machine checks
+
+PASS — 38 JavaScript files parse with node --check.
+PASS — 9 JSON files parse successfully.
+PASS — 17 HTML documents validated for shell/child architecture.
+PASS — index.html owns ambient_audio_host_v078e.js and the persistent #cqAppFrame.
+PASS — child app documents use app_shell_guard_v078e.js and ambient_audio_v078e.js.
+PASS — child navigation no longer points Home at index.html (prevents recursive shell loading).
+PASS — service worker cache key = cellquation-v0.7.8e and caches index.html + home.html + new shell/audio scripts.
+PASS — Scott Buckley MP3 present and readable: 266.031 s, title "The Things That Keep Us Here", album "Monomyth", artist "Scott Buckley".
+PASS — six-track audio order: Scott Buckley + five existing radio aporee recordings.
+PASS — fresh/default v0.7.8e selection = Scott Buckley.
+PASS — host wrap unit test: 0→1→2→3→4→5→0 and reverse 0→5.
+PASS — 25 repeated play() calls while already live cause 0 extra native Audio.play() calls and no source reload.
+PASS — Scott per-track gain 0.87 (~-1.2 dB) brings measured -25.23 LUFS source close to the existing ~-26 to -27 LUFS ambience set without re-encoding.
+PASS — child audio client contains no pagehide/pause-on-navigation path; only the persistent top-level host owns the Audio object.
+PASS — fullscreen operations target the top-level shell document when invoked from a child frame.
+PASS — PWA orientation remains "any".
+
+Runtime limitation: local HTTP browser automation is blocked by the current sandbox administrator policy, so final real-device/browser smoke testing remains required. The persistent-audio invariant is covered by unit/static architecture tests above.

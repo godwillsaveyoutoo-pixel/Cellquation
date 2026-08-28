@@ -366,6 +366,9 @@ export class CellWorld {
   }
 
   #createFusionApproach(cellA, cellB) {
+    // Fusion input contract (v0.7.8c): cellA is the SOURCE selected first;
+    // cellB is the TARGET selected second. The target stays spatially anchored
+    // while the source travels toward it, and the fused result remains there.
     cellA.setSelected(false); cellB.setSelected(false);
     cellA.state = 'fusion-approach'; cellB.state = 'fusion-approach';
     cellA.angularVelocity = 0; cellB.angularVelocity = 0;
@@ -384,6 +387,8 @@ export class CellWorld {
 
     return {
       kind: 'fusion-approach', cellA, cellB,
+      sourceCell: cellA, targetCell: cellB,
+      targetPosition: [...cellB.position],
       elapsed: 0, duration,
       startDistance: dist, targetDistance,
       engagement: 0,
@@ -420,8 +425,10 @@ export class CellWorld {
     const dy = b.position[1] - a.position[1];
     const dist = Math.max(0.0001, length2(dx, dy));
     const angle = Math.atan2(dy, dx);
-    const center = [(a.position[0] + b.position[0]) * 0.5, (a.position[1] + b.position[1]) * 0.5];
-    const velocity = [(a.velocity[0] + b.velocity[0]) * 0.5, (a.velocity[1] + b.velocity[1]) * 0.5];
+    // The target (b) owns the destination. Keep the transition and final
+    // Split cell centered on the second-clicked cell rather than the midpoint.
+    const center = ap.targetPosition ? [...ap.targetPosition] : [...b.position];
+    const velocity = [0, 0];
     const pairSep = dist * 0.5;
     const phaseA = phaseFromSeed(a.visualSeed), phaseB = phaseFromSeed(b.visualSeed);
     const nucleusSeedA = a.nuclei[0]?.visualSeed ?? a.visualSeed;
@@ -442,6 +449,10 @@ export class CellWorld {
       nucleusPhaseB: 0.4 + phaseFromSeed(nucleusSeedB),
       sourceFluidPhaseA: phaseA,
       sourceFluidPhaseB: phaseB,
+      // Keep the target body at the transition origin while the source enters
+      // from its real approach side. The shader relaxes this asymmetric pair
+      // into the final body at [0,0], so there is no midpoint snap.
+      customPair: { a: [-dist, 0], b: [0, 0] },
       nuclei: [
         { id: a.nuclei[0].id, visualSeed: nucleusSeedA, offset: [-0.05, 0] },
         { id: b.nuclei[0].id, visualSeed: nucleusSeedB, offset: [ 0.05, 0] },
@@ -993,15 +1004,18 @@ export class CellWorld {
       feedForward + tracking
     ) * engage;
 
-    const centerVx = (a.velocity[0] + b.velocity[0]) * 0.5;
-    const centerVy = (a.velocity[1] + b.velocity[1]) * 0.5;
-    const targetAVx = centerVx + nx * closingSpeed * 0.5;
-    const targetAVy = centerVy + ny * closingSpeed * 0.5;
-    const targetBVx = centerVx - nx * closingSpeed * 0.5;
-    const targetBVy = centerVy - ny * closingSpeed * 0.5;
+    // Directional Fusion: only the first-clicked source travels. The
+    // second-clicked target is an anchor, matching the player's source→target
+    // mental model and the Living Networks socket behaviour.
+    const targetAVx = nx * closingSpeed;
+    const targetAVy = ny * closingSpeed;
     const response = (this.settings.fusionApproachResponse ?? 6.0) * engage;
     this.#addForce(force, a, (targetAVx - a.velocity[0]) * response, (targetAVy - a.velocity[1]) * response);
-    this.#addForce(force, b, (targetBVx - b.velocity[0]) * response, (targetBVy - b.velocity[1]) * response);
+    b.velocity[0] = 0; b.velocity[1] = 0;
+    if (ap.targetPosition) {
+      b.position[0] = ap.targetPosition[0];
+      b.position[1] = ap.targetPosition[1];
+    }
 
     /* Stable material orientation: cells translate into contact; they never
        pre-rotate toward the interaction axis. */
@@ -1035,9 +1049,8 @@ export class CellWorld {
       this.#addForce(force, other, px * side * strength, py * side * strength);
     }
 
-    const rvx = b.velocity[0] - a.velocity[0], rvy = b.velocity[1] - a.velocity[1];
-    const relativeSpeed = length2(rvx, rvy);
-    if (dist <= ap.targetDistance + 0.0025 && relativeSpeed < 0.022 && engage >= 0.999) ap.stableTime += dt;
+    const sourceSpeed = length2(a.velocity[0], a.velocity[1]);
+    if (dist <= ap.targetDistance + 0.0025 && sourceSpeed < 0.028 && engage >= 0.999) ap.stableTime += dt;
     else ap.stableTime = 0;
     return true;
   }
@@ -1324,6 +1337,18 @@ export class CellWorld {
       cell.position[1] += cell.velocity[1] * dt;
       // Rotation is a persistent material frame, not a free physics variable.
     }
+
+    // Keep every Fusion target exactly on its second-click destination even if
+    // collision/boundary solvers touched its velocity later in the frame.
+    const pinFusionTarget = ap => {
+      if (!ap?.targetCell || !ap?.targetPosition || !this.cells.includes(ap.targetCell)) return;
+      ap.targetCell.position[0] = ap.targetPosition[0];
+      ap.targetCell.position[1] = ap.targetPosition[1];
+      ap.targetCell.velocity[0] = 0;
+      ap.targetCell.velocity[1] = 0;
+    };
+    pinFusionTarget(this.activeApproach);
+    for (const job of this.parallelFusions) if (job.stage === 'approach') pinFusionTarget(job.ap);
 
     const ap = this.activeApproach;
     if (ap && ap.stableTime >= 0.050) this.#startFusionTransition(transitionController, now);

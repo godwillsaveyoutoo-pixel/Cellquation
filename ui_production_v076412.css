@@ -140,3 +140,130 @@ body[data-screen="play"] .bottom{
 }
 body[data-screen="play"] .stage{background:transparent;box-shadow:none}
 body[data-screen="play"] canvas#gl{background:transparent}
+
+/* v0.7.8f baseline — semantic campaign miniatures + real target-cell colour toggles. */
+body[data-screen="home"] .cq-colour-toggle button{min-height:60px;gap:11px}
+.cq-toggle-cells{display:flex;align-items:center;justify-content:center;gap:2px;height:34px;min-width:62px}
+.cq-toggle-cells img{display:block;width:31px;height:31px;object-fit:contain;filter:saturate(.94) brightness(.92);opacity:.84;transform:translateZ(0)}
+.cq-toggle-cells img+img{margin-left:-7px}
+.cq-toggle-cells.is-three{min-width:78px}.cq-toggle-cells.is-three img{width:29px;height:29px}.cq-toggle-cells.is-three img+img{margin-left:-8px}
+.cq-colour-toggle button.is-active .cq-toggle-cells img{filter:saturate(1.08) brightness(1.08);opacity:1}
+
+body[data-screen="home"] .cq-card{grid-template-columns:84px minmax(0,1fr) auto;min-height:132px;gap:16px;padding:16px}
+body[data-screen="home"] .cq-card__icon{width:84px;height:84px;border-radius:23px;background:linear-gradient(145deg,rgba(5,30,41,.80),rgba(2,13,20,.90));overflow:hidden}
+.cq-campaign-mini{display:block;width:100%;height:100%;border-radius:inherit;background:rgba(2,18,25,.82)}
+.cq-campaign-mini.cq-mini-fallback{background:radial-gradient(circle at 50% 45%,rgba(52,177,205,.20),rgba(2,18,25,.88) 62%)}
+
+@media(max-width:430px){
+  body[data-screen="home"] .cq-card{grid-template-columns:76px minmax(0,1fr) auto;min-height:120px;gap:13px;padding:14px}
+  body[data-screen="home"] .cq-card__icon{width:76px;height:76px;border-radius:21px}
+  .cq-toggle-cells img{width:28px;height:28px}.cq-toggle-cells.is-three img{width:26px;height:26px}
+}
+@media(max-height:650px) and (orientation:landscape){
+  body[data-screen="home"] .cq-colour-toggle button{min-height:50px}
+  body[data-screen="home"] .cq-card{grid-template-columns:68px minmax(0,1fr) auto;min-height:106px;gap:11px;padding:10px 12px}
+  body[data-screen="home"] .cq-card__icon{width:68px;height:68px;border-radius:19px}
+  .cq-toggle-cells{height:29px;min-width:54px}.cq-toggle-cells img{width:26px;height:26px}.cq-toggle-cells.is-three{min-width:68px}.cq-toggle-cells.is-three img{width:24px;height:24px}
+}
+
+/* v0.7.8g — menu scaling hardening + gameplay-target visual cohesion. */
+body[data-screen="home"] .cq-colour-toggle{
+  align-items:stretch;
+}
+body[data-screen="home"] .cq-colour-toggle button{
+  min-height:58px;
+  height:58px;
+  max-height:64px;
+  padding:6px 12px;
+  gap:10px;
+  overflow:hidden;
+  flex-direction:row;
+  flex-wrap:nowrap;
+}
+body[data-screen="home"] .cq-colour-toggle button>strong{
+  flex:0 0 auto;
+  white-space:nowrap;
+  line-height:1;
+}
+body[data-screen="home"] .cq-toggle-cells{
+  display:flex;
+  flex:0 0 auto;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+  height:38px;
+  width:auto;
+  min-width:64px;
+  max-height:38px;
+  overflow:visible;
+}
+body[data-screen="home"] .cq-toggle-cells img{
+  display:block;
+  flex:0 0 33px;
+  width:33px!important;
+  height:33px!important;
+  max-width:33px!important;
+  max-height:33px!important;
+  object-fit:contain;
+}
+body[data-screen="home"] .cq-toggle-cells img+img{margin-left:-7px}
+body[data-screen="home"] .cq-toggle-cells.is-three{min-width:79px;max-width:79px}
+body[data-screen="home"] .cq-toggle-cells.is-three img{
+  flex-basis:30px;
+  width:30px!important;
+  height:30px!important;
+  max-width:30px!important;
+  max-height:30px!important;
+}
+body[data-screen="home"] .cq-toggle-cells.is-three img+img{margin-left:-7px}
+
+/* Campaign miniatures are real CellKit/Synapse frames but render only on demand. */
+body[data-screen="home"] .cq-card{grid-template-columns:92px minmax(0,1fr) auto;min-height:140px;gap:17px}
+body[data-screen="home"] .cq-card__icon{
+  width:92px;height:92px;border-radius:24px;overflow:hidden;
+  contain:layout paint size;
+}
+body[data-screen="home"] .cq-campaign-mini{
+  display:block!important;width:100%!important;height:100%!important;
+  max-width:100%!important;max-height:100%!important;aspect-ratio:1/1;
+}
+
+/* Level-select ratios reuse the exact nucleus-free gameplay target-cell assets. */
+body[data-screen="browser"] .cq-ratio{gap:3px;margin-top:8px;min-height:35px}
+body[data-screen="browser"] .cq-ratio__part.cq-ratio__cell{
+  position:relative;display:grid;place-items:center;flex:0 0 35px;
+  width:35px;height:35px;min-width:35px;padding:0;border:0;border-radius:0;
+  background:transparent;box-shadow:none;filter:drop-shadow(0 3px 6px rgba(0,0,0,.22));
+  overflow:visible;
+}
+body[data-screen="browser"] .cq-ratio__cell img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none;
+}
+body[data-screen="browser"] .cq-ratio__value{
+  position:relative;z-index:1;display:grid;place-items:center;
+  min-width:1ch;font:850 13px/1 var(--cq-mono);color:#f5fdff;text-shadow:0 1px 5px #000,0 0 4px rgba(0,0,0,.55);
+}
+body[data-screen="browser"] .cq-ratio__colon{margin:0 -1px;color:#7896a2;font-size:12px;font-weight:800}
+
+@media(max-width:430px){
+  body[data-screen="home"] .cq-colour-toggle button{height:54px;min-height:54px;padding:5px 7px;gap:6px;font-size:12px}
+  body[data-screen="home"] .cq-toggle-cells{height:34px;min-width:57px;max-height:34px}
+  body[data-screen="home"] .cq-toggle-cells img{flex-basis:29px;width:29px!important;height:29px!important;max-width:29px!important;max-height:29px!important}
+  body[data-screen="home"] .cq-toggle-cells.is-three{min-width:68px;max-width:68px}
+  body[data-screen="home"] .cq-toggle-cells.is-three img{flex-basis:27px;width:27px!important;height:27px!important;max-width:27px!important;max-height:27px!important}
+  body[data-screen="home"] .cq-card{grid-template-columns:82px minmax(0,1fr) auto;min-height:126px;gap:13px;padding:14px}
+  body[data-screen="home"] .cq-card__icon{width:82px;height:82px;border-radius:22px}
+}
+@media(max-height:650px) and (orientation:landscape){
+  body[data-screen="home"] .cq-colour-toggle button{height:48px;min-height:48px;max-height:48px;padding:4px 8px;gap:6px}
+  body[data-screen="home"] .cq-toggle-cells{height:30px;min-width:52px;max-height:30px}
+  body[data-screen="home"] .cq-toggle-cells img{flex-basis:26px;width:26px!important;height:26px!important;max-width:26px!important;max-height:26px!important}
+  body[data-screen="home"] .cq-toggle-cells.is-three{min-width:62px;max-width:62px}
+  body[data-screen="home"] .cq-toggle-cells.is-three img{flex-basis:24px;width:24px!important;height:24px!important;max-width:24px!important;max-height:24px!important}
+  body[data-screen="home"] .cq-card{grid-template-columns:72px minmax(0,1fr) auto;min-height:106px;gap:11px;padding:10px 12px}
+  body[data-screen="home"] .cq-card__icon{width:72px;height:72px;border-radius:20px}
+  body[data-screen="browser"] .cq-ratio{min-height:27px;gap:2px;margin-top:4px}
+  body[data-screen="browser"] .cq-ratio__part.cq-ratio__cell{flex-basis:27px;width:27px;height:27px;min-width:27px}
+  body[data-screen="browser"] .cq-ratio__value{font-size:10.5px}
+  body[data-screen="browser"] .cq-ratio__colon{font-size:10px}
+}

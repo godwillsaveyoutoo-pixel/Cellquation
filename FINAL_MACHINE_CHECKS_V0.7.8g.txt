@@ -1,0 +1,14 @@
+PASS: all top-level/runtime/CellKit JavaScript parses
+PASS: Home loads the v0.7.8g miniature module
+PASS: Home CSS URLs are cache-busted to v0.7.8g
+PASS: all four level browsers load v0.7.8g UI/menu code
+PASS: service worker cache advanced and includes new mini module
+PASS: level ratios reuse gameplay target-cell assets for blue/green/violet
+PASS: level ratio target-cell CSS present
+PASS: top 2/3-colour selector has explicit intrinsic-image size guards
+PASS: campaign miniatures are on-demand/resize driven, not continuous ~14fps
+PASS: campaign miniature viewport enlarged and bounded
+PASS: persistent audio shell retained
+PASS: Living Network Fusion remains first-click source → second-click target
+PASS: manifest still supports portrait and landscape
+PASS: no stale v0.7.8f miniature module refs in active HTML/service worker

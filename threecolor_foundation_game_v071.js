@@ -4,8 +4,8 @@ import {
 } from './cellkit_latest/profiles.js?v=0.12.3.4';
 import {FusionSplitTransition,TransitionPhase,evaluateFusionSplitMechanics,lerp,smooth01} from './cellkit_latest/transition.js?v=0.12.3.2';
 import {broodNucleusLocalPosition,broodNucleusRadius} from './cellkit_latest/brood.js?v=0.12.3.2';
-import {CellRenderer} from './cellkit_latest/renderer.js?v=0.7.7a.13';
-import {CellWorld} from './runtime/world_v0611.js?v=0.6.1.1';
+import {CellRenderer} from './cellkit_latest/renderer.js?v=0.7.8d';
+import {CellWorld} from './runtime/world_v0611.js?v=0.7.8d';
 import {loadProgress,recordCompletion} from './progress_v060.js?v=0.7.7a.6';
 import {saveGameplayResume} from './resume_state_v076412.js?v=0.7.6.4.12';
 import {applyVisualIdentityV062} from './visual_profiles_v062.js?v=0.7.3';
@@ -48,7 +48,7 @@ function syncHud(){
   let text='';
   if(pendingDestruct)text='CHOOSE A CELL TO REMOVE';
   else if(pendingImitate)text='CHOOSE A CELL TO COPY';
-  else if(world.selectedFusionCells.length===1)text='CHOOSE ANOTHER FUSION CELL';
+  else if(world.selectedFusionCells.length===1)text='CHOOSE THE FUSION TARGET';
   selection.textContent=text;selection.classList.toggle('on',!!text);
 }
 function syncChrome(){
@@ -104,9 +104,9 @@ function currentMaterialStyle(styleP){const a=materialProfiles.fusion,b=material
 function currentVisualStyle(styleP){const late=smooth01((styleP-.72)/.28),general=smooth01(styleP),fluidT=dynamics.fluidReaction<=.0001?late:general,o={},fluid=new Set(['volumeDepth','densityContrast','fluidWarp','fluidSpeed','liquidLights','fineDetail']);for(const k of new Set([...Object.keys(fusionVisual),...Object.keys(splitVisual)])){if(['radius','nucleusRadius','nucleusSeparation'].includes(k))continue;const a=fusionVisual[k]??splitVisual[k]??0,b=splitVisual[k]??fusionVisual[k]??0;o[k]=lerp(a,b,fluid.has(k)?fluidT:general)}return o}
 function renderBrood(t){
   for(const cell of world.cells){if(cell.type!=='brood')continue;const active=world.activeBrood?.cell===cell,colors=paletteForSpecies(cell.species),count=Math.max(1,cell.broodTargetCount??cell.liveBroodNuclei.length),nr=broodNucleusRadius(count,broodVisual);
-    if(!active){for(let ni=0;ni<cell.broodNuclei.length;ni++){const n=cell.broodNuclei[ni],local=broodNucleusLocalPosition(n,t,cell.radius,broodVisual,count,ni),ds=destructState(cell),opacity=(n.retiring?(1-smooth01(n.retireAge??0)):smooth01(n.age??1))*ds.opacity;renderer.drawBroodNucleus({time:t,center:[cell.position[0]+local[0]*ds.scale,cell.position[1]+local[1]*ds.scale],radius:nr*ds.scale,parentCenter:cell.position,parentRadius:cell.radius*ds.scale,phase:n.visualSeed,opacity,clipInside:1,colors,glow:broodVisual.broodNucleusGlow})}continue}
+    if(!active){const live=cell.liveBroodNuclei;for(let ni=0;ni<live.length;ni++){const n=live[ni],local=broodNucleusLocalPosition(n,t,cell.radius,broodVisual,count,ni),ds=destructState(cell),opacity=smooth01(n.age??1)*ds.opacity;renderer.drawBroodNucleus({time:t,center:[cell.position[0]+local[0]*ds.scale,cell.position[1]+local[1]*ds.scale],radius:nr*ds.scale,parentCenter:cell.position,parentRadius:cell.radius*ds.scale,phase:n.visualSeed,opacity,clipInside:1,colors,glow:broodVisual.broodNucleusGlow})}continue}
     const st=world.getBroodActiveState();if(!st)continue;const {bud,timeline,mechanics}=st;
-    for(const n of cell.broodNuclei){if(n.id===bud.nucleusId)continue;const fb=st.br.buds.find(b=>b.nucleusId===n.id),local=fb?.startLocal??[0,0];renderer.drawBroodNucleus({time:t,center:[cell.position[0]+local[0],cell.position[1]+local[1]],radius:nr,parentCenter:cell.position,parentRadius:cell.radius,phase:n.visualSeed,opacity:1,clipInside:1,colors,glow:broodVisual.broodNucleusGlow})}
+    for(const n of cell.liveBroodNuclei){if(n.id===bud.nucleusId)continue;const fb=st.br.buds.find(b=>b.nucleusId===n.id),local=fb?.startLocal??[0,0];renderer.drawBroodNucleus({time:t,center:[cell.position[0]+local[0],cell.position[1]+local[1]],radius:nr,parentCenter:cell.position,parentRadius:cell.radius,phase:n.visualSeed,opacity:1,clipInside:1,colors,glow:broodVisual.broodNucleusGlow})}
     const mainSeed=cell.nuclei[0]?.visualSeed??cell.visualSeed,shapePhaseA=(cell.visualSeed*.731)%6.283,shapePhaseB=(bud.visualSeed*.731)%6.283,nucleusPhaseA=(mainSeed*.731)%6.283,nucleusPhaseB=(bud.nucleusSeed*.731)%6.283,q=timeline.wallLocal,c=Math.cos(-bud.rotation),s=Math.sin(-bud.rotation),target=[c*q[0]-s*q[1],s*q[0]+c*q[1]];
     renderer.drawBroodDivision({time:t,center:cell.position,angle:bud.rotation,parentRotation:cell.rotation||0,mechanics,fusionVisual,colors,shapePhaseA,shapePhaseB,nucleusPhaseA,nucleusPhaseB,broodStartLocal:target,smallNucleusRadius:bud.smallNucleusRadius,materialProfile:materialProfiles.brood,outerHaloStrength:0});
   }

@@ -1,0 +1,23 @@
+PASS  2-colour ratio primer
+PASS  3-colour ratio primer
+PASS  ratio step is non-interactive GOT IT
+PASS  three-colour fusion index shifted safely
+PASS  no gameplay RATIO label
+PASS  first-world subtle ratio reminder
+PASS  reminder hides after completion
+PASS  foundations.html fresh menu script
+PASS  foundations.html ratio clarity css
+PASS  living.html fresh menu script
+PASS  living.html ratio clarity css
+PASS  threecolor_foundations.html fresh menu script
+PASS  threecolor_foundations.html ratio clarity css
+PASS  threecolor_living.html fresh menu script
+PASS  threecolor_living.html ratio clarity css
+PASS  tutorial fresh script
+PASS  tutorial ratio clarity css
+PASS  service worker cache version
+PASS  all service worker core assets exist
+PASS  manifest orientation remains any
+PASS  manifest version label
+
+SUMMARY: 21/21 checks passed

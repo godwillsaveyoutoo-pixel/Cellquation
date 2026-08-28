@@ -1,0 +1,14 @@
+Cellquation Core v0.7.8c — Fusion Source → Target
+
+PASS — 2-colour Living Networks uses first selected node as source and second as target.
+PASS — 3-colour Living Networks uses first selected node as source and second as target.
+PASS — Living Networks fusion completion clears source socket and keeps result on target socket.
+PASS — 2-colour Foundations passes first clicked cell as CellWorld source and second as target.
+PASS — 3-colour Foundations passes first clicked cell as CellWorld source and second as target.
+PASS — Foundation CellWorld directional simulation: target drift = 0; result-target error = 0; source travel ≈ 0.47 world units.
+PASS — Fusion transition uses asymmetric source/target pair rendering to avoid midpoint handoff semantics.
+PASS — Tutorial wording teaches source first, target second.
+PASS — JS syntax checks passed for all modified runtime/game modules.
+PASS — Service worker cache bumped to cellquation-v0.7.8c.
+
+No campaign content, goals, move minima, audio, background, settings, or orientation layouts were changed.

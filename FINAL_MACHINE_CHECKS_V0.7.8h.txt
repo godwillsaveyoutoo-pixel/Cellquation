@@ -1,0 +1,9 @@
+PASS: JavaScript syntax checks
+PASS: service worker v0.7.8h cache + new physical menu assets
+PASS: isolated scaling stylesheet is present on all active Home/browser menus
+PASS: menu controller uses new physical v0.7.8h filename
+PASS: campaign miniatures use one shared CellRenderer and old renderer is unreferenced
+PASS: one-shot GL capture + non-PNG fallback are present
+PASS: selector / ratio / campaign visual roles have independent hard size contracts
+PASS: all nucleus-free target-cell assets are present
+PASS: service-worker CORE assets exist (85 files)

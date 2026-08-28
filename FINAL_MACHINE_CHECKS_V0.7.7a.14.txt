@@ -1,0 +1,11 @@
+Cellquation v0.7.7a.14 final machine checks
+- JavaScript syntax: PASS
+- JSON parse: PASS
+- HTML local asset references: PASS
+- 4 gameplay families load final success SFX: PASS
+- All active ambient references use v0.7.7a.14: PASS
+- Water success cue present / harp removed: PASS
+- Persistent FX volume key + UI control present: PASS
+- Success SFX default/persistence/0%-mute smoke test: PASS
+- Old active audio runtime references: NONE
+- Service worker cache: cellquation-v0.7.7a.14

@@ -1,0 +1,21 @@
+Cellquation Core v0.7.8f — Final machine checks
+
+PASS: all JavaScript files parse with node --check
+PASS: all JSON files parse
+PASS: home loads menu_live_minis_v078f.js as a module
+PASS: campaign card art is a runtime canvas, not the old campaign PNG composition
+PASS: live miniature module imports CellRenderer
+PASS: live miniature module imports SynapseRenderer
+PASS: Foundations live miniature renderer present
+PASS: Living Networks live miniature renderer present
+PASS: colour selector uses blue/green/violet nucleus-free gameplay target assets
+PASS: regular campaign icon area enlarged to 84×84 px
+PASS: compact portrait and compact landscape icon sizing overrides present
+PASS: service worker cache bumped to cellquation-v0.7.8f
+PASS: menu_live_minis_v078f.js included in service worker core cache
+PASS: manifest orientation remains "any"
+PASS: persistent audio files from v0.7.8e remain present and unmodified by this pass
+
+VISUAL TEST LIMITATION:
+Headless Chromium in this container could not initialize a usable EGL/WebGL context,
+so final live WebGL appearance should be smoke-tested on a real browser/device.

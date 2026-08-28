@@ -4,8 +4,8 @@ import {
 } from './cellkit_latest/profiles.js?v=0.12.3.4';
 import {FusionSplitTransition,TransitionPhase,evaluateFusionSplitMechanics,lerp,smooth01} from './cellkit_latest/transition.js?v=0.12.3.2';
 import {broodNucleusLocalPosition,broodNucleusRadius} from './cellkit_latest/brood.js?v=0.12.3.2';
-import {CellRenderer} from './cellkit_latest/renderer.js?v=0.7.7a.13';
-import {CellWorld} from './runtime/world_v0611.js?v=0.6.1.1';
+import {CellRenderer} from './cellkit_latest/renderer.js?v=0.7.8d';
+import {CellWorld} from './runtime/world_v0611.js?v=0.7.8d';
 import {applyVisualIdentityV062} from './visual_profiles_v062.js?v=0.7.3';
 import {createAdaptiveMobilePerformance} from './runtime/mobile_performance_v0764.js?v=0.7.6.4';
 
@@ -18,7 +18,7 @@ if(mode!=='2f'&&mode!=='3f') mode='2f';
 const three=mode==='3f';
 
 const STEPS_2=[
-  {title:'Fusion becomes Split',text:'Tap both glowing Blue Fusion cells. They move together and fuse with the same animation as in the game. The result is one Blue Split cell.',label:'TAP BOTH FUSION CELLS',kind:'fusion',specs:[['fusion','blue',-.29,.03],['fusion','blue',.29,.03]]},
+  {title:'Fusion becomes Split',text:'Tap the Blue Fusion cell you want to move, then tap its Fusion target. The first cell moves to the second and they become one Blue Split cell at the target.',label:'TAP BOTH FUSION CELLS',kind:'fusion',specs:[['fusion','blue',-.29,.03],['fusion','blue',.29,.03]]},
   {title:'Split becomes two Fusion cells',text:'Tap the glowing Green Split cell. It divides into two Green Fusion cells using the real split animation.',label:'TAP THE SPLIT CELL',kind:'split',specs:[['split','green',0,0]]},
   {title:'Swap changes colour — then becomes Fusion',text:'Tap the Blue Swap cell. It changes to Green during the real Swap animation. When the action is finished, it is a Green Fusion cell — not another Swap cell.',label:'TAP THE BLUE SWAP CELL',kind:'swap',specs:[['swap','blue',0,0]]},
   {title:'Brood counts its own colour',text:'There are three Green cells here: the Brood cell plus two other Green cells. Tap Brood. It therefore births three new Green Fusion cells, one after another, and the parent itself becomes Fusion.',label:'3 GREEN CELLS → 3 BIRTHS',kind:'brood',specs:[['brood','green',0,.24],['fusion','green',-.43,-.25],['split','green',.43,-.25],['fusion','blue',0,-.48]]},
@@ -26,8 +26,8 @@ const STEPS_2=[
   {title:'Imitation copies role and colour',text:'First tap the Blue Imitation cell, then the Green Split cell. In 2 Colour Foundations, Imitation copies both the target role and its colour. The source becomes a Green Split cell; the target stays where it is.',label:'IMITATION → CHOOSE TARGET',kind:'imitate2',specs:[['imitate','blue',-.29,0],['split','green',.29,0],['fusion','blue',0,.38]]}
 ];
 const STEPS_3=[
-  {title:'Mixed Fusion creates the third colour',text:'Tap the Blue Fusion cell and the Green Fusion cell. They fuse with the real game animation and become one Violet Split cell.',label:'BLUE + GREEN → VIOLET',kind:'fusion',specs:[['fusion','blue',-.29,.03],['fusion','green',.29,.03]]},
-  {title:'Same-colour Fusion stays that colour',text:'Tap both Violet Fusion cells. Violet + Violet becomes one Violet Split cell.',label:'VIOLET + VIOLET',kind:'fusion',specs:[['fusion','violet',-.29,.03],['fusion','violet',.29,.03]]},
+  {title:'Mixed Fusion creates the third colour',text:'Tap the Fusion cell you want to move, then tap the other Fusion cell as its target. The first cell moves to the second; Blue + Green becomes one Violet Split cell at the target.',label:'BLUE + GREEN → VIOLET',kind:'fusion',specs:[['fusion','blue',-.29,.03],['fusion','green',.29,.03]]},
+  {title:'Same-colour Fusion stays that colour',text:'Tap the Violet Fusion cell you want to move, then tap the other Violet Fusion cell as its target. Violet + Violet becomes one Violet Split cell at the target.',label:'VIOLET + VIOLET',kind:'fusion',specs:[['fusion','violet',-.29,.03],['fusion','violet',.29,.03]]},
   {title:'Split works the same way',text:'Tap the Violet Split cell. It divides into two Violet Fusion cells with the same split animation used in the game.',label:'TAP THE VIOLET SPLIT',kind:'split',specs:[['split','violet',0,0]]},
   {title:'Brood still counts its own colour',text:'There are three Violet cells here: the Brood cell plus two other Violet cells. Tap Brood. It births three Violet Fusion cells serially, then the parent becomes Fusion.',label:'3 VIOLET CELLS → 3 BIRTHS',kind:'brood',specs:[['brood','violet',0,.24],['fusion','violet',-.43,-.25],['split','violet',.43,-.25],['fusion','green',0,-.48]]},
   {title:'Destruct removes itself and its target',text:'Tap the Violet Destruct cell, then the marked Green target. Both are removed by the real Destruct animation.',label:'DESTRUCT → CHOOSE TARGET',kind:'destruct',specs:[['destruct','violet',-.28,0],['split','green',.28,0],['fusion','blue',0,.38]]},
@@ -37,7 +37,7 @@ const steps=three?STEPS_3:STEPS_2;
 
 const $=id=>document.getElementById(id);
 const back=$('back'),eyebrow=$('eyebrow'),title=$('title'),panel=$('panel'),demo=$('demo'),canvas=$('tutorialGl'),sceneLabel=$('sceneLabel'),stepcount=$('stepcount'),stepTitle=$('stepTitle'),stepText=$('stepText'),tryHint=$('tryHint'),prev=$('prev'),next=$('next'),errorBox=$('error');
-back.href=three?'index.html?mode=3':'index.html?mode=2';
+back.href=three?'home.html?mode=3':'home.html?mode=2';
 eyebrow.textContent=three?'3 COLOUR · FOUNDATIONS TUTORIAL':'2 COLOUR · FOUNDATIONS TUTORIAL';
 title.textContent='FOUNDATIONS';
 if(three)panel.classList.add('three');
@@ -107,9 +107,9 @@ function currentMaterialStyle(styleP){const a=materialProfiles.fusion,b=material
 function currentVisualStyle(styleP){const late=smooth01((styleP-.72)/.28),general=smooth01(styleP),fluidT=dynamics.fluidReaction<=.0001?late:general,o={},fluid=new Set(['volumeDepth','densityContrast','fluidWarp','fluidSpeed','liquidLights','fineDetail']);for(const k of new Set([...Object.keys(fusionVisual),...Object.keys(splitVisual)])){if(['radius','nucleusRadius','nucleusSeparation'].includes(k))continue;const a=fusionVisual[k]??splitVisual[k]??0,b=splitVisual[k]??fusionVisual[k]??0;o[k]=lerp(a,b,fluid.has(k)?fluidT:general)}return o}
 function renderBrood(t){
   for(const cell of world.cells){if(cell.type!=='brood')continue;const active=world.activeBrood?.cell===cell,colors=paletteForSpecies(cell.species),count=Math.max(1,cell.broodTargetCount??cell.liveBroodNuclei.length),nr=broodNucleusRadius(count,broodVisual);
-    if(!active){for(let ni=0;ni<cell.broodNuclei.length;ni++){const n=cell.broodNuclei[ni],local=broodNucleusLocalPosition(n,t,cell.radius,broodVisual,count,ni),ds=destructState(cell),opacity=(n.retiring?(1-smooth01(n.retireAge??0)):smooth01(n.age??1))*ds.opacity;renderer.drawBroodNucleus({time:t,center:[cell.position[0]+local[0]*ds.scale,cell.position[1]+local[1]*ds.scale],radius:nr*ds.scale,parentCenter:cell.position,parentRadius:cell.radius*ds.scale,phase:n.visualSeed,opacity,clipInside:1,colors,glow:broodVisual.broodNucleusGlow})}continue}
+    if(!active){const live=cell.liveBroodNuclei;for(let ni=0;ni<live.length;ni++){const n=live[ni],local=broodNucleusLocalPosition(n,t,cell.radius,broodVisual,count,ni),ds=destructState(cell),opacity=smooth01(n.age??1)*ds.opacity;renderer.drawBroodNucleus({time:t,center:[cell.position[0]+local[0]*ds.scale,cell.position[1]+local[1]*ds.scale],radius:nr*ds.scale,parentCenter:cell.position,parentRadius:cell.radius*ds.scale,phase:n.visualSeed,opacity,clipInside:1,colors,glow:broodVisual.broodNucleusGlow})}continue}
     const st=world.getBroodActiveState();if(!st)continue;const {bud,timeline,mechanics}=st;
-    for(const n of cell.broodNuclei){if(n.id===bud.nucleusId)continue;const fb=st.br.buds.find(b=>b.nucleusId===n.id),local=fb?.startLocal??[0,0];renderer.drawBroodNucleus({time:t,center:[cell.position[0]+local[0],cell.position[1]+local[1]],radius:nr,parentCenter:cell.position,parentRadius:cell.radius,phase:n.visualSeed,opacity:1,clipInside:1,colors,glow:broodVisual.broodNucleusGlow})}
+    for(const n of cell.liveBroodNuclei){if(n.id===bud.nucleusId)continue;const fb=st.br.buds.find(b=>b.nucleusId===n.id),local=fb?.startLocal??[0,0];renderer.drawBroodNucleus({time:t,center:[cell.position[0]+local[0],cell.position[1]+local[1]],radius:nr,parentCenter:cell.position,parentRadius:cell.radius,phase:n.visualSeed,opacity:1,clipInside:1,colors,glow:broodVisual.broodNucleusGlow})}
     const mainSeed=cell.nuclei[0]?.visualSeed??cell.visualSeed,shapePhaseA=(cell.visualSeed*.731)%6.283,shapePhaseB=(bud.visualSeed*.731)%6.283,nucleusPhaseA=(mainSeed*.731)%6.283,nucleusPhaseB=(bud.nucleusSeed*.731)%6.283,q=timeline.wallLocal,c=Math.cos(-bud.rotation),s=Math.sin(-bud.rotation),target=[c*q[0]-s*q[1],s*q[0]+c*q[1]];
     renderer.drawBroodDivision({time:t,center:cell.position,angle:bud.rotation,parentRotation:cell.rotation||0,mechanics,fusionVisual,colors,shapePhaseA,shapePhaseB,nucleusPhaseA,nucleusPhaseB,broodStartLocal:target,smallNucleusRadius:bud.smallNucleusRadius,materialProfile:materialProfiles.brood});
   }
@@ -149,7 +149,7 @@ function pointerAction(ev){
   if(k==='fusion'){
     if(!isCell(cell,slots[0])&&!isCell(cell,slots[1])){miss();return}
     if(cell.selected){cell.setSelected(false);tryHint.textContent='TRY THE ACTION ABOVE';return}
-    if(world.selectedFusionCells.length===0){cell.setSelected(true);tryHint.textContent='NOW TAP THE OTHER FUSION CELL';return}
+    if(world.selectedFusionCells.length===0){cell.setSelected(true);tryHint.textContent='NOW TAP THE FUSION TARGET';return}
     const a=world.selectedFusionCells[0],b=cell;if(a===b)return;world.clearSelection();if(world.beginFusion(a,b,transition,runtime.simTime*1000)){actionStarted=true;tryHint.textContent='FUSION IN PROGRESS…'}return;
   }
   if(k==='split'){

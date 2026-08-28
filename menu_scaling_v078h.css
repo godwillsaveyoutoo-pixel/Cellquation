@@ -1,0 +1,207 @@
+/* Cellquation v0.7.8h — isolated menu-cell sizing contract.
+   New physical filename intentionally bypasses legacy service-worker CSS caches. */
+
+/* HOME COLOUR MODE — compact gameplay-target cells, never intrinsic-size. */
+body[data-screen="home"] .cq-colour-toggle{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+  align-items:stretch!important;
+}
+body[data-screen="home"] .cq-colour-toggle button{
+  box-sizing:border-box!important;
+  block-size:56px!important;
+  min-block-size:56px!important;
+  max-block-size:56px!important;
+  padding:5px 10px!important;
+  display:flex!important;
+  flex-flow:row nowrap!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:7px!important;
+  overflow:hidden!important;
+}
+body[data-screen="home"] .cq-colour-toggle button>strong{
+  flex:0 0 auto!important;
+  white-space:nowrap!important;
+  line-height:1!important;
+}
+body[data-screen="home"] .cq-toggle-cells,
+body[data-screen="home"] .cq-toggle-cells.is-three{
+  box-sizing:border-box!important;
+  display:flex!important;
+  flex:0 0 auto!important;
+  flex-flow:row nowrap!important;
+  align-items:center!important;
+  justify-content:center!important;
+  block-size:32px!important;
+  min-block-size:32px!important;
+  max-block-size:32px!important;
+  inline-size:60px!important;
+  min-inline-size:60px!important;
+  max-inline-size:60px!important;
+  overflow:hidden!important;
+}
+body[data-screen="home"] .cq-toggle-cells.is-three{
+  inline-size:70px!important;
+  min-inline-size:70px!important;
+  max-inline-size:70px!important;
+}
+body[data-screen="home"] .cq-toggle-cells img{
+  position:static!important;
+  display:block!important;
+  flex:0 0 28px!important;
+  box-sizing:border-box!important;
+  inline-size:28px!important;
+  block-size:28px!important;
+  min-inline-size:28px!important;
+  min-block-size:28px!important;
+  max-inline-size:28px!important;
+  max-block-size:28px!important;
+  object-fit:contain!important;
+  margin:0!important;
+}
+body[data-screen="home"] .cq-toggle-cells img+img{margin-left:-5px!important}
+body[data-screen="home"] .cq-toggle-cells.is-three img{
+  flex-basis:25px!important;
+  inline-size:25px!important;
+  block-size:25px!important;
+  min-inline-size:25px!important;
+  min-block-size:25px!important;
+  max-inline-size:25px!important;
+  max-block-size:25px!important;
+}
+body[data-screen="home"] .cq-toggle-cells.is-three img+img{margin-left:-4px!important}
+
+/* CAMPAIGN CARDS — one static copied frame from a shared CellKit GL renderer. */
+body[data-screen="home"] .cq-card{
+  grid-template-columns:86px minmax(0,1fr) auto!important;
+  min-height:126px!important;
+  gap:14px!important;
+}
+body[data-screen="home"] .cq-card__icon{
+  box-sizing:border-box!important;
+  inline-size:86px!important;
+  block-size:86px!important;
+  min-inline-size:86px!important;
+  min-block-size:86px!important;
+  max-inline-size:86px!important;
+  max-block-size:86px!important;
+  border-radius:22px!important;
+  overflow:hidden!important;
+  contain:layout paint size!important;
+}
+body[data-screen="home"] canvas.cq-campaign-mini{
+  display:block!important;
+  inline-size:100%!important;
+  block-size:100%!important;
+  min-inline-size:100%!important;
+  min-block-size:100%!important;
+  max-inline-size:100%!important;
+  max-block-size:100%!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  object-fit:contain!important;
+}
+
+/* LEVEL RATIO — same target-cell art as gameplay, compact menu scale. */
+body[data-screen="browser"] .cq-ratio{
+  display:flex!important;
+  align-items:center!important;
+  gap:2px!important;
+  min-height:30px!important;
+  margin-top:7px!important;
+}
+body[data-screen="browser"] .cq-ratio__part.cq-ratio__cell{
+  position:relative!important;
+  box-sizing:border-box!important;
+  display:grid!important;
+  place-items:center!important;
+  flex:0 0 30px!important;
+  inline-size:30px!important;
+  block-size:30px!important;
+  min-inline-size:30px!important;
+  min-block-size:30px!important;
+  max-inline-size:30px!important;
+  max-block-size:30px!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:0!important;
+  overflow:hidden!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  contain:layout paint size!important;
+}
+body[data-screen="browser"] .cq-ratio__cell img{
+  position:absolute!important;
+  inset:0!important;
+  display:block!important;
+  box-sizing:border-box!important;
+  inline-size:30px!important;
+  block-size:30px!important;
+  min-inline-size:30px!important;
+  min-block-size:30px!important;
+  max-inline-size:30px!important;
+  max-block-size:30px!important;
+  margin:0!important;
+  object-fit:contain!important;
+  pointer-events:none!important;
+}
+body[data-screen="browser"] .cq-ratio__value{
+  position:relative!important;
+  z-index:2!important;
+  font:850 11px/1 var(--cq-mono)!important;
+  color:#f5fdff!important;
+  text-shadow:0 1px 4px #000,0 0 3px rgba(0,0,0,.7)!important;
+}
+body[data-screen="browser"] .cq-ratio__colon{
+  flex:0 0 auto!important;
+  margin:0 -1px!important;
+  font-size:10px!important;
+}
+
+@media(max-width:430px){
+  body[data-screen="home"] .cq-colour-toggle button{
+    block-size:52px!important;min-block-size:52px!important;max-block-size:52px!important;
+    padding:4px 6px!important;gap:5px!important;font-size:11.5px!important;
+  }
+  body[data-screen="home"] .cq-toggle-cells,
+  body[data-screen="home"] .cq-toggle-cells.is-three{block-size:29px!important;min-block-size:29px!important;max-block-size:29px!important}
+  body[data-screen="home"] .cq-toggle-cells{inline-size:53px!important;min-inline-size:53px!important;max-inline-size:53px!important}
+  body[data-screen="home"] .cq-toggle-cells.is-three{inline-size:62px!important;min-inline-size:62px!important;max-inline-size:62px!important}
+  body[data-screen="home"] .cq-toggle-cells img{
+    flex-basis:25px!important;inline-size:25px!important;block-size:25px!important;min-inline-size:25px!important;min-block-size:25px!important;max-inline-size:25px!important;max-block-size:25px!important;
+  }
+  body[data-screen="home"] .cq-toggle-cells.is-three img{
+    flex-basis:22px!important;inline-size:22px!important;block-size:22px!important;min-inline-size:22px!important;min-block-size:22px!important;max-inline-size:22px!important;max-block-size:22px!important;
+  }
+  body[data-screen="home"] .cq-card{grid-template-columns:76px minmax(0,1fr) auto!important;min-height:116px!important;gap:11px!important;padding:12px!important}
+  body[data-screen="home"] .cq-card__icon{inline-size:76px!important;block-size:76px!important;min-inline-size:76px!important;min-block-size:76px!important;max-inline-size:76px!important;max-block-size:76px!important}
+  body[data-screen="browser"] .cq-ratio__part.cq-ratio__cell,
+  body[data-screen="browser"] .cq-ratio__cell img{
+    inline-size:28px!important;block-size:28px!important;min-inline-size:28px!important;min-block-size:28px!important;max-inline-size:28px!important;max-block-size:28px!important;
+  }
+  body[data-screen="browser"] .cq-ratio__part.cq-ratio__cell{flex-basis:28px!important}
+  body[data-screen="browser"] .cq-ratio__value{font-size:10.5px!important}
+}
+@media(max-height:650px) and (orientation:landscape){
+  body[data-screen="home"] .cq-colour-toggle button{block-size:46px!important;min-block-size:46px!important;max-block-size:46px!important}
+  body[data-screen="home"] .cq-toggle-cells{inline-size:49px!important;min-inline-size:49px!important;max-inline-size:49px!important}
+  body[data-screen="home"] .cq-toggle-cells.is-three{inline-size:58px!important;min-inline-size:58px!important;max-inline-size:58px!important}
+  body[data-screen="home"] .cq-toggle-cells img{
+    flex-basis:23px!important;inline-size:23px!important;block-size:23px!important;min-inline-size:23px!important;min-block-size:23px!important;max-inline-size:23px!important;max-block-size:23px!important;
+  }
+  body[data-screen="home"] .cq-toggle-cells.is-three img{
+    flex-basis:21px!important;inline-size:21px!important;block-size:21px!important;min-inline-size:21px!important;min-block-size:21px!important;max-inline-size:21px!important;max-block-size:21px!important;
+  }
+  body[data-screen="home"] .cq-card{grid-template-columns:66px minmax(0,1fr) auto!important;min-height:96px!important;gap:9px!important;padding:9px 11px!important}
+  body[data-screen="home"] .cq-card__icon{inline-size:66px!important;block-size:66px!important;min-inline-size:66px!important;min-block-size:66px!important;max-inline-size:66px!important;max-block-size:66px!important}
+  body[data-screen="browser"] .cq-ratio{min-height:25px!important;margin-top:3px!important}
+  body[data-screen="browser"] .cq-ratio__part.cq-ratio__cell,
+  body[data-screen="browser"] .cq-ratio__cell img{
+    inline-size:24px!important;block-size:24px!important;min-inline-size:24px!important;min-block-size:24px!important;max-inline-size:24px!important;max-block-size:24px!important;
+  }
+  body[data-screen="browser"] .cq-ratio__part.cq-ratio__cell{flex-basis:24px!important}
+  body[data-screen="browser"] .cq-ratio__value{font-size:9.5px!important}
+}

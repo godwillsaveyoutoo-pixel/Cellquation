@@ -1,15 +1,25 @@
 {
-  "name":"Cellquation",
-  "short_name":"Cellquation",
-  "description":"Living cell ratio puzzles.",
-  "start_url":"./index.html",
-  "scope":"./",
-  "display":"fullscreen",
-  "orientation":"portrait-primary",
-  "background_color":"#01070b",
-  "theme_color":"#031018",
-  "icons":[
-    {"src":"assets/app/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
-    {"src":"assets/app/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+  "name": "Cellquation Core v0.7.8i",
+  "short_name": "Cellquation",
+  "description": "Living cell ratio puzzles — Foundations and Living Networks.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#01070b",
+  "theme_color": "#031018",
+  "icons": [
+    {
+      "src": "assets/app/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/app/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }
